@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>登陆网络办公系统</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=gb2312">
+
+<META   HTTP-EQUIV="pragma"   CONTENT="no-cache">   
+<META   HTTP-EQUIV="Cache-Control"   CONTENT="no-cache,   must-revalidate">   
+<META   HTTP-EQUIV="expires"   CONTENT="Wed,   26   Feb   1997   08:21:57   GMT"> 
+
+
+<link rel=stylesheet href="css/css.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+function alertx(){
+	if (document.getElementById('logname').value=="")
+	{
+		alert("请填写用户名！");
+		return false;
+	}
+	if (document.getElementById('password').value=="")
+	{
+		alert("请填写密码！");
+		return false;
+	}
+	name_write2cookie();
+}
+function name_write2cookie(){//写选项到cookie里
+//alert(document.cookie); 
+var s= document.getElementById("logname");
+//s.value="bb";
+
+var   dat=new   Date(); 
+dat.setTime(dat.getTime()+365*24*3600*1000); 
+
+//s.selectedIndex=4;
+var obj=s.selectedIndex;
+document.cookie="a="+obj+";   expires= "+   dat.toGMTString()   + "; "; //a是cookie名,obj是cookie值
+//alert(s.selectedIndex);
+
+//document.cookie= "maya=water;   expires= "+   dat.toGMTString()   + "; "; 
+}
+function name_readfcookie(){
+var objx = getCookie("a");
+var s= document.getElementById("logname");
+s.selectedIndex=objx;
+//alert(objx);
+
+}
+
+////////////////////////////////////////////////
+function getCookieVal(offset)
+{
+var endstr = document.cookie.indexOf(";", offset);
+if(endstr == -1)
+{
+endstr = document.cookie.length;
+}
+return unescape(document.cookie.substring(offset, endstr));
+}
+function getCookie(name)//读cookie
+{
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while(i < clen)
+{
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+{
+return getCookieVal(j);
+}
+i = document.cookie.indexOf(" ", i) + 1;
+if(i == 0) break;
+}
+return;
+}
+////////////////////////////////////////////////
+//-->
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="#D9E7FD">
+
+<FORM id=fm METHOD=POST ACTION="validate.php" onSubmit="javascript :return alertx();" autocomplete = "off">
+<table width="100%" height="100%" border="0" align="center" ><tr><td>
+
+<TABLE class=tableborder   cellSpacing=1 cellPadding=4 width=294  align=center border=0 valign=center bgcolor="#FFFFFF">
+<tr >
+<td class=header3 colspan=2 style='font-size: 14px;'>佳艺网络办公系统</td>
+</tr>
+<TR >
+	<TD width="66"  align=center >用户名：</TD>
+	
+	
+	<!-- onmouseover="this.style.background='#CCCCCC';" -->
+	<TD width="207"><!-- <INPUT TYPE="text" NAME="logname" id = "logname" size=19 class=textare onmouseover="this.style.background='#cccccc'"  onfocus="this.select()"	style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1"  onmouseout="this.style.background='#FFFFFF'" 	> -->
+	<!-- <INPUT TYPE="text" NAME="logname" id = "logname" size=19 class=textare style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1"> -->
+	
+	<SELECT NAME="logname" id = "logname" style="width=120px;background-color:white;"> <OPTION selected>--请选择--</OPTION><OPTION value=35>朱继昌</OPTION> <OPTION 
+                    value=1 id="殷嘉">殷嘉</OPTION> <OPTION 
+                    value=30>戴婧</OPTION>
+					<OPTION value=31>葛春燕</OPTION>
+					<OPTION value=42>巩彩霞</OPTION>
+					<OPTION value=33>姚建东</OPTION>
+					<OPTION value=34>张静</OPTION>
+					<OPTION value=36>周徐</OPTION>
+					<OPTION value=37>鲍明</OPTION>
+					<OPTION value=39>蔡培珍</OPTION>
+					<OPTION value=40>樊春峰</OPTION>
+					<OPTION value=43>黄宏江</OPTION>
+					<OPTION value=72>朱玉珏</OPTION>
+					<OPTION value=46>姜春明</OPTION>
+					<OPTION value=50>牟维坤</OPTION>
+					<OPTION value=51>任本喜</OPTION>
+					<OPTION value=53>沈琴</OPTION>
+					<OPTION value=54>宋群</OPTION>
+					<OPTION value=58>王育明</OPTION>
+					<OPTION value=65>殷军</OPTION>
+					<OPTION value=70>周参</OPTION>
+					<OPTION value=61>薛伟兴</OPTION>
+					<OPTION value=68>张昱</OPTION>
+					<OPTION value=63>杨福君</OPTION>
+					<OPTION value=49>梁连喜</OPTION>
+					<OPTION value=53>绍忠元</OPTION>
+					<OPTION value=57>王莉莉</OPTION>
+					<OPTION value=62>严建华</OPTION>
+					<OPTION value=56>王海龙</OPTION>
+
+			  </SELECT> 
+	
+	
+	</TD>
+</TR>
+<TR>
+	<TD align=center>密&nbsp;&nbsp;码：</TD>
+	<TD><INPUT TYPE="password" name="password" id="password" class=textare  style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1">
+	</TD>
+</TR>
+<tr>
+  <td align="center">验证码：</td>
+  <td ><input type="text" id=authnumbox name=authnumbox class=textare style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1">
+<img src=authnum.php /></td></tr>
+<TR>
+	<TD colspan=2 align=center><INPUT TYPE="submit" value="登&nbsp;&nbsp;录" class='inp5'></TD>
+	</TR>
+</TABLE><BR><DIV ALIGN="center"><B>上海佳艺冷弯型钢厂&copy;</B></DIV>
+<DIV ALIGN="center">Deisigned By <a href="mailto:evoex@126.com">evoup</a></DIV>
+
+</td></tr>
+</table>
+</FORM>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+name_readfcookie();
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

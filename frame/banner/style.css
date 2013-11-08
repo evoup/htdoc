@@ -1,0 +1,76 @@
+A:link    { color: #0000FF; TEXT-DECORATION: none;}
+A:visited { COLOR: #0000FF; TEXT-DECORATION: none}
+A:active  { COLOR: #3333ff; TEXT-DECORATION: none}
+A:hover   { COLOR: #ff0000; TEXT-DECORATION: none}
+
+
+body { font-size: 10pt; font-family:"Verdana", "Arial", "宋体"; SCROLLBAR-FACE-COLOR: rgb(158,180,214); SCROLLBAR-3DLIGHT-COLOR: rgb(158,180,214); SCROLLBAR-ARROW-COLOR:  #FFFFFF; }
+.bodycolor { BACKGROUND: #ffffff}
+
+
+.small  { font-size: 9pt;}
+.big    { font-size: 9pt;}
+.bigbak    { font-size: 12pt;}
+.big1   { font-size: 12pt;COLOR: #000000;}
+.big2   { font-size: 18pt}
+.verybig{ font-size: 24pt}
+
+
+input.SmallButton{ BORDER-RIGHT: #104a7b 1px solid;    BORDER-TOP: #afc4d5 1px solid;    BACKGROUND: #d6e7ef;    BORDER-LEFT: #afc4d5 1px solid;    CURSOR: hand;    COLOR: #000066;    BORDER-BOTTOM: #104a7b 1px solid;    HEIGHT: 19px;    FONT-SIZE: 9pt;    TEXT-DECORATION: none}
+input.BigbakButton  { BORDER-RIGHT: #104a7b 1px solid;    BORDER-TOP: #afc4d5 1px solid;    BACKGROUND: #d6e7ef;    BORDER-LEFT: #afc4d5 1px solid;    CURSOR: hand;    COLOR: #000066;    BORDER-BOTTOM: #104a7b 1px solid;    HEIGHT: 24px;    FONT-SIZE: 12pt;    TEXT-DECORATION: none}
+input.BigButton{ BORDER-RIGHT: #104a7b 1px solid;    BORDER-TOP: #afc4d5 1px solid;    BACKGROUND: #d6e7ef;    BORDER-LEFT: #afc4d5 1px solid;    CURSOR: hand;    COLOR: #000066;    BORDER-BOTTOM: #104a7b 1px solid;    HEIGHT: 19px;    FONT-SIZE: 9pt;    TEXT-DECORATION: none}
+
+input.SmallInput { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+input.SmallInput1{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-RIGHT:0; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+input.BigInput { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+input.BigbakInput   { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+input.BigInputMoney { text-align: RIGHT; FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+input.SmallStatic{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+input.BigbakStatic  { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+input.BigStatic{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+select.BigSelect{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+select.BigbakSelect  { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+select.SmallSelect{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+select.BigbakStatic  { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+select.BigStatic{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+select.SmallStatic{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+textarea.BigInput { FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #d6e7ef; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal;LINE-HEIGHT: normal;}
+textarea.BigStatic{ FONT-FAMILY: ??ì?,MS SONG,SimSun,tahoma,sans-serif; COLOR: #000066; BACKGROUND: #E0E0E0; border:1 solid black; BORDER-BOTTOM:1px double; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal;LINE-HEIGHT: normal;}
+
+.Calender    { BACKGROUND: #00FCFC;}
+.TableControl{ BACKGROUND: #EFF7FF;}
+.TableHeader { BACKGROUND: #D3E5FA;}
+.TableHeader1 { BACKGROUND: #D3E5FA; background-image: url("/images/button_back.gif");  CURSOR: hand; COLOR: #000066;}
+.TableHeader2 { BACKGROUND: #D3E5FA; background-image: url("/images/menubg.gif");  CURSOR: hand; COLOR: #000066;FONT-WEIGHT: bold;}
+.ED1B23 { BACKGROUND:  #ED1B23;}
+.7EC0EE { BACKGROUND:  #7EC0EE;}
+.0088FF { BACKGROUND:  #0088FF;}
+.0000FF { BACKGROUND:  #0000FF;}
+.E7F0FF { BACKGROUND:  #E7F0FF;}
+.8800FF { BACKGROUND:  #8800FF;}
+.AB82FF { BACKGROUND:  #AB82FF;}
+.FF88FF { BACKGROUND:  #FF88FF;}
+.FF00FF { BACKGROUND:  #FF00FF;}
+.FF0088 { BACKGROUND:  #FF0088;}
+.FF0000 { BACKGROUND:  #FF0000;}
+.F4A460 { BACKGROUND:  #F4A460;}
+.CC9999 { BACKGROUND:  #CC9999;}
+.888800 { BACKGROUND:  #888800;}
+.888888 { BACKGROUND:  #888888;}
+.CCCCCC { BACKGROUND:  #CCCCCC;}
+.90E090 { BACKGROUND:  #90E090;}
+.008800 { BACKGROUND:  #008800;}
+.008888 { BACKGROUND:  #008888;}
+.TableContent{ BACKGROUND: #E2E8FA;}
+.TableData   { BACKGROUND: #FFFFFF;}
+.TableLine1  { BACKGROUND: #F3F3F3;}
+.TableLine2  { BACKGROUND: #FFFFFF;}
+.TableLine3  { BACKGROUND: #FFFFFF;}
+
+#write {BACKGROUND: #d6e7ef;}
+.pagenav {font-size: 10pt; font-family:"Verdana", "Arial", "宋体";}
+.bgcolor2 {font-size: 10pt; font-family:"Verdana", "Arial", "宋体";}
+.bgcolor3 {font-size: 10pt; font-family:"Verdana", "Arial", "宋体";}
+.bgcolor4 {color: green; font-size: 10pt; font-family:"Verdana", "Arial", "宋体";}

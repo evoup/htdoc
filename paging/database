@@ -1,0 +1,56 @@
+# phpMyAdmin MySQL-Dump
+# version 2.2.3
+# http://phpwizard.net/phpMyAdmin/
+# http://phpmyadmin.sourceforge.net/ (download page)
+#
+# Host: localhost
+# Generation Time: Jan 06, 2006 at 03:27 PM
+# Server version: 3.23.47
+# PHP Version: 4.1.1
+# Database : `test`
+# --------------------------------------------------------
+
+#
+# Table structure for table `hotel`
+#
+
+CREATE TABLE hotel (
+  pid int(11) NOT NULL auto_increment,
+  hotel_name varchar(250) NOT NULL default '',
+  status char(1) NOT NULL default '',
+  PRIMARY KEY  (pid)
+) TYPE=MyISAM;
+
+#
+# Dumping data for table `hotel`
+#
+
+INSERT INTO hotel VALUES (28, 'Kamat Lingapur', 'a');
+INSERT INTO hotel VALUES (29, 'Manohar Radisson', 'a');
+INSERT INTO hotel VALUES (26, 'IK London', 'a');
+INSERT INTO hotel VALUES (27, 'I T C Kakatiya', 'a');
+INSERT INTO hotel VALUES (25, 'Green Park', 'a');
+INSERT INTO hotel VALUES (23, 'Fortune Katriya', 'a');
+INSERT INTO hotel VALUES (24, 'Golkonda Hotel', 'a');
+INSERT INTO hotel VALUES (22, 'Comfort Inn Wood Bridge', 'a');
+INSERT INTO hotel VALUES (21, 'Central Court Hotel', 'a');
+INSERT INTO hotel VALUES (20, 'Celebrity Boutique', 'a');
+INSERT INTO hotel VALUES (19, 'Belson Taj', 'a');
+INSERT INTO hotel VALUES (18, 'Hotel Baseraa Inn', 'a');
+INSERT INTO hotel VALUES (17, 'Baseraa', 'a');
+INSERT INTO hotel VALUES (16, 'Asrani International Hotel', 'a');
+INSERT INTO hotel VALUES (15, 'Amrutha Castle', 'a');
+INSERT INTO hotel VALUES (30, 'N K M Grand', 'a');
+INSERT INTO hotel VALUES (31, 'Ohris Banjara', 'a');
+INSERT INTO hotel VALUES (32, 'Ohris Cusine Court', 'a');
+INSERT INTO hotel VALUES (33, 'Pearl Regency', 'a');
+INSERT INTO hotel VALUES (34, 'Quality Inn Residency', 'a');
+INSERT INTO hotel VALUES (35, 'Rukmini Riviera', 'a');
+INSERT INTO hotel VALUES (36, 'Taj Krishna', 'a');
+INSERT INTO hotel VALUES (37, 'Taj Banjara', 'a');
+INSERT INTO hotel VALUES (38, 'Taj Residency', 'a');
+INSERT INTO hotel VALUES (39, 'Taj Tristar', 'a');
+INSERT INTO hotel VALUES (40, 'Viceroy', 'a');
+INSERT INTO hotel VALUES (41, 'Aditya Park Inn', 'a');
+INSERT INTO hotel VALUES (42, 'Hotel Karan', 'a');
+

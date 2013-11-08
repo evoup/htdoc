@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<tree>
+ <tree text="部门管理" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/document/draft.php';void(null);" radio="" checked="false">
+<!--   <tree text="报表发送管理">
+   <tree src="document_general.xml">
+    gg
+   </tree>
+  </tree>
+  <tree>
+   test2-3
+  </tree> -->
+ </tree>
+ <tree text="人员管理" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/addlist/admin.php';void(null);" radio="" checked="false" >
+ </tree>
+ <tree text="人员照片" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/addlist/ablum.php';void(null);" radio="" checked="false" >
+ </tree>
+ <tree text="生成JS" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/admin/makejs/makedepusr_transfer.php';void(null);" radio="" checked="false" src=''>
+ </tree>
+
+
+
+
+</tree>

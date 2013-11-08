@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http://www.rudong.gov.cn/rudong/RegisterUser/LoginSmall.aspx -->
+<HTML><HEAD><TITLE>LoginSmall</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2900.3243" name=GENERATOR>
+<META content=C# name=CODE_LANGUAGE>
+<META content=JavaScript name=vs_defaultClientScript>
+<META content=http://schemas.microsoft.com/intellisense/ie5 
+name=vs_targetSchema><LINK href="LoginSmall.files/RegisterStyle.css" 
+type=text/css rel=stylesheet><LINK href="LoginSmall.files/Styles.css" 
+type=text/css rel=stylesheet>
+<SCRIPT>
+		function OpenBackend(type)
+	{
+		var url="";
+			if(type=='MyBackend')
+				url='backend/FrameAll.aspx';
+			else if(type=='BBS')
+				url='RedirectBBS.aspx';
+		
+			winioffice=window.open(url,'','resizable=no,fullscreen=no,scrolling=no')
+			winioffice.moveTo(0,0)
+			winioffice.resizeTo(window.screen.availWidth,window.screen.availHeight)			
+		
+	}
+	function OpenType(type)
+	{
+		var url="";
+			if(type=='MyBackend')
+				url='backend/FrameAll.aspx';
+			else if(type=='BBS')
+				url='RedirectBBS.aspx';
+		
+			winioffice=window.open(url)
+
+	}
+	</SCRIPT>
+</HEAD>
+<BODY MS_POSITIONING="FlowLayout">
+<FORM id=Form1 name=Form1 action=LoginSmall.aspx method=post><INPUT type=hidden 
+value=dDw5ODg3NjkzMTY7dDxwPGw8cm5kOz47bDxRVjczOz4+O2w8aTwxPjs+O2w8dDw7bDxpPDE+O2k8Mz47PjtsPHQ8O2w8aTwyPjs+O2w8dDw7bDxpPDE+Oz47bDx0PDtsPGk8Mz47PjtsPHQ8cDxsPGlubmVyaHRtbDs+O2w8XDxpbWcgc3JjPSIuLi9SZWFkVGVtcEltZy5hc3B4P1VpZD1iOCtRbFhWNTZCREp1M09yMnhzNFlRPT0iXD47Pj47Oz47Pj47Pj47Pj47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs7Pjs+Pjs+Pjs+7bJUa1bSUOSzE+H2cZEx4XXN3pE= 
+name=__VIEWSTATE> <!--登录区域-->
+<TABLE id=tblLogin cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD style="HEIGHT: 30px" noWrap align=right width=72 height=30>用户名：</TD>
+    <TD><INPUT class=textbg id=txtUserName style="WIDTH: 100px" 
+      name=txtUserName></TD></TR>
+  <TR>
+    <TD align=right width=72 height=25>密码：</TD>
+    <TD><INPUT class=textbg id=txtPassWord style="WIDTH: 100px" type=password 
+      name=txtPassWord></TD></TR>
+  <TR>
+    <TD style="HEIGHT: 25px" align=right width=72 height=25>验证码：</TD>
+    <TD>
+      <TABLE border=0>
+        <TBODY>
+        <TR>
+          <TD><INPUT class=textbg id=Txt_yzm style="WIDTH: 60px" 
+          name=Txt_yzm></TD>
+          <TD id=Td_img><IMG 
+        src="LoginSmall.files/ReadTempImg.gif"></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD align=middle colSpan=2 height=30><INPUT class=Btnbg id=btn_login tabIndex=3 type=submit value=用户登陆 name=btn_login> 
+<INPUT class=Btnbg onclick="javascript:window.open('Register.aspx','_blank','')" type=button value=注册> 
+    </TD></TR></TBODY></TABLE></FORM></BODY></HTML>

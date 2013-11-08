@@ -1,0 +1,118 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>用户登录</title>
+<style type="text/css">
+<!--
+body {
+	color: #FF4800;
+	font-size: 12px;
+}
+td {
+	font-size: 12px;
+}
+a {
+	color: #FF4800;
+	text-decoration: none;
+}
+#k1 {
+	border: 1px solid #FF4800;
+	height: 184px;
+	width: 200px;
+}
+#k2 {
+	border: 1px solid #FFFD76;
+	height: 100%;
+	width: 100%;
+	background-color: #ffc800;
+	padding: 2px;
+}
+.k3 {
+	background-color: #FFE784;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFEDAB;
+	border-right-color: #FD9346;
+	border-bottom-color: #FD9346;
+	border-left-color: #FFEDAB;
+}
+.m2px {
+	margin-top: 2px;
+}
+.k32 {
+	height: 80px;
+}
+.k33 {
+	height: 62px;
+	line-height: 200%;
+}
+.k4 {
+	padding-top: 4px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+.k5 {
+	height: 144px;
+}
+.input {
+	border: 1px solid #FFBA00;
+	font-size: 12px;
+	background-color: #FFF7D5;
+	width: 65px;
+}
+.mail {
+	border: 1px solid #FFBA00;
+	font-size: 12px;
+	background-color: #FFF7D5;
+	width: 80px;
+}
+-->
+</style>
+</head>
+<body>
+
+<DIV id="k1">
+<DIV id="k2">
+<DIV class="k3 k4"><img src="file:///C|/Documents and Settings/evoup/桌面/images/login_b.gif" width="108" height="21" alt="" /></DIV>
+<DIV class="k3 k32 m2px">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+<form id="form1" name="form1" method="post" action="login.asp">
+<tr>
+  <td width="63%" align="center">用户名
+    <label>
+	  <input name="userName" type="text" class="input" id="userName" tabindex="1" value="" size="10" />
+	</label></td>
+  <td width="37%" rowspan="2" align="center"><label>
+	<input name="imageField" type="image" src="file:///C|/Documents and Settings/evoup/桌面/images/login_go.gif" alt="Go" tabindex="4" />
+  </label></td>
+</tr>
+<tr>
+  <td width="63%" align="center">密&nbsp;&nbsp;码
+    <label>
+    <input name="password" type="password" class="input" id="password" value="" size="10" tabindex="2" />
+    </label></td>
+</tr>
+<tr>
+  <td align="center">验证码
+	<input name="codestr" type="text" class="input" id="codestr" size="10" tabindex="3" /></td>
+  <td><img src="GetCode.asp" width="55" height="16" border="0" align="absmiddle" /></td>
+</tr>
+</form>
+</table>
+</div>
+<DIV class="k3 k33 m2px" align="center">
+  <a href="../user/reg.asp" target="_blank">免费注册</a> <a href="#">找回密码</a> <a href="#">站点地图</a><br />
+      <img src="file:///C|/Documents and Settings/evoup/桌面/images/login_member.gif" alt="会员中心" width="90" height="26" border="0" />
+    <a href="../help/1.asp" target="_blank"><img src="file:///C|/Documents and Settings/evoup/桌面/images/login_help.gif" alt="帮助中心" width="90" height="26" border="0" /></a></DIV>
+</DIV><!--close k1-->
+</DIV><!--close k2-->
+
+</body>
+</html>

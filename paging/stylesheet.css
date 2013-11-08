@@ -1,0 +1,46 @@
+.bodytext
+{
+	font-family: "arial";
+	font-size:10pt;
+	color: #686868;
+	text-decoration: none;
+	font-weight:normal;	
+}
+.redheading {
+	font-family: "Verdana";
+	font-size:11px;
+	color: #CC0000;
+	text-decoration: none;
+	font-weight:bold;
+}
+.redheading:hover {
+	font-family: "Verdana";
+	font-size:11px;
+	color: #999999;
+	text-decoration: none;
+	font-weight:bold;
+}
+.smallheading {
+	font-family: "Verdana";
+	font-size:11px;
+	color: #0099FF;
+	text-decoration: none;
+	font-weight:bold;
+}
+.boldcolor
+{
+	font-family: "Verdana";
+	font-size: 8pt;
+	color: #EB410D;
+	BACKGROUND-COLOR: #FAFFE4;
+	text-decoration: none;
+	font-weight:bold;
+	BORDER-BOTTOM: #eeeeee 1px double; 
+	BORDER-LEFT: #eeeeee 1px double; 
+	BORDER-RIGHT: #eeeeee 1px double; 
+	BORDER-TOP: #eeeeee 1px double;
+	PADDING-BOTTOM: 1px; 
+	PADDING-LEFT: 3px; 
+	PADDING-RIGHT: 0px; 
+	PADDING-TOP: 1px;
+}

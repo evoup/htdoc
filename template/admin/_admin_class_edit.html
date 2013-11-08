@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script><script type="text/javascript" src="js/common.js"></script><script language="JavaScript">
+<!--
+// 这里把JS用到的所有语言都赋值到这里
+var process_request = "正在處理您的請求...";
+var todolist_caption = "記事本";
+var todolist_autosave = "自動儲存";
+var todolist_save = "存檔";
+var todolist_clear = "清除";
+var todolist_confirm_save = "是否將更改儲存到記事本？";
+var todolist_confirm_clear = "是否移除內容？";
+var catname_empty = "分類名稱不能為空!";
+var unit_empyt = "數量單位不能為空!";
+var is_leafcat = "您選取的分類是一個底層分類。\r\n新分類的上層分類不能是一個底層分類";
+var not_leafcat = "您選取的分類不是一個底層分類。\r\n商品的分類轉移只能在底層分類之間才可以操作。";
+//-->
+</script>
+
+
+<script language="javascript">
+function DeleteConfirm(str){
+return confirm(str);
+}
+</script>
+
+
+
+
+
+</head>
+<body>
+<h1>
+<span class="action-span"><a href="admin_class_edit.php?action=add">新增分类</a></span>
+<span class="action-span1"><a href="javascript:void(0)">EVPCMS 管理中心</a>  - 文章分类 </span>
+<div style="clear:both"></div>
+</h1><script type="text/javascript" src="../js/utils.js"></script><script type="text/javascript" src="js/listtable.js"></script>
+<form method="post" action="" name="listForm">
+<!-- start ad position list -->
+<div class="list-div" id="listDiv">
+
+<table width="100%" cellspacing="1" cellpadding="2" id="list-table">
+  <tr>
+    <th>分类名称</th>
+    <th>导航列</th>
+    <th>是否显示</th>
+    <th>排序</th>
+    <th>操作</th>
+  </tr>
+   <!-- <tr align="center" class="0">
+    <td align="left" class="first-cell" >
+            <img src="images/menu_minus.gif" width="9" height="9" border="0" style="margin-left:0em" onclick="rowClicked(this)" />
+            <span><a href="goods.php?act=list&cat_id=1">手機</a></span>    </td>
+    <td width="10%"><img src="images/yes.gif" onclick="listTable.toggle(this, 'toggle_show_in_nav', 1)" /></td>
+    <td width="10%"><img src="images/yes.gif" onclick="listTable.toggle(this, 'toggle_is_show', 1)" /></td>
+    <td width="10%" align="right"><span onclick="listTable.edit(this, 'edit_sort_order', 1)">0</span></td>
+    <td width="24%" align="center">
+      <a href="category.php?act=move&cat_id=1">转移分类內的文章</a> |
+      <a href="category.php?act=edit&amp;cat_id=1">编辑 </a> |
+      <a href="javascript:;" onclick="listTable.remove(1, '您確定要刪除這筆記錄嗎?')" title="移除">移除</a>    </td>
+  </tr>
+    <tr align="center" class="1">
+    <td align="left" class="first-cell" >
+            <img src="images/menu_minus.gif" width="9" height="9" border="0" style="margin-left:1em" onclick="rowClicked(this)" />
+            <span><a href="goods.php?act=list&cat_id=2">歐美手機</a></span>    </td>
+    <td width="10%"><img src="images/no.gif" onclick="listTable.toggle(this, 'toggle_show_in_nav', 2)" /></td>
+    <td width="10%"><img src="images/yes.gif" onclick="listTable.toggle(this, 'toggle_is_show', 2)" /></td>
+    <td width="10%" align="right"><span onclick="listTable.edit(this, 'edit_sort_order', 2)">0</span></td>
+    <td width="24%" align="center">
+      <a href="category.php?act=move&amp;cat_id=1">转移分类內的文章</a><a href="category.php?act=move&cat_id=2"></a> |
+      <a href="category.php?act=edit&amp;cat_id=1">编辑</a><a href="category.php?act=edit&amp;cat_id=2"></a> |
+      <a href="javascript:;" onclick="listTable.remove(2, '您確定要刪除這筆記錄嗎?')" title="移除">移除</a>    </td>
+  </tr>
+    <tr align="center" class="1">
+    <td align="left" class="first-cell" >
+            <img src="images/menu_minus.gif" width="9" height="9" border="0" style="margin-left:1em" onclick="rowClicked(this)" />
+            <span><a href="goods.php?act=list&cat_id=3">日韓手機</a></span>    </td>
+    <td width="10%"><img src="images/no.gif" onclick="listTable.toggle(this, 'toggle_show_in_nav', 3)" /></td>
+    <td width="10%"><img src="images/yes.gif" onclick="listTable.toggle(this, 'toggle_is_show', 3)" /></td>
+    <td width="10%" align="right"><span onclick="listTable.edit(this, 'edit_sort_order', 3)">0</span></td>
+    <td width="24%" align="center">
+      <a href="category.php?act=move&amp;cat_id=1">转移分类內的文章</a><a href="category.php?act=move&cat_id=3"></a> |
+      <a href="category.php?act=edit&amp;cat_id=1">编辑</a><a href="category.php?act=edit&amp;cat_id=3"></a> |
+      <a href="javascript:;" onclick="listTable.remove(3, '您確定要刪除這筆記錄嗎?')" title="移除">移除</a>    </td>
+  </tr>-->
+  
+  
+  
+  
+  
+  
+   <!-- <tr align="center" class="1">
+      <td align="left" class="first-cell" ></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+    </tr>这部分用OUT的，看到igenus里也是没办法的，在这些部分里直接写的-->
+	<!--嵌套输出开始-->
+	<!-- BEGIN list -->
+[##gradetop##]
+<!-- BEGIN list1 -->
+[##gradesub##]
+<!-- BEGIN list2 -->
+[##gradesublevel2##]
+<!-- BEGIN list3 -->
+[##gradesublevel3##]
+<!-- BEGIN list4 -->
+[##gradesublevel4##]
+<!-- END list4 -->
+<!-- END list3 -->
+<!-- END list2 -->
+<!-- END list1 -->
+<!-- END list -->
+	<!--嵌套输出结束-->
+  </table>
+
+</div>
+</form>
+
+
+<script language="JavaScript">
+<!--
+
+onload = function(){
+
+}
+
+var imgPlus = new Image();
+imgPlus.src = "/images/menu_plus.gif";
+
+/**
+ * 折叠分类列表
+ */
+function rowClicked(obj)
+{
+  obj = obj.parentNode.parentNode;
+
+  var tbl = document.getElementById("list-table");
+  var lvl = parseInt(obj.className);
+  var fnd = false;
+
+  for (i = 0; i < tbl.rows.length; i++)
+  {
+      var row = tbl.rows[i];
+
+      if (tbl.rows[i] == obj)
+      {
+          fnd = true;
+      }
+      else
+      {
+          if (fnd == true)
+          {
+              var cur = parseInt(row.className);
+              if (cur > lvl)
+              {
+                  row.style.display = (row.style.display != 'none') ? 'none' : (Browser.isIE) ? 'block' : 'table-row';
+              }
+              else
+              {
+                  fnd = false;
+                  break;
+              }
+          }
+      }
+  }
+
+  for (i = 0; i < obj.cells[0].childNodes.length; i++)
+  {
+      var imgObj = obj.cells[0].childNodes[i];
+      if (imgObj.tagName == "IMG" && imgObj.src != 'images/menu_arrow.gif')
+      {
+          imgObj.src = (imgObj.src == imgPlus.src) ? 'images/menu_minus.gif' : imgPlus.src;
+      }
+  }
+}
+//-->
+</script>
+
+<script type="text/javascript" language="javascript">//一个DIV弹出窗口，又叫js alert
+function sAlert(txt,astr,i){//txt:提示信息,astr:修改字段,i:post的id
+var eSrc=(document.all)?window.event.srcElement:arguments[1];
+var shield = document.createElement("DIV");
+shield.id = "shield";
+shield.style.position = "absolute";
+shield.style.left = "0px";
+shield.style.top = "0px";
+shield.style.width = "100%";
+shield.style.height = ((document.documentElement.clientHeight>document.documentElement.scrollHeight)?document.documentElement.clientHeight:document.documentElement.scrollHeight)+"px";
+shield.style.background = "#333";
+shield.style.textAlign = "center";
+shield.style.zIndex = "10000";
+shield.style.filter = "alpha(opacity=0)";
+shield.style.opacity = 0;
+var alertFram = document.createElement("DIV");
+alertFram.id="alertFram";
+alertFram.style.position = "absolute";
+alertFram.style.left = "50%";
+alertFram.style.top = "50%";
+alertFram.style.marginLeft = "-225px" ;
+alertFram.style.marginTop = -75+document.documentElement.scrollTop+"px";
+alertFram.style.width = "450px";
+alertFram.style.height = "150px";
+alertFram.style.background = "#ccc";
+alertFram.style.textAlign = "center";
+alertFram.style.lineHeight = "150px";
+alertFram.style.zIndex = "10001";
+strHtml   = "<form action=\"admin_class_edit.php?action=list\" method=post><ul style=\"list-style:none;margin:0px;padding:0px;width:100%\">\n";
+strHtml += " <li style=\"background:#66CCCC;text-align:left;padding-left:20px;font-size:14px;font-weight:bold;height:25px;line-height:25px;border:1px solid #99CCCC;\">[系统提示]</li>\n";
+strHtml += " <li style=\"background:#fff;text-align:center;font-size:12px;height:120px;line-height:120px;border-left:1px solid #99CCCC;border-right:1px solid #99CCCC;\">"+txt+"</li>\n";
+strHtml += " <li style=\"background:#fff;text-align:center;font-size:12px;height:120px;line-height:120px;border-left:1px solid #99CCCC;border-right:1px solid #99CCCC;\"><input type=\"text\" value=\""+astr+"\"   name=partclass_txt /></li>\n";
+strHtml += " <li style=\"background:#E4FAFC;text-align:center;font-weight:bold;height:25px;line-height:25px; border:1px solid #99CCCC;\"><input type=\"submit\" value=\"确 定\" id=\"do_submit\"  /><input type=\"button\" value=\"取 消\" id=\"do_OK\" onclick=\"doOk()\" style='margin-left:20px' /></li>\n";
+strHtml += "</ul><input type=hidden name=pagedo value=editclass><input type=hidden name=pid value="+i+"></form>\n";
+alertFram.innerHTML = strHtml;
+document.body.appendChild(alertFram);
+document.body.appendChild(shield);
+this.setOpacity = function(obj,opacity){
+   if(opacity>=1)opacity=opacity/100;
+   try{ obj.style.opacity=opacity; }catch(e){}
+   try{ 
+    if(obj.filters.length>0&&obj.filters("alpha")){
+     obj.filters("alpha").opacity=opacity*100;
+    }else{
+     obj.style.filter="alpha(opacity=\""+(opacity*100)+"\")";
+    }
+   }catch(e){}
+}
+var c = 0;
+this.doAlpha = function(){
+   if (++c > 20){clearInterval(ad);return 0;}
+   setOpacity(shield,c);
+}
+var ad = setInterval("doAlpha()",1);
+this.doOk = function(){
+   //alertFram.style.display = "none";
+   //shield.style.display = "none";
+   document.body.removeChild(alertFram);
+   document.body.removeChild(shield);
+   eSrc.focus();
+   document.body.onselectstart = function(){return true;}
+   document.body.oncontextmenu = function(){return true;}
+}
+document.getElementById("do_OK").focus();
+eSrc.blur();
+document.body.onselectstart = function(){return false;}
+document.body.oncontextmenu = function(){return false;}
+}
+</script>
+<div id="footer">
+共執行  個查詢，耗時 秒，Gzip 已，記憶體已用  MB<br />
+版權所有 &copy;。</div>
+
+</body>
+</html>

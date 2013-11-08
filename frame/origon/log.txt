@@ -1,0 +1,1 @@
+document1.php是用xloadtree，没有继续研究下去，看最新的xtree2,否则就直接去用xtree

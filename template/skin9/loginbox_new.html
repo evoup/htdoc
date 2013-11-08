@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css"  href="css/gen2.css" />
+<!--<link rel="stylesheet" type="text/css"  href="css/list.css" />
+	<link rel="stylesheet" type="text/css"  href="calendar/css/cal.css" />-->
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+function alertx(){
+/*alert V1 */
+	/*if (document.getElementById('logname').value=="")
+	{
+		alert("请填写用户名！");
+		return false;
+	}
+	if (document.getElementById('password').value=="")
+	{
+		alert("请填写密码！");
+		return false;
+	}*/
+	if (document.getElementById('logname').value=="" & document.getElementById('logname').value==""){
+	//alert('hg');
+	window.location.href='reg1/login.php';
+	return false;
+	}
+}
+//-->
+</SCRIPT>
+<FORM name=form id=fm METHOD=POST ACTION=[[[actionURL]]] onsubmit="javascript :return alertx();" 
+autocomplete = "off">
+  <!-- //下面是登录窗体的背景 -->
+  <div id=loginbox_bg2>
+    <TABLE class=tableborder   cellSpacing=3 cellPadding=4 width=185   height=176 align=center border=0  
+valign=center>
+      <tr >
+        <td class=header_skin6 colspan=2 style='font-size: 14px;text-align:center;'>&nbsp;</td>
+      </tr>
+      <TR >
+        <TD  align=center style='font-size:12px;font-weight:bold'>用户名：</TD>
+        <TD><INPUT TYPE="text" NAME="login" id = "logname" size=19 
+style="width:60px;border-style:solid;border-width:1px;padding-left:4px;padding-right:4px;padd
+ing-top:1px;padding-bottom:1px" value=[[[postlogname]]]>
+        </TD>
+      </TR>
+      <TR>
+        <TD align=center style='font-size:12px;font-weight:bold'>密&nbsp;&nbsp;&nbsp;&nbsp;码：</TD>
+        <TD><INPUT TYPE="password" name="password" id="password"  
+style="width:60px;border-style:solid;border-width:1px;padding-left:4px;padding-right:4px;padd
+ing-top:1px;padding-bottom:1px" autocomplete = "off">
+        </TD>
+      </TR>
+      <TR >
+        <td colspan="2" style="font-size:12px; color: #999999">2周内不再登录
+          <input type="checkbox" name="remember" value="yes" [[[checkit]]]></td>
+      </TR>
+      <tr>
+        <td><!--<div class="warning">[[[loginerr]]]</div>这里用以后json回调显示解决--></td>
+      </tr>
+      <TR >
+        <td><div align="center"><a href="reg1/reg.html" >注册</a>&nbsp;<a href=[[[forgotURL]]]>忘记密码?</a></div></td>
+        <TD  ><input type="image" src="/image/login_0418.jpg" name =  "Submit" onMouseOver="this.style.cursor='pointer';" onclick="javascript :return alertx();document.getElementById('fm').submit();" />
+<!--<INPUT TYPE="submit" value="登&nbsp;录" class='inp5' name="Submit">--></TD>
+      </TR>
+    </TABLE>
+  </div>
+  <BR>
+</FORM>

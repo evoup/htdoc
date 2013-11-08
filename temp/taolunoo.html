@@ -1,0 +1,235 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0053)http://akata2.vicp.net/article/readarticle.php?id=509 -->
+<HTML xml:lang="cn" xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>讨论研究OO系统的价值_嘉定365</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="files/gen.css" type=text/css rel=stylesheet><LINK 
+href="files/footer.css" type=text/css rel=stylesheet>
+<STYLE type=text/css>.STYLE1 {
+	FONT-SIZE: 12px
+}
+#arttags A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; LETTER-SPACING: 4px; TEXT-DECORATION: none
+}
+.code {
+	BORDER-RIGHT: #0099cc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #0099cc 1px solid; DISPLAY: block; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 5px; BORDER-LEFT: #0099cc 1px solid; WIDTH: 600px; COLOR: #000000; LINE-HEIGHT: 22px! important; PADDING-TOP: 5px; BORDER-BOTTOM: #0099cc 1px solid; FONT-FAMILY: "Verdana","Courier New","Courier","mono"; BACKGROUND-COLOR: #ddedfb; TEXT-ALIGN: left
+}
+.code A {
+	COLOR: #000000
+}
+.code A:visited {
+	COLOR: #000000
+}
+.ccode {
+	BORDER-RIGHT: slategray 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: slategray 1px solid; DISPLAY: block; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 5px; BORDER-LEFT: slategray 1px solid; WIDTH: 600px; COLOR: #000000; LINE-HEIGHT: 22px! important; PADDING-TOP: 5px; BORDER-BOTTOM: slategray 1px solid; FONT-FAMILY: "Verdana","Courier New","Courier","mono"; BACKGROUND-COLOR: lavender; TEXT-ALIGN: left
+}
+.ccode A {
+	COLOR: #000000
+}
+.ccode A:visited {
+	COLOR: #000000
+}
+</STYLE>
+
+<SCRIPT language=javascript src="files/arttag.js"></SCRIPT>
+
+<SCRIPT language=javascript src="files/common.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+	var arttag = new tagshowword();
+	var tagstr=arttag.tagstr//这里要改为arttag里面一个对象的实例，否则无法作为全局变量,这样就实现了全局函数，其实是一个类对象罢了
+	var gjz= '';
+	function show_tag(){/*show the news tags*/
+	var arr=new Array();
+	arr=tagstr.split("|"); //all tagsstr
+	
+	//var arr2=new Array();//所需的tagid
+	/*arr2=ww.split("|");
+		for (var i=0;i<arr.length;i++){
+		document.getElementById('arttags').innerHTML+="<a href=#>"+arr[i]+"</a>";
+		}*/
+	for (var i=0;i<arr.length;i++)	{//遍历所有tag,如果括号里的等于了ww里的一个就显示这个
+	//alert(arr[i]);
+	//js正则匹配出()里的内容
+	if (arr[i]!=''){
+	id=arr[i].match((/(\d)+/g));//匹配括号里的数字
+	arr2=gjz.split("|");
+		for (var j=0;j<arr2.length;j++){
+		if (id==arr2[j]){
+		arr[i]=arr[i].replace(/\([\d\D]*?\)/g,"");
+		document.getElementById('arttags').innerHTML+="<a href=#>"+arr[i]+"</a>";
+		}
+		}
+	}
+	}
+		
+		/*for (var i=0;i<arr2.length;i++){
+		alert(arr2[i]);
+		document.getElementById('arttags').innerHTML+="<a href=#>"+arr[arr2[i]]+"</a>";
+		}*/
+	}
+	</SCRIPT>
+
+<META content="MSHTML 6.00.2900.3354" name=GENERATOR></HEAD>
+<BODY class=www style="MARGIN-TOP: 0px; MARGIN-LEFT: 0px"><!--UdmComment-->
+<DIV id=container><LINK href="files/gen.css" type=text/css 
+rel=stylesheet><LINK href="files/footer.css" type=text/css 
+rel=stylesheet>
+<SCRIPT language=Javascript src="" type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript>
+function inits(){
+isDOM=document.getElementById?true:false
+  isOpera=isOpera5=window.opera && isDOM
+  isOpera6=isOpera && window.print
+  isOpera7=isOpera && document.readyState
+  isMSIE=isIE=document.all && document.all.item && !isOpera
+  isStrict=document.compatMode=='CSS1Compat'
+  isNN=isNC=navigator.appName=="Netscape"
+  isNN4=isNC4=isNN && !isDOM
+  isMozilla=isNN6=isNN && isDOM
+}
+inits(); </SCRIPT>
+<!--<script type="text/javascript">
+printSigninStatus();//360quan的一个函数，留着以后自己实现
+</script>-->
+<SCRIPT type=text/javascript>
+function resizeImage(obj){
+obj=document.getElementById(obj);
+var   cns   =   obj.childNodes; 
+	for(var   i=0;i<cns.length;i++)   {   
+	  var   __temp   =   cns[i];   
+	//  if(__temp.tagName.toLowerCase()   ==   "img")   {   
+		if(__temp=document.getElementsByTagName("img")){
+		__temp.width   =   40; 
+		__temp.height   =   40; 
+		} 
+	} 
+} 
+</SCRIPT>
+<NOSCRIPT>需要支持框架的浏览器哦~</NOSCRIPT> 
+<DIV class=navbar>
+<DIV class=tools>
+<DIV class=toolbg><A href="http://akata2.vicp.net/"><IMG class=navlogo alt="" 
+src="files/logo.png" border=0></A> 
+<DIV class=navsearch><A class="normalink help" 
+href="http://akata2.vicp.net/article/help.php">帮助</A> 
+<DIV class=searchcon>
+<FORM action=/search method=get target=_blank><INPUT type=hidden value=member 
+name=type><INPUT class=input 
+onblur="this.value = this.value =='' ? '搜名字或昵称' : this.value;this.className='input'" 
+onfocus="this.className='input2 '" onclick="this.value='';" value=搜名字或昵称 name=q><INPUT class=but type=submit value=提交查询内容> </FORM></DIV>
+<SCRIPT type=text/javascript>
+			function headSearch(oform) {
+				if ((oform.q.value.length == 0)||(oform.q.value == "搜名字或昵称")) {
+					oform.action = "/searchPortal?type=all&q=";
+				} else {
+					oform.action = "/search";
+				}
+			}
+			</SCRIPT>
+</DIV></DIV></DIV></DIV><!--<div  style='z-index:99;margin-top:70px;position:absolute;display:none'><iframe src="yahoomenu/sample.php" frameBorder=0 width=100% scrolling=no height=30 style='background-color:transparent'></iframe></div>--><!--<div style="clear: both;"></div>--><!-- Main content -->
+<DIV id=page><!-- [[[disp]]]--><!--<div style='display:block;margin-top:30px;color:#999999;font-size:12px; background-color:#999999'><a href="../../index.php">嘉定365</a>&gt;<a href=../../article/articlelist.php?id=></a>&gt;<a href=../../article/articlelist.php?id=%E6%97%B6%E5%B0%9A&rootview=yes>时尚</a></div>--><!--copy from weather.qq.com start--><!-- copy from weather.qq.com end--><!--中部文章开始-->
+<DIV id=tbl style="MARGIN: 0px auto; TEXT-ALIGN: center">
+<TABLE width=920 align=center>
+  <TBODY>
+  <TR>
+    <TD></TD></TR>
+  <TR>
+    <TD><!--snavi s-->
+      <DIV id=nowpsn>
+      <P id=position>您所在的位置： <A 
+      href="http://akata2.vicp.net/index.php">嘉定365</A>&gt;<A 
+      href="http://akata2.vicp.net/article/articlelist.php?id="></A>&gt;<A 
+      href="http://akata2.vicp.net/article/articlelist.php?id=%E6%97%B6%E5%B0%9A&amp;rootview=yes">时尚</A>&gt; 
+      &gt;正文</P>
+      <FORM name=flso action=# target=_blank>
+      <P id=Soso><INPUT class=sosoin maxLength=60 size=12 value=请输入关键词 name=w> <INPUT class=sosobutton onclick=submit() type=button name=sosobutton> 
+      <INPUT type=hidden value=web name=sc> <INPUT type=hidden value=w.q.news.b 
+      name=ch> </P></FORM></DIV><!--snavi e--></TD></TR></TBODY></TABLE>
+<TABLE width=920 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <TABLE 
+      style="BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid" 
+      cellSpacing=4 cellPadding=3 width=660 border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <H2 style="TEXT-ALIGN: center">讨论研究OO系统的价值</H2>
+            <DIV 
+            style="FONT-SIZE: 12px; COLOR: gray; TEXT-ALIGN: center">2008-07-23 
+            14:08 
+            <DIV 
+            style="DISPLAY: inline; MARGIN: 0px 0px 0px 19px; COLOR: rgb(0,102,255)">信息技术</DIV>点击: 
+            </DIV></TD></TR>
+        <TR>
+          <TD>
+            <DIV align=center></DIV>
+            <DIV id=articlecontent align=left>
+            <P>直接读代码的价值有价值吗？有！</P>
+            <P>有什么价值？仅仅是函数吗？如果辛辛苦苦挖出来一个函数，搞了半天不能直接应用到项目里去，这样不是很好的选择。</P>
+            <P>架构不要学习吗？不要拿架构说事情。通常架构应该建立在自己熟悉的基础上开始，如果使用架构和MVC不能提升开发效率，那么这么做显然是得不偿失的。</P>
+            <P>为什么JSP开发要比PHP慢？因为太OO了，OO的直接问题是，每个应用系统都不一样，这样找一个应用就要全部分析一次，整合起来当然慢，这一点PHP要稍好。为什么要OO，不知道，DZ也没多少OO，OO调试起来方便吗？</P></DIV>
+            <SCRIPT language=javascript></SCRIPT>
+<!--下方编辑开始-->
+            <P 
+            style="FILTER: glow(color=#0066FF,strength=3); WIDTH: 100%; COLOR: #ffffff; LINE-HEIGHT: 25px" 
+            align=right><!--编辑名字 s-->编辑：佚名 <!--编辑名字 e--></P><!--下方编辑结束-->
+            <DIV align=center></DIV>
+            <P align=left><SPAN>上一个<A 
+            href="http://akata2.vicp.net/article/readarticle.php?id=508">自己的CMS也就业余2个多月写好了</A></SPAN><BR><SPAN>下一个<A 
+            href="http://akata2.vicp.net/article/readarticle.php?id=511">此篇记录每日英语学习</A></SPAN></P>
+            <P>点击查看更多 酒会 聚会 早点 好朋友 冷气 清凉 相关信息</P>
+            <P 
+            style="FONT-SIZE: 12px; FLOAT: left; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" 
+            align=left>标签(Tags)</P>
+            <DIV id=arttags style="FLOAT: left"></DIV>
+            <P></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top width=300 bgColor=#e9f2f8><!--右侧开始-->
+      <P class=STYLE1>招商信息 4000创业　两年身家百万 2万元 开一家童装折扣店 9-99元女装　很火很赚钱 做别人没想到的生意　图 
+      0加盟费名品女装1折供货 无法想象的火爆生意　图 英语很烂的看这不看后悔 看22岁女孩如何月赚10万 10元折扣箱包　　卖疯了 
+      开童装店　一年有车有房 玻璃多了　　　什么火了 智能芭比娃娃　　赚大钱 娱乐资料库检索</P>
+      <DL>
+        <DT>
+        <DIV>活动·博客</DIV>
+        <DD>
+        <P><A href="http://ent.qq.com/a/20080423/000360.htm" target=_blank><IMG 
+        height=90 alt=1 src="files/10107489.gif" width=70 
+        border=0></A><BR><A class=normalink 
+        href="http://ent.qq.com/a/20080423/000360.htm" 
+        target=_blank>送！迪士尼舞台剧门票</A></P>
+        <P><A href="http://qbar.qq.com/yingxun/12404.htm" target=_blank><IMG 
+        height=90 alt=4 src="files/l071030799.jpg" width=70 
+        border=0></A><BR><A class=normallink 
+        href="http://qbar.qq.com/yingxun/12404.htm" target=_blank>细评七影星的漂亮脸蛋</A> 
+        </P>
+        <P><A class=normallink 
+        href="http://blog.qq.com/qzone/622009127/1210097480.htm" 
+        target=_blank><IMG height=90 alt=3 
+        src="files/10294721.jpg" width=70 border=0></A><BR><A 
+        class=normallink 
+        href="http://blog.qq.com/qzone/622009127/1210097480.htm" 
+        target=_blank>王婧化妆间私房照</A></P>
+        <P><A href="http://blog.qq.com/qzone/622009080/1210070139.htm" 
+        target=_blank><IMG height=90 alt=2 
+        src="files/10294720.jpg" width=70 border=0></A><BR><A 
+        class=normallink 
+        href="http://blog.qq.com/qzone/622009080/1210070139.htm" 
+        target=_blank>田朴珺：美女保养秘密</A></P></DD></DL>
+      <P>&nbsp;</P><!--右侧结束--></TD></TR></TBODY></TABLE></DIV><!--中部文章结束--></DIV></DIV>
+<SCRIPT type=text/javascript>show_tag();</SCRIPT>
+<LINK href="files/footer.css" type=text/css rel=stylesheet>
+<DIV align=center>
+<DIV class=footer>
+<DIV class=footerlinks><A 
+href="http://akata2.vicp.net/aboutus.html">关于我们</A>　|　<A 
+href="http://akata2.vicp.net/terms.html">用户条款</A>　|　<A 
+href="http://akata2.vicp.net/privacy.html">隐私政策</A>　|　<A 
+href="http://akata2.vicp.net/contactus.html">联系我们</A>　|　<A 
+href="http://akata2.vicp.net/links.html">友情链接</A>　|　<A 
+href="http://akata2.vicp.net/article/readarticle.php?id=509#">不良信息举报</A>　|　<A 
+href="http://akata2.vicp.net/admin" target=_blank>管理登录</A></DIV>
+<DIV class=copyright>© 2008 <SPAN>JIADING365</SPAN> - 
+沪ICP证070415号</DIV></DIV></DIV>
+<DIV align=center>Did nothing in 0.012314081192 seconds</DIV></BODY></HTML>

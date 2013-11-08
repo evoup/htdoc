@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>EVP网络科技办公系统--登录页</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<META   HTTP-EQUIV="pragma"   CONTENT="no-cache">   
+<META   HTTP-EQUIV="Cache-Control"   CONTENT="no-cache,   must-revalidate">   
+<META   HTTP-EQUIV="expires"   CONTENT="Wed,   26   Feb   1997   08:21:57   GMT"> 
+
+
+<link rel=stylesheet href="css/css.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+function alertx(){
+	if (document.getElementById('logname').value=="")
+	{
+		alert("请填写用户名！");
+		return false;
+	}
+	if (document.getElementById('password').value=="")
+	{
+		alert("请填写密码！");
+		return false;
+	}
+	name_write2cookie();
+}
+function name_write2cookie(){//写选项到cookie里
+//alert(document.cookie); 
+var s= document.getElementById("logname");
+//s.value="bb";
+
+var   dat=new   Date(); 
+dat.setTime(dat.getTime()+365*24*3600*1000); 
+
+//s.selectedIndex=4;
+var obj=s.selectedIndex;
+document.cookie="a="+obj+";   expires= "+   dat.toGMTString()   + "; "; //a是cookie名,obj是cookie值
+//alert(s.selectedIndex);
+
+//document.cookie= "maya=water;   expires= "+   dat.toGMTString()   + "; "; 
+}
+function name_readfcookie(){
+var objx = getCookie("a");
+var s= document.getElementById("logname");
+s.selectedIndex=objx;
+//alert(objx);
+
+}
+
+////////////////////////////////////////////////
+function getCookieVal(offset)
+{
+var endstr = document.cookie.indexOf(";", offset);
+if(endstr == -1)
+{
+endstr = document.cookie.length;
+}
+return unescape(document.cookie.substring(offset, endstr));
+}
+function getCookie(name)//读cookie
+{
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while(i < clen)
+{
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+{
+return getCookieVal(j);
+}
+i = document.cookie.indexOf(" ", i) + 1;
+if(i == 0) break;
+}
+return;
+}
+////////////////////////////////////////////////
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<FORM id=fm METHOD=POST ACTION="validate.php" onSubmit="javascript :return alertx();" autocomplete = "off">
+<table width="100%" height="100%" border="0" align="center" ><tr><td>
+
+<TABLE class=tableborder   cellSpacing=1 cellPadding=4 width=222  align=center border=0 valign=center>
+<tr >
+<td class=header3 colspan=2 style='font-size: 14px;'>EVP网络科技办公系统</td>
+</tr>
+<TR >
+	<TD  align=center >用户名：</TD>
+	
+	
+	<!-- onmouseover="this.style.background='#CCCCCC';" -->
+	<TD><!-- <INPUT TYPE="text" NAME="logname" id = "logname" size=19 class=textare onmouseover="this.style.background='#cccccc'"  onfocus="this.select()"	style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1"  onmouseout="this.style.background='#FFFFFF'" 	> -->
+	<!-- <INPUT TYPE="text" NAME="logname" id = "logname" size=19 class=textare style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1"> -->
+	
+	<SELECT NAME="logname" id = "logname" style="width=120px;background-color:white;"> <OPTION selected>--请选择--</OPTION><OPTION value=35>朱继昌</OPTION> <OPTION 
+                    value=1 id="殷嘉">殷嘉</OPTION>
+					<OPTION value=30>戴婧</OPTION>
+					<OPTION value=40>樊春峰</OPTION>
+					<OPTION value=51>任本喜</OPTION>
+					<OPTION value=54>宋群</OPTION>
+					<OPTION value=57>王莉莉</OPTION>
+			  </SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD align=center>密&nbsp;&nbsp;码：</TD>
+	<TD><INPUT TYPE="password" name="password" id="password" class=textare  style="width:120px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padding-top:1;padding-bottom:1">
+	</TD>
+</TR>
+<TR>
+	<TD colspan=2 align=center><INPUT TYPE="submit" value="登&nbsp;&nbsp;录" class='inp5'></TD>
+	</TR>
+</TABLE><BR>
+<DIV ALIGN="center"></DIV>
+<DIV ALIGN="center">Deisigned By <a href="mailto:evoex@126.com">evoup</a></DIV>
+
+</td></tr>
+</table>
+</FORM>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+name_readfcookie();
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

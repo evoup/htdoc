@@ -1,0 +1,33 @@
+.ff {
+	BORDER-TOP: 0px; FILTER: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1); BORDER-LEFT: 0px
+}
+TD {
+	FONT-SIZE: 9pt
+}
+.line {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 14pt
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+BODY {
+	TEXT-ALIGN: center
+}
+INPUT {
+	FONT-SIZE: 9pt
+}
+TEXTAREA {
+	FONT-SIZE: 9pt
+}
+SELECT {
+	FONT-SIZE: 9pt
+}

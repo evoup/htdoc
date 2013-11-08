@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var xmlHttp;
+function a(){
+if (window.ActiveXObject){
+	xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	else if(window.XMLHttpRequest){
+	xmlHttp=new XMLHttpRequest();
+	}
+}
+function b(){
+a();
+xmlHttp.onreadystatechange=handleStateChange;
+xmlHttp.open("GET","sp.xml",true);
+xmlHttp.send(null);
+}
+function handleStateChange(){
+if(xmlHttp.readyState==4&&xmlHttp.status==200){alert("ÖÐµºÃÀ¼Î"+xmlHttp.responseText);}
+}
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM METHOD=POST ACTION="#">
+<INPUT TYPE="button" onclick="b();">
+</FORM>
+
+</BODY>
+</HTML>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<link rel=stylesheet href="../css/css.css" type="text/css">
+<style type="text/css">
+<!--
+.divpain{margin:5px 20px 0px 20px;padding:10px 5px 10px 5px;background-color: white;border:1px solid #3366CC}
+-->
+</style>
+<body> 
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function popupDialog(url,width,height){ 
+    //showx = event.screenX - event.offsetX - 4 - 10 ; // + deltaX;  这段代码只对IE有效，已经不用了 
+    //showy = event.screenY - event.offsetY -168; // + deltaY; 这段代码只对IE有效，已经不用了 
+     
+        var x = parseInt(screen.width / 2.0) - (width / 2.0);  
+    var y = parseInt(screen.height / 2.0) - (height / 2.0); 
+        var isMSIE= (navigator.appName == "Microsoft Internet Explorer");  //判断浏览器 
+
+        if (isMSIE) {           
+            retval = window.showModalDialog(url, window, "dialogWidth:"+width+"px; dialogHeight:"+height+"px; dialogLeft:"+x+"px; dialogTop:"+y+"px; status:no; directories:yes;scrollbars:no;Resizable=no; "  ); 
+       } else { 
+        var win = window.open(url, "mcePopup", "top=" + y + ",left=" + x + ",scrollbars=" + scrollbars + ",dialog=yes,modal=yes,width=" + width + ",height=" + height + ",resizable=no" ); 
+        eval('try { win.resizeTo(width, height); } catch(e) { }'); 
+        win.focus();            
+		
+    } 
+} 
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor=#E3EEF4>
+<p style='margin-top:10px;'><div class='divpain'>位置：行政管理 -> 部门管理<span class="action-span"><a href="goods.php?act=add">添加新部门</a></span></div></p> 
+<CENTER>
+ <DIV class=maintable>
+<!-- <DIV class="spaceborder spacebottom" 
+style="BORDER-TOP: medium none; WIDTH: 98%; BORDER-BOTTOM: medium none"> --><!-- 这个是2列线框 -->
+ <DIV class="spaceborder spacebottom" 
+style="CLEAR: both; MARGIN-TOP: 0px; WIDTH: 98%"> 
+<TABLE class=row  cellSpacing=0 cellPadding=4>
+  <TBODY>
+  
+  <TR class=category align=middle>
+    <TD style='font:13px;font-weight: bold;margin-left:30px;text-decoration: underline;'><INPUT TYPE="checkbox" NAME="">部  门</TD>
+    <TD align=left style='font:13px;font-weight: bold;text-decoration: underline;'>主  管</TD>
+    <TD  style='font:13px;font-weight: bold;text-decoration: underline;'>电  话1</TD>
+    <TD  style='font:13px;font-weight: bold;text-decoration: underline;'>电  话2</TD>
+    <TD  style='font:13px;font-weight: bold;text-decoration: underline;'>传  真</TD>
+    <TD  style='font:13px;font-weight: bold;text-decoration: underline;' align=center>操  作</TD><TD width="16%">&nbsp;</TD>
+  </TR>
+  <!-- BEGIN list -->
+  <TR onMouseOver="this.className='row1'" 
+onmouseout="this.className='row'">
+    <TD ><div style="padding-left:20px"><A 
+      href=# onclick="popupDialog('editdep.php?id=[##pid##]')" ><INPUT TYPE="checkbox" NAME="">[##dep##]</A></div></A></TD>
+    <TD ><b>[##mng##]</b></TD>
+    <TD >[##tel##]</TD>
+    <TD >[##tel1##]</TD>
+    <TD >[##tax##]</TD>
+
+
+    <TD > <SPAN 
+      class="smalltxt lighttxt"><a href=# class=a1 onclick="popupDialog('editdep.php?id=[##pid##]')"><IMG SRC="../image/editit.gif" alt='编辑' title='编辑' border=0>编辑</a> </SPAN></TD>
+    <TD ><a href=# class=a1 ><IMG SRC="../image/frozen.gif" alt='删除' title='删除' border=0>删除</a></TD>
+   </TR><!-- END list --></TBODY>
+    </TABLE></DIV></DIV>
+
+
+
+<!-- <ol class="art" ><li><address>部  门</address><address>部门主管</address><address>部门电话</address><address>操  作</address></li></ol>
+<ol class="art" > -->
+<!-- BEGIN list --->
+<!-- <li><address>[##dep##]</address><address>[##mng##]</address><address>[##tel##]</address><a href=depman.php?id=[##pid##]&action=edit class=a1><IMG SRC="../image/editit.gif" alt='编辑' title='编辑' border=0>编辑</a><a href=# class=a1 style='margin-left:40px;'><IMG SRC="../image/frozen.gif" alt='删除' title='删除' border=0>删除</a></li> -->
+<!-- END list ---> 
+<!-- </ol> -->
+</BODY>
+</HTML>

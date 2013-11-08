@@ -1,0 +1,94 @@
+This is documentation file for class DatabaseSearch. This class was created
+to help with searching through text fields in MySql tables.
+
+I. What can it do?
+
+- Connect with MySQL without using separate class for this
+- Draw search form with input field and submit button. Optionally you can 
+  choose between OR and AND logic using radio button.
+- Change the look of the form with your own css classes and submit text
+- Search without search form (search function can take any string as a 
+  needle).
+- Detect words and phrases - phrases are recognised with double quotes. Use
+  as many as you want and mix them in whatever order
+- Use OR or AND operator when looking for many words and phrases (you must
+  decide for one - not use it in search string!)
+- Leave results display to user (return list of distinct values (record ids
+  most of the time) where the needle was found)
+- search string is saved in a session if session is detected - the class 
+  doesn't start the session if it isn't already started. Saved string is 
+  inserted in text input in search form.
+
+
+II. Varibles
+
+- Parameters for MySql connection:
+      var $db_host;
+      var $db_database;
+      var $db_user;
+      var $db_pass;
+
+- What to look for
+      var $needle;
+
+- Which logical operator to use, when multiple words and/or phrases are 
+  submitted ("OR" is default, "AND" is another possibility)
+      var $logic;
+
+- Whether to display sql query and MySql error information.
+      var $debug;
+
+III. Methods
+
+- constructor
+	DatabaseSearch($host,$database,$user,$pass,$debug=false)
+First four parameters determine MySql connection. The last parameter turns 
+debug mode on or off. In debug mode sql query is echoed as well as mysql 
+errors (if any).
+
+- search form drawing
+	DrawForm($action,$size=15,$input_class="",$submit_class="",$submit_text="Search",$logic=false)
+$action determines action parameter in form tag
+$input_class sets css class parameter in text input tag
+$submit_class sets css class parameter in submit input
+$submit_text sets value for submit input
+$logic determines if two radio buttons should be drawn to allow choice of 
+logical operator. If not drawn, "OR" will be assumed.
+
+If you want to draw your own form, override this function. Remember to use 
+DatabaseSearchNeedle as name of text input and DatabaseSearchLogic as name 
+of the radio group.
+
+- actual searching
+	DoSearch($table,$return_field,$fields,$text="",$logic="")
+$table - in which table to look
+$return_field - if needle is found in $fields, what field to return (record
+id most probably)
+$fields - array of column names in which to look for a needle
+$text - needle. If left empty (default) it will use needle from search form
+(if form was submitted)
+$logic - either "OR" or "AND" (case sensitive). If left empty (default) it 
+will use logical operator from search form. Default value is "OR"
+
+This function returns array of $return_field fields where needle was found 
+in columns named in $fields.
+
+- search string conversion (internal - you don't have to use it)
+	ProcessNeedle($text)
+It takes $text as typed in search text input and converts it to array of 
+words and phrases. Phrases are recognised by double quotes.
+
+IV. How it works?
+
+First instanciate the class. Then draw a form. In text input write your 
+search string. Words and phrases should be divided by space. Phrases should
+be wrapped in double quotes. Choose OR or AND as your logical operator (if 
+you told DrawForm to draw those radio buttons). Submit the form. Submitting
+and processing can take place in different files as well as the same file. 
+While processing, use DoSearch to search your database. Normally you'd only
+use first three parameters, as it will take the rest from the submitted 
+form. If for some reason you don't want to use values from form, use fourth
+and fifth parameter to set search string and logical operator (still "OR" 
+and "AND" are the only possible ones). Now process the list to display it 
+on page (commonly you'd want to give some links with the ids returned). 
+See test file for more clear examples.

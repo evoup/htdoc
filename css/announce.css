@@ -1,0 +1,17 @@
+/****** Announcement Box ******/
+.announce{
+	margin-bottom: 15px;
+	border:#AAF3FF solid 1px;
+	/*border:#33BBE5 dotted 1px;*/
+	padding:1px;
+
+}
+.announce-content{
+	word-wrap: break-all;
+	background: #DEF3FA;
+	padding: 8px;
+	color:#1BA8D1;
+	line-height:150%;
+	text-indent: 24px;
+	_height:1%;
+}

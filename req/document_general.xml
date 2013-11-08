@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2006 U (http://www.altova.com) by hp (EMBRACE) -->
+<TreeNode>
+	<TreeNode text="报文发送管理" value="1"  action="javascript:alert('0');" radio="" checked="false">
+		<TreeNode text="报表发送管理">
+			<TreeNode text="1.1.1" src='../req/tree.xml'/>
+		</TreeNode>
+	</TreeNode>
+	<TreeNode text="收文管理" value="2" radio="" checked="false">
+		<TreeNode text="收文登记管理"/>
+	</TreeNode>
+	<TreeNode text="行文管理" checkbox="" value="3" checked="flase">
+		<TreeNode text="行文管理"/>
+	</TreeNode>
+</TreeNode>

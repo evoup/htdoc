@@ -1,0 +1,21 @@
+.Btnbg {
+	BORDER-RIGHT: #ffb26d 0px solid; BORDER-TOP: #ffb26d 0px solid; FLOAT: none; BACKGROUND-IMAGE: url(webimages/btn_login.gif); FONT: 12px ËÎÌו; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffb26d 0px solid; WIDTH: 72px; CURSOR: hand; COLOR: #5679a3; BORDER-BOTTOM: #ffb26d 0px solid; HEIGHT: 26px; BACKGROUND-COLOR: transparent
+}
+.Btnbg140 {
+	BORDER-RIGHT: #ffb26d 0px solid; BORDER-TOP: #ffb26d 0px solid; FLOAT: none; BACKGROUND-IMAGE: url(webimages/btn_login140.gif); FONT: 12px ËÎÌו; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffb26d 0px solid; WIDTH: 140px; CURSOR: hand; COLOR: #5679a3; BORDER-BOTTOM: #ffb26d 0px solid; HEIGHT: 26px; BACKGROUND-COLOR: transparent
+}
+.Error {
+	BORDER-RIGHT: #ff6600 1px solid; BACKGROUND-POSITION: left top; BORDER-TOP: #ff6600 1px solid; PADDING-LEFT: 15px; BACKGROUND-IMAGE: url(webimages/error.gif); BORDER-LEFT: #ff6600 1px solid; PADDING-TOP: 19px; BORDER-BOTTOM: #ff6600 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #fff2e9
+}
+.Warring {
+	BORDER-RIGHT: #ff6600 1px solid; BACKGROUND-POSITION: left top; BORDER-TOP: #ff6600 1px solid; PADDING-LEFT: 15px; BORDER-LEFT: #ff6600 1px solid; BORDER-BOTTOM: #ff6600 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #fff2e9
+}
+.Check {
+	BORDER-RIGHT: #00a8ff 1px solid; BORDER-TOP: #00a8ff 1px solid; PADDING-LEFT: 15px; PADDING-BOTTOM: 4px; BORDER-LEFT: #00a8ff 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #00a8ff 1px solid; BACKGROUND-COLOR: #e2f5ff
+}
+.SystemBg {
+	BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; PADDING-LEFT: 23px; BACKGROUND-IMAGE: url(images/SystemBg.gif); BORDER-LEFT: 0px solid; WIDTH: 195px; CURSOR: hand; COLOR: #616161; BORDER-BOTTOM: 0px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 27px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+TD {
+	FONT-SIZE: 9pt; COLOR: #000000
+}

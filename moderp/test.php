@@ -1,0 +1,5 @@
+<?php
+require_once('class.machineset.php');
+$x=new machineset();
+echo $x->Ð´ÉÏÁÏ¼ÇÂ¼();
+?>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script><script type="text/javascript" src="js/common.js"></script>
+
+<script language="javascript" src="js/confirm.js"></script>
+
+</head>
+<body>
+<h1>
+<span class="action-span"><a href="admin_class_edit.php?action=add">新增分类</a></span>
+<span class="action-span1"><a href="index.php?act=main">EVPCMS 管理中心</a>  - 文章分类 </span>
+<div style="clear:both"></div>
+</h1><script type="text/javascript" src="../js/utils.js"></script><script type="text/javascript" src="js/listtable.js"></script>
+<form method="post" action="" name="listForm">
+<!-- start ad position list -->
+<div class="list-div" id="listDiv">
+
+<table width="100%" cellspacing="1" cellpadding="2" id="list-table">
+  <tr>
+    <th>分类名称</th>
+    <th>导航列</th>
+    <th>是否显示</th>
+    <th>排序</th>
+    <th>操作</th>
+  </tr>
+    </tr>这部分用OUT的，看到igenus里也是没办法的，在这些部分里直接写的-->
+	<!--嵌套输出开始-->
+	<!-- BEGIN list -->
+[##gradetop##]
+<!-- BEGIN list1 -->
+[##gradesub##]
+<!-- BEGIN list2 -->
+[##gradesublevel2##]
+<!-- BEGIN list3 -->
+[##gradesublevel3##]
+<!-- BEGIN list4 -->
+[##gradesublevel4##]
+<!-- END list4 -->
+<!-- END list3 -->
+<!-- END list2 -->
+<!-- END list1 -->
+<!-- END list -->
+	<!--嵌套输出结束-->
+  </table>
+
+</div>
+</form>
+
+
+<script language="JavaScript">
+<!--
+
+onload = function()
+{
+  // 开始检查订单
+  startCheckOrder();
+}
+
+var imgPlus = new Image();
+imgPlus.src = "/images/menu_plus.gif";
+
+/**
+ * 折叠分类列表
+ */
+function rowClicked(obj)
+{
+  obj = obj.parentNode.parentNode;
+
+  var tbl = document.getElementById("list-table");
+  var lvl = parseInt(obj.className);
+  var fnd = false;
+
+  for (i = 0; i < tbl.rows.length; i++)
+  {
+      var row = tbl.rows[i];
+
+      if (tbl.rows[i] == obj)
+      {
+          fnd = true;
+      }
+      else
+      {
+          if (fnd == true)
+          {
+              var cur = parseInt(row.className);
+              if (cur > lvl)
+              {
+                  row.style.display = (row.style.display != 'none') ? 'none' : (Browser.isIE) ? 'block' : 'table-row';
+              }
+              else
+              {
+                  fnd = false;
+                  break;
+              }
+          }
+      }
+  }
+
+  for (i = 0; i < obj.cells[0].childNodes.length; i++)
+  {
+      var imgObj = obj.cells[0].childNodes[i];
+      if (imgObj.tagName == "IMG" && imgObj.src != 'images/menu_arrow.gif')
+      {
+          imgObj.src = (imgObj.src == imgPlus.src) ? 'images/menu_minus.gif' : imgPlus.src;
+      }
+  }
+}
+//-->
+</script>
+
+
+<div id="footer">
+共執行  個查詢，耗時 秒，Gzip 已，記憶體已用  MB<br />
+版權所有 &copy;。</div>
+
+</body>
+</html>

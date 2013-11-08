@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<tree>
+ <tree text="报文发送管理三" menugrade="1" menusuperior="2" value="1" action="javascript:call(1,2);" radio="" checked="false">
+  <tree text="报表发送管理四">
+   <tree src="document_general1.xml">
+    gg
+   </tree>
+  </tree>
+  <tree>
+   test2-3
+  </tree>
+ </tree>
+</tree>

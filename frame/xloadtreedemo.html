@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+     "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+<title>XTree 2 Demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link type="text/css" rel="stylesheet" href="../css/xtree2.links.css">
+<script type="text/javascript" src="../js/static/xtree2.js"></script>
+<script type="text/javascript" src="../js/static/xloadtree2.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+/// suse Look
+webFXTreeConfig.rootIcon		= "images/linuxsuse/folder.png";
+webFXTreeConfig.openRootIcon	= "images/linuxsuse/openfolder.png";
+webFXTreeConfig.folderIcon		= "images/linuxsuse/folder.png";
+webFXTreeConfig.openFolderIcon	= "images/linuxsuse/openfolder.png";
+webFXTreeConfig.fileIcon		= "images/linuxsuse/file.png";
+webFXTreeConfig.lMinusIcon		= "images/linuxsuse/Lminus.png";
+webFXTreeConfig.lPlusIcon		= "images/linuxsuse/Lplus.png";
+webFXTreeConfig.tMinusIcon		= "images/linuxsuse/Tminus.png";
+webFXTreeConfig.tPlusIcon		= "images/linuxsuse/Tplus.png";
+webFXTreeConfig.iIcon			= "images/linuxsuse/I.png";
+webFXTreeConfig.lIcon			= "images/linuxsuse/L.png";
+webFXTreeConfig.tIcon			= "images/linuxsuse/T.png";
+var tree = new WebFXLoadTree("Hello World", "document_general.xml");
+tree.write();
+//var xx=tree.findNodeByText('Deep Nesting');
+//tree.update();
+</script>
+<br/>
+<INPUT type="button" name="ad" onclick="charge();" value="change">
+<br/>
+<TEXTAREA rows="10" cols="30" id="ttt" name="ttt"></TEXTAREA>
+<br/>
+<INPUT type="button" name="findnode" onclick="findnode();" value="findnode">
+<br/>
+<INPUT type="button" name="openpath" onclick="openpath();" value="openpath">
+<script>
+    function charge(){
+        document.getElementById('ttt').value=tree.getSelected().toHtml();
+    }
+    
+    function findnode(){
+        tree.findChildByText(document.getElementById('ttt').value,0);
+    }
+    
+    function openpath(){
+        tree.openPath(webFXTreeHandler.htmlToText(document.getElementById('ttt').value),true);
+        tree.getSelected().expand();
+		tree.getSelected().reload();
+		
+    }
+
+</script>
+</body>
+</html>

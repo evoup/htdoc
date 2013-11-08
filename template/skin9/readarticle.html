@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[[[articletitle]]]_[[[SITENAME]]]</title>
+<link rel="stylesheet" type="text/css"  href="[[[site_dir]]]/css/gen.css">
+<link rel="stylesheet" type="text/css"  href="[[[site_dir]]]/css/footer.css">
+<style type="text/css">
+<!--
+.STYLE1 {font-size: 12px}
+#arttags a{letter-spacing: 4px; text-decoration:none;padding:0 0 0 10px}/*标签连接*/
+.code {
+text-align:left;
+background-color:#DDEDFB;
+border:1px solid #0099CC;
+color:#000000;
+display:block;
+font-family:"Verdana","Courier New","Courier","mono";
+font-size:11px;
+line-height:22px !important;
+margin:5px;
+padding:5px;
+width:600px;
+}
+.code a,.code a:visited{color: #000000}
+.ccode {
+text-align:left;
+background-color:Lavender;
+border:1px solid SlateGray;
+color:#000000;
+display:block;
+font-family:"Verdana","Courier New","Courier","mono";
+font-size:11px;
+line-height:22px !important;
+margin:5px;
+padding:5px;
+width:600px;
+}
+.ccode a,.ccode a:visited{color: #000000}
+
+
+-->
+    </style>
+<script language="javascript" src="../js/arttag.js"></script>
+<script language="javascript" src="../js/static/common.js"></script>
+<script language="javascript">
+	var arttag = new tagshowword();
+	var tagstr=arttag.tagstr//这里要改为arttag里面一个对象的实例，否则无法作为全局变量,这样就实现了全局函数，其实是一个类对象罢了
+	var gjz= '[[[guanjianzi]]]';
+	function show_tag(){/*show the news tags*/
+	var arr=new Array();
+	arr=tagstr.split("|"); //all tagsstr
+	
+	//var arr2=new Array();//所需的tagid
+	/*arr2=ww.split("|");
+		for (var i=0;i<arr.length;i++){
+		document.getElementById('arttags').innerHTML+="<a href=#>"+arr[i]+"</a>";
+		}*/
+	for (var i=0;i<arr.length;i++)	{//遍历所有tag,如果括号里的等于了ww里的一个就显示这个
+	//alert(arr[i]);
+	//js正则匹配出()里的内容
+	if (arr[i]!=''){
+	id=arr[i].match((/(\d)+/g));//匹配括号里的数字
+	arr2=gjz.split("|");
+		for (var j=0;j<arr2.length;j++){
+		if (id==arr2[j]){
+		arr[i]=arr[i].replace(/\([\d\D]*?\)/g,"");
+		document.getElementById('arttags').innerHTML+="<a href=#>"+arr[i]+"</a>";
+		}
+		}
+	}
+	}
+		
+		/*for (var i=0;i<arr2.length;i++){
+		alert(arr2[i]);
+		document.getElementById('arttags').innerHTML+="<a href=#>"+arr[arr2[i]]+"</a>";
+		}*/
+	}
+	</script>
+</head>
+<body class="www" style="margin-top:0; margin-left:0">
+<!--UdmComment-->
+<div id="container">[[[header]]]
+  <!--<div style="clear: both;"></div>-->
+  <!-- Main content -->
+  <div id="page"><!-- [[[disp]]]-->
+    <!--<div style='display:block;margin-top:30px;color:#999999;font-size:12px; background-color:#999999'>[[[snavi]]]</div>-->
+    <!--copy from weather.qq.com start-->
+    <!-- copy from weather.qq.com end-->
+    <!--中部文章开始-->
+    <div id=tbl  style="margin:0 auto !important;text-align:center; ">
+      <table width="920" align="center">
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td><!--snavi s-->
+            <div id=nowpsn>
+              <p id=position>您所在的位置： [[[snavi]]]>
+                >正文</p>
+              <form name=flso action=# target=_blank>
+                <p id=Soso>
+                  <input class=sosoin maxLength=60 size=12 value=请输入关键词 name=w>
+                  <input class=sosobutton onclick=submit() type=button name=sosobutton>
+                  <input type=hidden value=web name=sc>
+                  <input type=hidden value=w.q.news.b name=ch>
+                </p>
+              </form>
+            </div>
+            <!--snavi e--></td>
+        </tr>
+      </table>
+      <table  border="0" width="920" align="center">
+        <tr>
+          <td valign="top" ><table  border="0" cellpadding="3" cellspacing="4" width="660" style="border:1px solid #cccccc;">
+              <tr>
+                <td><h2 style='text-align:center;'>[[[articletitle]]]</h2>
+                  <div style="color:gray; text-align:center; font-size:12px;"> [[[adddate]]]
+                    <div style="color:rgb(0,102,255);display:inline;margin:0 0 0 19px;">[[[artbywho]]]</div>
+                  [[[adminit]]] [[[hits]]] </div></td>
+              </tr>
+              <tr>
+                <td><div align="center">[[[paging]]]</div>
+                  <div id="articlecontent" align="left">[[[articlecontent]]]</div>
+                  <script language="javascript"></script>
+                  <!--下方编辑开始-->
+                  <P style="FILTER: glow(color=#0066FF,strength=3); WIDTH: 100%; line-height:25px; COLOR: #ffffff;" align=right>
+                    <!--编辑名字 s-->
+                    [[[editor]]]
+                    <!--编辑名字 e-->
+                  </p>
+                  <!--下方编辑结束--><div align="center">[[[paging]]]</div>
+                  <p align="left"><span>[[[prevlinkstr]]]</span><br />
+                    <span>[[[nextlinkstr]]]</span></p>
+                  <p>点击查看更多 酒会 聚会 早点 好朋友 冷气 清凉 相关信息</p>
+                  <p align="left" style="float:left; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif">标签(Tags)<div id=arttags style="float:left"></div></p>
+                </td>
+              </tr>
+            </table></td>
+          <td width="300px" valign="top" bgcolor="#e9f2f8"><!--右侧开始-->
+            <p class="STYLE1">招商信息 
+              4000创业　两年身家百万
+              2万元 开一家童装折扣店
+              9-99元女装　很火很赚钱
+              做别人没想到的生意　图
+              0加盟费名品女装1折供货
+              无法想象的火爆生意　图 
+              英语很烂的看这不看后悔
+              看22岁女孩如何月赚10万
+              10元折扣箱包　　卖疯了
+              开童装店　一年有车有房
+              玻璃多了　　　什么火了
+              智能芭比娃娃　　赚大钱 
+              
+              娱乐资料库检索</p>
+            <dl>
+              <dt>
+                <div>活动·博客</div>
+              </dt>
+              <dd>
+                <p><a href="http://ent.qq.com/a/20080423/000360.htm" target="_blank"><img src="http://img1.qq.com/ent/pics/10107/10107489.gif" alt="1" width="70" height="90" border="0" /></a><br />
+                  <a href="http://ent.qq.com/a/20080423/000360.htm" target="_blank" class= "normalink">送！迪士尼舞台剧门票</a></p>
+                <p><a href="http://qbar.qq.com/yingxun/12404.htm" target="_blank"><img src="http://mat1.qq.com/ent/08film/l071030799.jpg" alt="4" width="70" height="90" border="0" /></a><br />
+                  <a href="http://qbar.qq.com/yingxun/12404.htm" target="_blank" class= "normallink">细评七影星的漂亮脸蛋</a> </p>
+                <p><a href="http://blog.qq.com/qzone/622009127/1210097480.htm" target="_blank" class= "normallink"><img src="http://img1.qq.com/ent/pics/10294/10294721.jpg" alt="3" width="70" height="90" border="0" /></a><br />
+                  <a href="http://blog.qq.com/qzone/622009127/1210097480.htm" target="_blank" class= "normallink">王婧化妆间私房照</a></p>
+                <p><a href="http://blog.qq.com/qzone/622009080/1210070139.htm" target="_blank"><img src="http://img1.qq.com/ent/pics/10294/10294720.jpg" alt="2" width="70" height="90" border="0" /></a><br />
+                  <a href="http://blog.qq.com/qzone/622009080/1210070139.htm" target="_blank" class= "normallink">田朴珺：美女保养秘密</a></p>
+              </dd>
+            </dl>
+            <p>&nbsp;</p>
+            <!--右侧结束--></td>
+        </tr>
+      </table>
+    </div>
+    <!--中部文章结束-->
+  </div>
+</div>
+<script type="text/javascript">show_tag();</script>
+[[[footer]]]
+</body>
+</html>

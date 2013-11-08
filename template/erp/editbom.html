@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>料宽表维护</title>
+<link href="../../css/css.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+
+<!--
+function ck(){
+if(document.getElementById('cp').value=='')
+{alert('请输入完整信息');return false;}
+return confirm('确实要修改吗?');
+}
+//-->
+</script>
+
+
+
+
+</head>
+
+<body>
+<table width="366" height="195" border="0" cellspacing="4" cellpadding="4">
+  <form id="form1" name="form1" method="post" action=# onsubmit="javascript :return ck();">
+  <tr>
+    <td width="76">&nbsp;</td>
+    <td width="137">&nbsp;</td>
+    <td width="139">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center">产品</div></td>
+    <td><input name="cp" id=cp type="text"  maxlength="20" value=[##cp##] /></td>
+    <td rowspan="5"><p>产品图片<br>
+          <img src="images/cpxz/[##pic_src##]" alt="" name="cp_pic" width="80" height="80" align="top" id="cp_pic" style="border:1px solid #666666" /></p>
+      </td>
+  </tr>
+  <tr>
+    <td><div align="center">产品规格</div></td>
+    <td><input name="cpgg" type="text" id="cpgg"  maxlength="20" value=[##cpgg##] /></td>
+  </tr>
+  <tr>
+    <td><div align="center">钢种</div></td>
+    <td><input name="gz" type="text" id="gz"  maxlength="20" value=[##gz##] /></td>
+  </tr>
+  <tr>
+    <td><div align="center">厚度</div></td>
+    <td><input name="hd" type="text" id="hd"  maxlength="20" value=[##hd##] /></td>
+  </tr>
+  <tr>
+    <td><div align="center">工艺类型</div></td>
+    <td><input name="gylx" type="text" id="gylx"  maxlength="20" value=[##gylx##] /></td>
+  </tr>
+  <tr>
+    <td><div align="center">R角</div></td>
+    <td><input name="rt" type="text" id="rt"  maxlength="20" value=[##rt##] /></td>
+    <td>
+      <label>
+        <input type="submit" name="Submit" value="选择图片" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <td><div align="center">展开宽度</div></td>
+    <td><input name="zkkd" type="text" id="zkkd"  maxlength="20" value=[##zkkd##] /></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center">机组</div></td>
+    <td><input name="jz" type="text" id="jz"  maxlength="20"  value=[##jz##] /></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><label>
+        <input type="submit" name="Submit2" value="确定" onClick="document.form1.actionsflag2.value='close';" />&nbsp;&nbsp;
+        <input type="button" name="btnexit" value="返回" onclick='javascript:dialogArguments.location="yfgl.php";window.close()' />
+    </label></td>
+  </tr><INPUT TYPE="hidden" id="actionsflag" name="actionsflag" value="1">
+<INPUT TYPE="hidden" id="actionsflag2" name="actionsflag2" value="go"><INPUT TYPE="hidden" id="picid" name="picid" value=[##pic_src##]></form>
+</table>
+</body>
+</html>

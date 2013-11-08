@@ -1,0 +1,63 @@
+<html><head><script language="JavaScript">
+var LEFT_MENU_VIEW=0;
+function leftmenu_open()
+{
+   LEFT_MENU_VIEW=0;
+   leftmenu_ctrl();
+}
+
+
+function leftmenu_ctrl()
+{
+   if(LEFT_MENU_VIEW==0)
+   {
+      parent.document.getElementById('frame2').cols="180,8,*";
+      LEFT_MENU_VIEW=1;
+      document.getElementById('myarrow').src="callleftmenu_data/arrow_l.gif";
+   }
+   else
+   {
+      parent.document.getElementById('frame2').cols="0,8,*";
+      LEFT_MENU_VIEW=0;
+      document.getElementById('myarrow').src="callleftmenu_data/arrow_r.gif";
+   }
+}
+
+function setPointer(theRow, thePointerColor)
+{
+    if (typeof(theRow.style) == 'undefined' || typeof(theRow.cells) == 'undefined')
+    {
+        return false;
+    }
+
+    var row_cells_cnt=theRow.cells.length;
+    for (var c = 0; c < row_cells_cnt; c++)
+    {
+        theRow.cells[c].bgColor = thePointerColor;
+    }
+
+    return true;
+}
+
+</script><title>¿ØÖÆ×ó²Ëµ¥ÏÔÒþ</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" type="text/css" href="../banner/style.css"></head><body topmargin="0" leftmargin="0" onload="leftmenu_ctrl()">
+
+ <table align="center" background="callleftmenu_data/side.gif" cellpadding="0" cellspacing="0" height="100%" width="100%">
+   <tbody><tr>
+     <td>
+       <table bordercolorlight="#000000" bordercolordark="#FFFFFF" bgcolor="#90BED5" border="1" cellpadding="0" cellspacing="0" height="50" width="100%">
+         <tbody><tr onclick="leftmenu_ctrl()" onmouseover="setPointer(this, '#D3E5FF')" onmouseout="setPointer(this, '#EEEEEE')">
+           <td style="" bgcolor="#eeeeee">
+           <img id="myarrow" src="callleftmenu_data/arrow_l.gif">
+           </td>
+           </tr>
+         </tbody></table>
+     </td>
+   </tr>
+ </tbody></table>
+
+</body></html>

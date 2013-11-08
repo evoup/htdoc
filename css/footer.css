@@ -1,0 +1,24 @@
+.footer {
+	BORDER-TOP: #c5c5c5 1px solid; MARGIN-TOP: 20px; PADDING-BOTTOM: 20px; MARGIN-LEFT: auto; WIDTH: 960px; MARGIN-RIGHT: auto; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.footerlinks {
+	FONT-SIZE: 14px; COLOR: #767676; LINE-HEIGHT: 32px
+}
+.footerlinks A:link {
+	FONT-SIZE: 14px; COLOR: #767676; TEXT-DECORATION: none
+}
+.footerlinks A:visited {
+	FONT-SIZE: 14px; COLOR: #767676; TEXT-DECORATION: none
+}
+.footerlinks A:hover {
+	FONT-SIZE: 14px; COLOR: #ff0000; TEXT-DECORATION: none
+}
+.footerlinks A:active {
+	FONT-SIZE: 14px; COLOR: #ff0000; TEXT-DECORATION: none
+}
+.copyright {
+	FONT-SIZE: 12px; COLOR: #8d8d8d
+}
+.copyright SPAN {
+	COLOR: #fd3600
+}

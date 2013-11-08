@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='GB2312' ?>
+<menu>
+    <RECORD>
+     <menu_id>1</menu_id>
+     <menu>计算机</menu>
+     <menu_grade>1</menu_grade>
+     <menu_superior>0</menu_superior>
+    </RECORD>
+    <RECORD>
+     <menu_id>8</menu_id>
+     <menu>数学</menu>
+     <menu_grade>1</menu_grade>
+     <menu_superior>0</menu_superior>
+    </RECORD>
+    <RECORD>
+     <menu_id>13</menu_id>
+     <menu>文学</menu>
+     <menu_grade>1</menu_grade>
+     <menu_superior>0</menu_superior>
+    </RECORD>
+</menu>

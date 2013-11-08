@@ -1,0 +1,56 @@
+<link rel="stylesheet" type="text/css"  href="[##$site_dir##]css/gen.css">
+<link rel="stylesheet" type="text/css"  href="[##$site_dir##]css/footer.css">
+<script language="Javascript" type="text/javascript" src="[##$site_dir##]js/head.js"></script>
+<script language="javascript">
+function inits(){
+isDOM=document.getElementById?true:false
+  isOpera=isOpera5=window.opera && isDOM
+  isOpera6=isOpera && window.print
+  isOpera7=isOpera && document.readyState
+  isMSIE=isIE=document.all && document.all.item && !isOpera
+  isStrict=document.compatMode=='CSS1Compat'
+  isNN=isNC=navigator.appName=="Netscape"
+  isNN4=isNC4=isNN && !isDOM
+  isMozilla=isNN6=isNN && isDOM
+}
+inits(); </script>
+<!--<script type="text/javascript">
+printSigninStatus();//360quan的一个函数，留着以后自己实现
+</script>-->
+<script type="text/javascript">
+function resizeImage(obj){
+obj=document.getElementById(obj);
+var   cns   =   obj.childNodes; 
+	for(var   i=0;i<cns.length;i++)   {   
+	  var   __temp   =   cns[i];   
+	//  if(__temp.tagName.toLowerCase()   ==   "img")   {   
+		if(__temp=document.getElementsByTagName("img")){
+		__temp.width   =   40; 
+		__temp.height   =   40; 
+		} 
+	} 
+} 
+</script>
+<noscript>需要支持框架的浏览器哦~</noscript>
+</head>
+<body class="www" style="margin-top:0; margin-left:0"><div class=navbar>
+<div class=tools>
+<div class=toolbg><a href="[##$site_dir##]"><IMG class=navlogo src="[##$site_dir##]css/cssimg/logo.png" alt="" border=0></a>
+<div class=navsearch><a class="normalink help" 
+href="help.php">帮助</a> 
+<div class=searchcon>
+<form action=/search method=get target=_blank><INPUT 
+type=hidden value=member name=type><INPUT class=input 
+onblur="this.value = this.value =='' ? '搜名字或昵称' : this.value;this.className='input'" 
+onfocus="this.className='input2 '" onClick="this.value='';" value=搜名字或昵称 name=q><INPUT class=but type=submit>
+</form></div>
+<script type="text/javascript">
+			function headSearch(oform) {
+				if ((oform.q.value.length == 0)||(oform.q.value == "搜名字或昵称")) {
+					oform.action = "/searchPortal?type=all&q=";
+				} else {
+					oform.action = "/search";
+				}
+			}
+			</script>
+</div></div></div></div>

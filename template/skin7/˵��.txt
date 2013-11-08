@@ -1,0 +1,1 @@
+注意把设计好后的gen.css、list.css、footer.css和img文件夹拷贝到根目录css文件夹里

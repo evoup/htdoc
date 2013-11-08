@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<script type="text/javascript" src="ubbeditor.js"></script>
+<script type="text/javascript">
+function insertemot (emotcode) {
+	var emot="[emot]"+emotcode+"[/emot]";
+	AddText(emot);
+	document.getElementById('emotid').style.display='none';
+}
+
+function showemot () {
+	if (document.getElementById('emotid').style.display=='block') document.getElementById('emotid').style.display='none';
+	else document.getElementById('emotid').style.display='block';
+}
+</script>
+
+
+
+</HEAD>
+
+<body onload="init_ubb('content');">
+
+<a href="JavaScript: void(0); "><IMG border=0 onclick="bold()" title="粗体" src="images/bold.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="italicize()" title="斜体" src="images/italic.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="underline()" title="下划线" src="images/underline.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="strike()" title="删除线" src="images/strikethrough.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="subsup('sup')" title="上标" src="images/superscript.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="subsup('sub')" title="下标" src="images/subscript.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="center()" title="设置文字对齐方式" src="images/center.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="hyperlink()" title="插入超链接" src="images/url.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="email()" title="插入邮件地址" src="images/email.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="image()" title="插入图片" src="images/insertimage.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="addmedia('swf');" title="插入Flash" src="images/swf.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="addmedia('wmp');" title="插入Windows Media Player文件" src="images/wmp.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="addmedia('real');" title="插入Real文件" src="images/real.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="showcode()" title="插入代码" src="images/code.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="quoteme()" title="插入引用文字" src="images/quote.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="addacronym();" title="插入注释文字" src="images/acronym.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="AddText('[hr]')" title="插入分割线" src="images/line.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="addfile();" title="插入普通文件下载" src="images/file.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="addsfile();" title="插入注册会员才可下载的文件" src="images/sfile.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="showemot()" title="表情选择" src="images/insertsmile.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="AddText('[separator]')" title="插入截断符" src="images/separator.gif" ></a>
+<a href="JavaScript: void(0); "><IMG border=0 onclick="AddText('[newpage]')" title="插入分页符" src="images/newpage.gif" ></a>
+<script type="text/javascript">
+if (is_firefox) {
+	document.write("<a href='JavaScript: void(0); '><IMG border=0 onclick='undo_fx();' title='挽回数据' src='images/undo.gif' ></a>");
+}
+</script>
+<br>
+<div id='emotid' style="display: none;">{$emots}</div>
+ 字体： 
+<select onChange=showfont(this.options[this.selectedIndex].value) name=font>
+<option value="#define#" selected>请选择字体</option>
+<option value="宋体">宋体</option>
+<option value="楷体_GB2312">楷体_GB2312</option>
+<option value="新宋体">新宋体</option>
+<option value="黑体">黑体</option>
+<option value="隶书">隶书</option>
+<option value="仿宋_GB2312">仿宋_GB2312</option>
+<option value=Arial>Arial</option>
+<option value=Tahoma>Tahoma</option>
+<option value=Verdana>Verdana</option>
+<option value="Times New Roman">Times New Roman</option>
+<option value="Bookman Old Style">Bookman Old Style</option>
+<option value="Century Gothic">Century Gothic</option>
+<option value="Comic Sans MS">Comic Sans MS</option>
+<option value="Courier New">Courier New</option>
+<option value="Wingdings">Wingdings</option>
+<option value="#define#">自定义</option>
+
+</select>
+&nbsp;&nbsp;字号：
+<select onChange=showsize(this.options[this.selectedIndex].value) name=size>
+<option value="#define#" selected>请选择字号</option>
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+<option value=6>6</option>
+</select>
+&nbsp;&nbsp;颜色： 
+<select onChange=showcolor(this.options[this.selectedIndex].value) name=color>
+<option value="#define#" selected>请选择颜色</option>
+<option value="#87CEEB" style="color:#87CEEB">天蓝</option>
+<option value="#4169E1" style="color:#4169E1">品蓝</option>
+<option value="#0000FF" style="color:#0000FF">蓝</option>
+<option value="#00008B" style="color:#00008B">暗蓝</option>
+<option value="#FFA500" style="color:#FFA500">橙</option>
+<option value="#FF4500" style="color:#FF4500">桔红</option>
+<option value="#DC143C" style="color:#DC143C">深红</option>
+<option value="#FF0000" style="color:#FF0000">红</option>
+<option value="#B22222" style="color:#B22222">棕</option>
+<option value="#8B0000" style="color:#8B0000">暗红</option>
+<option value="#008000" style="color:#008000">绿色</option>
+<option value="#32CD32" style="color:#32CD32">灰绿</option>
+<option value="#2E8B57" style="color:#2E8B57">海绿</option>
+<option value="#FF1493" style="color:#FF1493">粉</option>
+<option value="#FF6347" style="color:#FF6347">西红柿色</option>
+<option value="#FF7F50" style="color:#FF7F50">珊瑚色</option>
+<option value="#800080" style="color:#800080">紫色</option>
+<option value="#4B0082" style="color:#4B0082">靛青</option>
+<option value="#DEB887" style="color:#DEB887">棕木</option>
+<option value="#F4A460" style="color:#F4A460">沙褐</option>
+<option value="#A0522D" style="color:#A0522D">土黄</option>
+<option value="#D2691E" style="color:#D2691E">巧克力色</option>
+<option value="#008080" style="color:#008080">土绿</option>
+<option value="#C0C0C0" style="color:#C0C0C0">银</option>
+<option value="#define#">自定义</option>
+</select>
+[<a href="javascript: toggle_upload();">上传文件管理器</a>]
+<div id="FrameUpload" style="display: none;"></div>
+<FORM METHOD=POST ACTION="result.php">
+
+
+<textarea name='content' id='content' rows='20' cols='100' class='formtextarea'></textarea>
+<input type=hidden id='content_old' value=''><BR>
+<div align=center><INPUT TYPE="submit" value="提交">&nbsp;<INPUT TYPE="reset" value="重置"></div>
+</FORM>
+<br><ul>
+<script type="text/javascript">
+if (is_firefox) {
+	document.write("针对Mozilla/Firefox/Flock用户的特别提示：</B><BR>如果执行一个操作后编辑器发生意外（Gecko核心的一个问题，原因不明），清空了所有数据，请点击<img border=0 title='挽回数据' src='images/undo.gif'> 按钮，将挽回上一次编辑前的数据。正常情况下请勿使用。",
+743=>"<B>如何只在首页显示一部分内容？</B><br>要在首页只显示一部分内容，并在点击“阅读全文”后才能看到完整内容，请在需要截断日志的地方插入<B>[separator]</B>标记。或者，您可以点击编辑栏上的 <IMG border=0 onclick=\"AddText('[separator]')\" title=\"插入截断符\" src=\"images/separator.gif\" > 按钮。");
+}
+</script>
+
+<li><B>如何只在首页显示一部分内容？</B><br>要在首页只显示一部分内容，并在点击“阅读全文”后才能看到完整内容，请在需要截断日志的地方插入<B>[separator]</B>标记。或者，您可以点击编辑栏上的 <IMG border=0 onclick="AddText('[separator]')" title="插入截断符" src="images/separator.gif" > 按钮。</li>
+<li><B>如何给文章分页？</B><br>请在需要分页的地方插入<B>[newpage]</B>标记。或者，您可以点击编辑栏上的 <IMG border=0 onclick="AddText('[newpage]')" title="插入分页符" src="images/newpage.gif" > 按钮。一篇文章可包含多个分页符。</li></ul>
+
+
+
+</BODY>
+</HTML>

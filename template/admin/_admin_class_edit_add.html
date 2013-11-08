@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> </title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="js/common.js">
+</script><script language="JavaScript">
+<!--
+// 这里把JS用到的所有语言都赋值到这里
+var process_request = "正在處理您的請求...";
+var todolist_caption = "記事本";
+var todolist_autosave = "自動儲存";
+var todolist_save = "存檔";
+var todolist_clear = "清除";
+var todolist_confirm_save = "是否將更改儲存到記事本？";
+var todolist_confirm_clear = "是否移除內容？";
+var catname_empty = "分類名稱不能為空!";
+var unit_empyt = "數量單位不能為空!";
+var is_leafcat = "您選取的分類是一個底層分類。\r\n新分類的上層分類不能是一個底層分類";
+var not_leafcat = "您選取的分類不是一個底層分類。\r\n商品的分類轉移只能在底層分類之間才可以操作。";
+//-->
+</script>
+</head>
+<body>
+<h1>
+<span class="action-span"><a href="admin_class_edit.php?action=list">文章分类</a></span>
+<span class="action-span1"><a href="javascript:void(0)">EVP管理中心</a>  - 新增分类 </span>
+<div style="clear:both"></div>
+</h1><!-- start add new category form -->
+<div class="main-div">
+  <form action="admin_class_edit.php?action=list" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+  <table width="100%" id="general-table">
+      <tr>
+        <td class="label">分类名称:</td>
+        <td>
+          <input type='text' name='cat_name' maxlength="20" value='' size='27' /> <font color="red">*</font>        </td>
+      </tr>
+      <tr>
+        <td class="label">上级分类:</td>
+        <td>			
+          <select name="parent_id">
+            <option value="0">最上层分类</option>
+            <script language="javascript" src="../js/catelog_Dropdownlist.js?time=[##phprand##];"></script>         </select>        </td>
+      </tr>
+      <tr>
+        <td class="label">排序:</td>
+        <td>
+          <input type="text" name='sort_order'  value="0" size="15" />        </td>
+      </tr>
+      <tr>
+        <td class="label">是否显示:</td>
+        <td>
+          <input type="radio" name="is_show" value="1"  checked="true"/> 是          <input type="radio" name="is_show" value="0"  /> 否        </td>
+      </tr>
+      <tr>
+        <td class="label">是否显示在导航列:</td>
+        <td>
+          <input type="radio" name="show_in_nav" value="1" /> 是          <input type="radio" name="show_in_nav" value="0"  checked="true" /> 否        </td>
+      </tr>    
+      <tr>
+        <td class="label"><a href="javascript:showNotice('noticeGoodsSN');" title="點選此處閱讀說明訊息"><img src="images/notice.gif" width="16" height="16" border="0" alt="您可以為每一個商品分類指定一個樣式表檔案。例如檔案存放在 themes 目錄下則鍵入：themes/style.css"></a>分类的CSS文件:</td>
+        <td>
+          <input type="text" name="style" value="" size="40" /> <br />
+          <span class="notice-span" style="display:block"  id="noticeGoodsSN">您可以为每一个栏目指定一個CSS文件。例如文件存放在 themes 目录下则键入：themes/style.css</span>        </td>
+      </tr>
+      <tr>
+        <td class="label">关键字:</td>
+        <td><input type="text" name="keywords" value='' size="50">        </td>
+      </tr>
+      <tr>
+        <td class="label">分类描述:</td>
+        <td>
+          <textarea name='cat_desc' rows="6" cols="48"></textarea>        </td>
+      </tr>
+      </table>
+      <div class="button-div">
+        <input type="submit" value=" 确定 " />
+        <input type="reset" value=" 重设 " />
+      </div>
+    <input type="hidden" name="act" value="insert" />
+    <input type="hidden" name="old_cat_name" value="" />
+    <input type="hidden" name="cat_id" value="" />
+	
+	<input type="hidden" value='add' name = 'pagedo' />[##gen_input##]<!--operation flag-->
+  </form>
+</div>
+<script type="text/javascript" src="../js/utils.js"></script><script type="text/javascript" src="js/validator.js"></script>
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['cat_name'].focus();
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+  validator = new Validator("theForm");
+  validator.required("cat_name",      catname_empty);
+  if (parseInt(document.forms['theForm'].elements['grade'].value) >10 || parseInt(document.forms['theForm'].elements['grade'].value) < 0)
+  {
+    validator.addErrorMsg('');
+  }
+  return validator.passed();
+}//-->
+</script>
+</body>
+</html>

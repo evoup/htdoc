@@ -1,0 +1,109 @@
+/* Single stylesheet for Royal Berks and Battle Hospitals NHS Trust - April 2006 */
+* {margin:0; padding:0; }
+body {color:#000; background-color:#fff; font-family:Verdana, sans-serif; font-size:80%;line-height:1.25em} 
+p, th, td, ul, ol, li, dt, dd, div {font-family:Verdana, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family:Verdana,sans-serif; color:#06c; font-weight:bold; margin-bottom:.5em; line-height:1.25em;}
+h1 {font-size:1.8em; clear:both;}
+h2 {font-size:1.4em}
+h3 {font-size:1.2em}
+h4 {font-size:1em}
+h5 {font-size:1em; font-weight:normal;}
+h6 {font-size:.8em; font-weight:normal;}
+img {border: none;}
+table {font-size:100%;border-color:#06c;empty-cells:show;} /*IE5 inheritance bug */
+td,th {vertical-align:top;border-color:#06c}
+th, legend {color:#06c;}
+p {margin:.5em}
+li {margin:.5em 2em;}
+ol {margin-left:1em}
+ul  {list-style-type:square}
+ul ul  {list-style-type:disc}
+ul ul ul  {list-style-type:circle;font-size:85%}
+a {color:#000099; background:transparent;}
+address {margin:1em; font-style:normal; font-variant:small-caps; }
+blockquote {margin:.5em 2em; padding:.5em; border:1px solid #06c}
+code {font-size:12px;}
+dt {font-weight:bold; color:#06c;}
+hr {color:#06c; border:1px solid #06c; margin:1em;}
+big {line-height:1.2em}
+
+topic, .topic {display:block; font-weight:bold; font-size:1.2em; background:#ff9; color:#06c; border-top:.1em solid #06c; border-bottom:.1em solid #ff9;padding:.2em; text-align:right; clear:both; } 
+author, .author{display:block; width:12em;background:#ff9;font-weight:bold;float:left;padding:.3em}
+message, .message {display:block; margin-left:12em; padding:.3em}
+.postbar {background:#ff9; font-weight:bold; color:#06c; text-align:right;}
+.prompt {width:7.5em;text-align:right;float:left;}
+.inbox {width:20em}
+
+.boxed {border:#06c 1px solid; padding:.5em; margin:5px;}
+.conceal, .conceal a {color:#eee;font-size:xx-small}
+.credit {color:#ccc; font-size:xx-small;margin-top:2em;}
+.credit a {color:#ccf;}
+.data td{padding:.5em;}
+.endlinks {font-size:x-small;text-align:center;list-style:none;}
+.endlinks li{margin:0;}
+.g {margin-top:1em; font-size:1.1em;} /*google result*/
+.h1 {font-size:1.8em;font-family:Verdana,sans-serif; color:#06c; font-weight:bold;}
+.here {color:red;background-color:white;border:1px solid red}
+.in {margin-left:20px}
+.left {float:left; margin-right:1em;}
+.l {margin-left:-.5em;}
+.menu, .local a{background-color:#06c; color:#fff; font-weight:bold; line-height:2em; border:1px solid #999; border-top-color:#ccc; border-left-color:#ccc; white-space:nowrap;}
+.menufoot {font-size:xx-small;text-align:right; margin:0;}
+.menutoggle {display:none;}
+.pointless {list-style-type:none; text-indent:-22px; margin-left:.5em;}
+.right {float:right; margin-left:1em;}
+.sidebar {float:right; border:#06c 1px solid; width:230px; background-color:#ff9; font-size:87%; margin:3px; padding:.5em;}
+.sectionpic {display:none;}
+.small {font-size:x-small;}
+.summary{font-size:larger;}
+.tiny {font-size:xx-small;}
+
+.atoz {font-size:90%;}
+.atoz td {border-bottom:#000000 solid 1px; border-collapse:collapse; margin:0 5px;}
+.atoz-battle {background-color:#ccc;}
+.atoz-centre {background-color:#f00; color:#fff;}
+.atoz-entrance {background-color:#fc0;}
+.atoz-eye {background-color:#ff0;}
+.atoz-maternity {background-color:#99c; color:#fff;}
+.atoz-north {background-color:#9fc}
+.atoz-outside {background-color:#fcc;}
+.atoz-south {background-color:#69c; color:#fff;}
+
+@media all{ /* hide from Netscape 4, Lynx and other non-CSS2 browsers */
+ a{text-decoration:none;padding:2px;}
+ a:hover {color: #fff; background-color:#f60; }
+ 
+ .shh, .invisibledivider {display:none;}
+ .menutoggle {display:inline; font-size:xx-small; cursor:pointer; color:#f60;}
+ .searchbox {padding:5px; margin:0; background:#f60; }
+ .sectionpic {margin:0; padding:0; width:230px; height:185px; display:block; border:0; }
+ .ad {     /* button-like links on front page */
+  margin: 6px;
+  border: outset #fc6 2px;
+  text-align: center;
+  width: 82%;
+  padding: 3px;
+  background-color: #fc6; 
+  }
+
+ #wide {position:absolute; left:235px; top:0px} 
+  #content {color:#000; background-color:#fff; padding:10px; margin-top:.8em; line-height:1.2em;  clear:both}
+  #footer {text-align:center; background:#fff; border-top:1px solid #06c;padding-top:1em; font-size:xx-small;}
+} /*end @media all */
+@media screen{
+ #narrow {position:absolute; left:0px; top:0px; width:230px; padding:0; border:1px solid #999 }
+  #navigation {background-color:#06c; color:#fff; padding:5px; position:relative;}
+   #navigation ul {list-style:none; padding:0; margin:0; }
+   #navigation ul ul{visibility:hidden; margin:-1.5em -20em 0 185px; border:1px solid #999;
+    background:#06c; position:absolute; z-index:100; }
+   #navigation li {display:inline; line-height:1em;}
+   #navigation a {display:block; color:#fff; font-weight:bold; width:200px; text-align:center;}
+   #navigation .hover {background-color:#09f;}
+   #navigation a:hover{background-color:#fff; color:#f60;}
+   #navigation .hover {color:#06c;background-color:#09f;}
+
+} /*end @media screen*/
+@media print{
+ #narrow, #navigation, .credit, .menutoggle, .footlinks {display:none;}
+ #wide {position:static; width:100%;}
+} /*end @media print*/

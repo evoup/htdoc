@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>信息添加</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../js/init.js" charset="utf-8"></script>
+<script language="javascript"  defer="defer" charset="utf-8" src="js/geteditorHTML.js">//important!do not delete,otherwise the editor content can`t post to server</script>
+<script language="javascript"  src="js/smallcolorpicker/jquery.js"></script><!--colorpicker based on jq-->
+<script language="javascript"  src="js/smallcolorpicker/jquery.colorPicker-1.1.0.pack.js"></script>
+<script language="javascript">function repost(){//重定义post的方向，1个是添加文章的，1个是修改文章的
+document.f1.action="[[[repostdir]]]";
+}
+</script>
+<script language="javascript" src="../js/arttag.js"></script>
+<script language="javascript" >//来自readarticle.html
+	var arttag = new tagshowword();
+	var tagstr=arttag.tagstr//这里要改为arttag里面一个对象的实例，否则无法作为全局变量,这样就实现了全局函数，其实是一个类对象罢了
+	var gjz= '[[[guanjianzi]]]';
+function show_tag(){/*show the news tags*/
+	var arr=new Array();
+	arr=tagstr.split("|"); //all tagsstr
+	for (var i=0;i<arr.length;i++)	{//遍历所有tag,如果括号里的等于了ww里的一个就显示这个
+	//js正则匹配出()里的内容
+		if (arr[i]!=''){
+		id=arr[i].match((/(\d)+/g));//匹配括号里的数字
+		arr2=gjz.split("|");
+			for (var j=0;j<arr2.length;j++){
+				if (id==arr2[j]){
+				arr[i]=arr[i].replace(/\([\d\D]*?\)/g,"");	
+				document.getElementById('kword'+(j+1)).value=arr[i];
+				}
+			}
+		}
+	}
+}
+</script>
+<script language="JavaScript" defer="defer">
+function check(){
+var s=document.getElementById('artsel').selectedIndex;
+var bt=document.getElementById('bt');
+	if (document.getElementById('pagedo').value!='edit'){
+		if(s==0 ) {alert('请选择文章分类');return false;}
+	}	
+	else if (bt=='') {alert('请填写标题');return false;} 
+}
+</script>
+<style type="text/css">
+<!--
+.STYLE1 {color: #FFFFFF}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0">
+<table width="100%" border="1" cellpadding="2" cellspacing="4" bgcolor="#F2f2f2">
+  <tr>
+    <td width="85%" valign="middle" class="txt"><strong>添加信息：</strong></td>
+    <td width="15%" align="right" valign="middle" class="txt">[ <a href="article.php?action=list">返回列表</a> 
+      ]</td>
+  </tr>
+</table>
+<table width="100%"  border="1" cellpadding="2" cellspacing="6" bgcolor="#f2f2f2">
+  <tr>
+    <td><table width="100%" align="center" cellpadding="2" cellspacing="1" bgcolor="#000000" class="txt">
+        <form name="f1" method="post" action="article.php?action=list" onSubmit="javascript:return check();">
+          <tr bgcolor="#FFFFFF"> 
+            <td width="9%" class=td1> <div align="right"><font color="#FF0000">* 
+            </font>信息分类：</div></td>
+            <td width="91%" class=td2>
+            <SELECT NAME="aclass" id = "artsel" onFocus="this.options[0].text='--选择--';this.options[0].value='na';"><option value="na">--选择--</option><script language="javascript" src="../js/catelog_Dropdownlist_article.js?t=[[[rand]]]"></script></SELECT>
+            (请选择一个信息的分类，此项为必填)            <!--测试按钮<input type="button" onClick="getmyeditorHTML()"><input type="button" onClick="alert(document.getElementById('hideditor').innerText)" >--></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td class=td1> <div align="right"><font color="#FF0000">* </font>标题：</div></td>
+            <td class=td2> <input type="text" name="bt" id = "bt" size="50" maxlength="100" value="[[[artbt]]]"></td>
+          </tr>
+		  
+          <tr bgcolor="#FFFFFF">
+            <td align="right" class=td1>超链接：</td>
+            <td align="left" class=td2><input name="linkURL" type="text" id="linkURL" size="50" maxlength="500">
+              (用于直接链接到其他地址)</td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td class=td1 align="right">链接颜色：</td>
+            <td class=td2><INPUT readOnly name=text4> <IMG 
+onclick="$(this).colorPicker({setValue:'input[@name=text4]',setText:false})" 
+height=18 
+src="../image/colorpick.gif" 
+width=21 align=absMiddle></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td class=td1> <div align="right">作者：</div></td>
+            <td class=td2> <input type="text" name="author" size="50" maxlength="100" value="[[[artauthor]]]"></td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td align="right">摘要：</td>
+            <td>
+              <textarea name="memo" cols="30" rows="4" id="memo"></textarea>
+              (首页或者其他地方显示的简单的摘要)            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td class=td1> <div align="right">图片1：</div></td>
+            <td class=td2> 
+			<input type="text" size="50" maxlength="100" id="thumb_art_pic" name="thumb_art_pic" value="[[[thumbpicname]]]">
+			<input name="isUploadedImage" type="checkbox" id="isUploadedImage" value="true"  onClick="if(this.checked==true) {document.all('frmImage').style.display='block';} else {document.all('frmImage').style.display='none';}">
+              <label>上传图片</label>
+              <iframe id="frmImage" name="frmImage" style="display:none;" src="upload_newspic_thumb.php" width="500" height="35" scrolling="no" frameborder="0"></iframe>              
+              (主要用作预览图或摘要图片)</td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td class=td1> <div align="right"><font color="#FF0000">* </font>内容：</div></td>
+            <td class=td2 align="center">
+			<div style="width:100%;height:300px; border:1px solid #333333; ">
+			<input type="hidden" name = "hid_newfile" id = "hid_newfile" value="[[[hid_newfile]]]" /><!--新建是1，修改是0-->
+			<iframe src="editorpage.php" width="100%" height="405px" frameborder="0" name='editorfrm'> </iframe>
+			</div></td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td colspan="2" class=td1>关键字1
+<input type="text" name="kword[]"  size="8" maxlength="8" id = kword1>
+关键字2
+<input type="text" name="kword[]"  size="8" maxlength="8" id = kword2>
+关键字3
+<input type="text" name="kword[]"  size="8" maxlength="8" id = kword3>
+关键字4
+<input type="text" name="kword[]"  size="8" maxlength="8" id = kword4>
+
+<textarea style="display:none" name = "hideditor" id = "hideditor"></textarea>
+
+<!--下面是执行的参数判断-->
+<input type="hidden" value='[[[pagedo]]]' name = 'pagedo' id=pagedo />
+<textarea name="hiddentextarea" id = "hiddentextarea" style="display:none"></textarea><!--用来将模板的数据库里editor字段传递给FCK的隐藏文本域-->
+[[[insert_inline_js_dbv2txtv]]]<!--这里最好学习一下ecshop的insertscript模板标记-->
+[[[inset_inline_js_changeselect]]]<!--这个是设置默认的select的option值--></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td colspan="2" class=td1> <div align="center"> 
+                [[[gen_input]]]<input type="submit" name="Submit" value="提交" onClick="repost();getmyeditorHTML();">
+                &nbsp;&nbsp; 
+                <input type="reset" name="Submit2" value="清除">
+                     <label>
+                <input type="button" name="hidval2editor_btn" id = 'hidval2editor_btn' value="转换隐藏文本域到编辑器" onClick=addHTML_from_hid_to_real() style="display:none">
+                </label></div></td>
+          </tr>
+        </form>
+      </table></td>
+  </tr>
+</table>
+<div align="center"><br>
+</div>
+<script type="text/javascript">show_tag();</script>
+<script language="javascript">
+function addHTML_from_hid_to_real(){
+	
+	if (document.getElementById("hid_newfile").value=='0'){//如果是修改
+	editorfrm.SetEditorContents('FCKeditor1',document.getElementById('hiddentextarea').innerText);
+	}
+	
+}
+
+</script>
+</body>
+</html>

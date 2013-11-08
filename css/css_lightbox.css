@@ -1,0 +1,272 @@
+/*其实只要做掉a:hover{position:relative;*/
+body {font-size: 12px;font-family:"宋体","Arial" ; /*background: #F6F6F6;*/color:#494949; margin-top:0px;margin-bottom:0px;}
+h1 {font: 15pt/17pt "Arial"; font-weight: bold; color: maroon}
+h2 {font: 13pt/15pt "Arial"; font-weight: bold; color: blue}
+p {font: 10pt/12pt "Arial"; color: black}
+.border-a {
+	font: 12px/normal "宋体", "Osaka";
+	border: 1px solid #B7E5F1;
+	background-color: #ECF8FB}
+.border-b {
+	font: 12px/normal "宋体", "Osaka";
+	border: 1px solid #FFFFFF;}
+/*input { font-size: 12px ; font-family: "宋体", "Osaka"}*/
+input,select,textarea	{ font: 12px Tahoma, Verdana; color: #555555; font-weight: normal; background-color: #F8F8F8 }
+td {  font-size: 12px; line-height: normal;}
+a:link{text-decoration:none;color:#0000CC;}
+a:visited{text-decoration:none;color:#0000CC;}
+a:hover{text-decoration:underline;color:#FF0000;
+/*position:relative;*/
+top:0px;
+left:0px;}
+
+textarea:focus {
+	background: #F0F9FB; /*----for firefox......----*/
+	border: 1px solid #1D95C7;
+font-size: 12px ; font-family: "宋体", "Osaka";
+}/*textarea:focus, input:focus {
+	background: #F0F9FB; 
+	border: 1px solid #1D95C7;
+font-size: 12px ; font-family: "宋体", "Osaka";
+}*/
+
+/*input,textarea{
+	border: 1px solid #CCCCCC;
+	margin: 5px 0px;
+	font-size: 12px ; font-family: "宋体", "Osaka";
+}*/
+textarea{
+	border: 1px solid #CCCCCC;
+	margin: 5px 0px;
+	font-size: 12px ; font-family: "宋体", "Osaka";
+}
+.tred {
+	background-color: #FF0000;
+	color:#FFFFFF;
+	}
+.tbg { color:#333333;background-image: url("../image/left_tt_bg.jpg"); 
+}
+.mybutton {
+	background-color: #E7E7E7;
+	border: 1px solid  #429AF7;
+	height: 20px;
+	width: 80px;
+}
+
+/*#textare {
+	border: 1px solid #429AF7;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}*/
+#lselect	{
+		width: 130px;
+		height: 370px;
+		background-image: url("../12.gif");
+		color:#CCCCCC;
+			}
+#lselect h3 span {
+		display: none;
+		}
+
+#lselect h3	{
+			background:  url("../tit.gif");
+			width: 130px;
+			height: 22px;
+			top: 0px;
+			margin: 0px;
+			padding: 0px;
+			}
+#lselect ul	{
+	margin-top: 5px;
+
+		}
+#lselect li {
+	border-bottom: 2px dotted #FFFFFF;
+	width: 80px;
+	margin-bottom: 5px;
+	margin-left:0px;
+	list-style-position: outside;
+	list-style-image:  url("../check.gif");
+font:12px "Arial";
+}
+#lselect .c {
+	/*text-transform: capitalize;*/
+}
+
+#lselect a {
+	display: block;
+	font-weight: bold;
+	color:#FFFFFF;
+}
+
+#lselect a:hover {
+	display: block;
+	font-weight: bold;
+	color: #3399FF;
+	background-color:#FFFFFF;
+}
+
+#lselect a.c {
+	color: #ffffff;
+	display: inline;
+	font-weight: bold;
+	font-size: 10px;
+	font-family:normal "宋体", "Osaka";
+}
+
+#lselect a.c:hover {
+	color: #E45315;
+	display: inline;
+	font-weight: bold;
+	background-color:#ffffff;
+font-size: 10px;
+	font-family:normal "宋体", "Osaka";
+}
+
+
+/*#logincontainer {
+margin-left:auto;
+ margin-right:auto;
+vertical-align: center;
+ width:300px;
+ height:200px;
+ text-align:left;
+ background:#ccc;
+
+}
+
+
+#middle-demo-3{
+display: table-cell;
+height: 300px;
+vertical-align: center;
+}*/
+
+/*以下是作CSS外框装饰
+
+.in {
+text-align:center;
+background:#fff;
+border:1px solid #555;
+position:relative;
+padding:5px;
+font-weight:normal;
+}/*内框的设定
+.ltin {
+left:-5px;
+}
+.tpin {
+top:-5px;
+}*/
+.pic {
+ position:relative;
+ background:#CCC;
+ margin:10px;
+ }
+.pic span {
+display:block;
+border:1px solid #CCCCCC;
+background:#FFF;
+position:relative;
+padding: 3px;
+}
+.right {/*阴影在右边时*/
+top:-4px;
+left:-4px;
+}
+.left {/*阴影在左边时*/
+top:-4px;
+right:-4px;
+}
+#h_green_t h3{
+	
+	background: transparent url(../image/h_green_t.jpg) no-repeat ;
+	height: 22px;
+	margin:0px;
+}
+#h_green_t1 h3{
+	
+	background: transparent url(../image/h_green_t1.jpg) no-repeat ;
+	height: 22px;
+	margin:0px;
+}
+
+#h_green_t span{display:none;}
+
+
+
+#h_green_t1 span{display:none;}
+
+
+.tb{BORDER-BOTTOM:  #000000  1px  dotted;BORDER-top:  #000000  1px  dotted;BORDER-LEFT:  #000000  1px  dotted;BORDER-RIGHT:  #000000  1px  }
+
+.bgLine {
+	background-image: url(../image/line.gif);
+	line-height: 22px;
+
+}
+.fontSearch {
+	font-weight: bold;
+	color: #0000FF;
+}
+.text1 {
+	line-height: 15pt;
+
+}
+
+
+a.frozen,aactive { display: inline; clear: none; color: #FF0000; }
+
+/*a.c:frozen,a.active { text-decoration: none; color: #51C3C4; }*/
+
+
+
+#innermainContent {
+	BORDER-RIGHT: #ced4ca 3px solid; BORDER-TOP: #ced4ca 1px solid; BACKGROUND: #fff; MARGIN: 20px 0px 0px 195px; BORDER-LEFT: #ced4ca 1px solid; BORDER-BOTTOM: #ced4ca 3px solid
+}
+
+
+
+
+/*xoops的header*/
+
+TD#headerbanner {
+	BACKGROUND: url(../image/headerbg.png) repeat-x; VERTICAL-ALIGN: middle; WIDTH: 100%; TEXT-ALIGN: center
+}
+TD#headerbar {
+	BACKGROUND-IMAGE: url(../image/hbar.gif); BORDER-BOTTOM: #dddddd 1px solid
+}
+
+
+.textbox-link a {
+	color: #3F67A5;
+	text-decoration: none;
+}
+
+.mynobod  {
+border-style: none;
+} 
+#alert	{
+		width: 130px;
+		height: 370px;
+		background-image: url("../12.gif");
+		color:#CCCCCC;
+			}
+#wrapper {
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    top: 20px;
+    width:750px;
+    background-color: #CCCCCC;
+}
+.tableborder	{
+background: #ffffff; border: 1px solid #698CC3 } 
+.header		{ 
+font: 11px Tahoma, Verdana; color: #FFFFFF; font-weight: bold; background-image: url("../image/dpstyle_header_bg.gif") }
+.header1		{ 
+font: 11px Tahoma, Verdana; color: #FFFFFF; font-weight: bold; background-image: url("../image/dpstyle_header_bg1.jpg") }
+.altbg2		{ background: #FFFFFF }
+.altbg1	{ background: whitesmoke }
+.tableborder1	{
+background: #ffffff; border: 1px solid #698CC3 } 

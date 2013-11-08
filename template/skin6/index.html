@@ -1,0 +1,153 @@
+<!--这个模版来自[最好模版-http://BestMoban.Com],需要更多模版请访问http://BestMoban.Com-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<link rel="stylesheet" type="text/css" href="template/skin6/default.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="default.css"/> -->
+<title>佳艺企业内部网</title>
+</head>
+<!-- <body> -->
+[##body##]<div id="sitename"><h1><span>佳艺企业内部网--佳艺腾飞，通向富有</span></h1></div>
+<!-- ajx -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var xmlHttp;
+function createXMLHttpRequest(){
+if (window.ActiveXObject){xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");}
+else if (window.XMLHttpRequest){xmlHttp=new XMLHttpRequest();}
+}
+function go() {
+            createXMLHttpRequest();            
+            xmlHttp.open("GET", "../frame/news.php?time=new Date().getTime()", true);
+            xmlHttp.onreadystatechange = goCallback;
+            xmlHttp.send("");
+
+
+//在加上个弹出窗口
+
+
+
+
+
+        }
+function goCallback() {
+            if (xmlHttp.readyState == 4) {
+                if (xmlHttp.status == 200) {
+					var msg = document.getElementById("msgunread");
+
+					msg.innerHTML=xmlHttp.responseText;
+					
+                    setTimeout("pollServer()", 10000);
+                }
+            }
+        }
+function pollServer() {
+go();
+        }
+
+
+
+//-->
+</SCRIPT>
+<!-- ajx -->
+<!--kill leftsidebar start-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function hidesidebar () {
+	if (document.getElementById('content_right').style.display=='block') {document.getElementById('content_right').style.display='none';document.getElementById('content_left').style.width='900px';document.getElementById("bodytag").style.background='#999 url(img/bg1.gif) repeat-y;';}
+	else {document.getElementById('content_right').style.display='block';document.getElementById('content_left').style.width='705px';}
+}
+//-->
+</SCRIPT>
+
+<!--kill leftsidebar end-->
+<div class="header">
+<div class="content_main">
+	<div class="menu">
+		<ul>
+			<li><a href="index.php" id="current">首  页</a></li>
+			<li><a href="../article/articlelist.php?id=网上办事&rootview=yes">网上办事</a></li>
+			<li><a href="../article/articlelist.php?id=制度规定&rootview=yes">制度规定</a></li>
+			<li><a href="#">选 项</a></li>[##console_li##]
+		</ul>
+  </div>
+  </div>
+  <div id=xbar></div><div id=xbar2 ><span class=span_xbar2_left>[##nowtime##]</span><span class=span_xbar2_right><A HREF="#" onclick='hidesidebar()'>开关左侧边栏</A>关于内网</span></div>
+</div>
+<div class="content_main">
+<div class="content_left" id='content_left'>
+[##myconsole##][##logout_li##]
+	<div class="date">首页新闻</div>
+
+	<div class="newsitem1">
+		<div class="title">2007企业运营计划书的要求和具体内容</div>
+		<div class="body">
+			<img src="image/20060816.jpg" width="120" height="120" class="left" alt=""/>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;连续多年来，宏观经济的高速增长，特别是2006年人均GDP增长超过了10%，这给社会上每个企业都带来了发展机遇。钢铁行业虽然是国家宏观调控的对象，但是今年全国的增长超过了20%，机械制造行业也不例外，超过了32.5%；出口外贸顺差已经上万亿元人民币。这么好的外部环境，使冷弯型钢行业的投资在不断增加，近两三年来新增的产能已经超过6百万吨，远远大于社会的总需求。投资过热造成市场竞争激烈，价格过低、利润率低下，佳艺怎么办？机遇和挑战并存！..<BR><A HREF="article/readarticle.php?id=160" style='border-bottom:1px dashed rgb(0,127,211);' >查看详细内容&gt;&gt;</A></p>
+		</div>
+		<div class="clearer"><span></span></div>
+	</div>
+
+	<div class="newsitem">
+		<div class="title" >网上办事<span style='margin-left:20px;'><a href="../article/articlelist.php?id=网上办事&rootview=yes">全部</a></span></div>
+		<div class="body">
+			<ul>
+<!-- BEGIN list -->
+<li>[##onlinework##]<div style="display:inline;margin-left:2px; font-size:10px;">([##time0##])</div>
+</li>
+<!-- END list -->
+</ul> 		 
+		</div>
+		<div class="clearer"><span></span></div>
+	</div>
+
+	<div class="newsitem">
+		<div class="title">制度规定<span style='margin-left:20px;'><a href="../article/articlelist.php?id=制度规定&rootview=yes">全部</a></span></div>
+		<div class="body">
+			<ul><!-- BEGIN list1 --><li>[##zdgd##]<div style="display:inline;margin-left:2px; font-size:10px;">([##time1##])</div></li><!-- END list1 --></ul>
+		</div>
+		
+		<div class="clearer"><span></span></div>
+	</div>
+	<div class="newsitem">
+		<div class="title">会议纪要</div>
+		<div class="body">
+			<ul>
+<!-- BEGIN list2 -->
+<li>[##hyjy##]<div style="display:inline;margin-left:2px;">([##time2##])</div></li>
+<!-- END list2 -->
+</ul>				
+		</div>
+		
+		<div class="clearer"><span></span></div>
+	</div>
+</div></div>
+<div class="content_main">
+<div class="content_right" id='content_right'>
+
+	<div class="links">[##loginbox##]
+<div class="title"><IMG SRC="../../image/annoucement.gif"  BORDER="0" ALT="">公告</div>
+<div class="announce">&nbsp;&nbsp;&nbsp;&nbsp;各位同仁，新年好！2007年我们企业的内部网开通了，目前还处于初级阶段，希望大家多提宝贵意见。登录帐号请<a href='bulletin/readbulletin.php?id=89' id=annc>点击这里</a>。时间仓促，页面美工做得不好，请谅解。祝你工作愉快！
+         <p style='text-align:right'>-- 行政部</p></div>
+		<div class="title">访问过的连接</div>
+
+		[##lastb##]
+		<a href="#"><b>more</b></a>
+<div class="title">新雇员须知</div>
+<A HREF="/article/readarticle.php?id=56">职工加班的有关规定</A>		
+<A HREF="/article/readarticle.php?id=68">关于工、量具管理的规定</A>	
+<A HREF="/article/readarticle.php?id=72" style='color:red;'>员工手册</A>	
+<A HREF="/article/readarticle.php?id=150">计算机使用管理规定</A>	
+</div>
+</div></div>
+<div class="content_main">
+<div class="footer">
+	<div class="copyright">&copy; 2007 佳艺企业内部网. Design by <a href="mailto:evoex@126.com">Evoup</a>.</div>
+</div></div>
+</body>
+</html>

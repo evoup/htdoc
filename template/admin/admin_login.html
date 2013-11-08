@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<title>佳艺内部网_登录</title>
+<script language="javascript"><!--
+if (self != top)
+{
+	top.location = self.location;
+}
+window.onload = function (){ 
+	if (document.getElementById('loginname').value == '')
+	{
+		document.getElementById('loginname').focus();
+	}
+	else if (document.getElementById('passwd').value == '')
+	{
+		document.getElementById('passwd').focus();
+		document.getElementById("logintype").checked = true;
+	}
+	else 
+		document.getElementById('checkwd').focus();
+}
+-->
+</script>
+<script language="JavaScript" type="text/javascript">
+function ck(){
+if (document.getElementById('loginname').value == '')
+{alert("你没填写用户名吧");
+return false;
+}
+if (document.getElementById('passwd').value == '')
+{alert("你没填写密码吧");
+return false;
+}
+
+
+
+}
+</script>
+
+
+
+
+
+
+<style type="text/css">
+<!--
+a.a01:link {text-decoration:none;color:#666666;font-size:12px;}
+a.a01:visited {text-decoration:none;color:#666666;font-size:12px;}
+a.a01:active,a.a01:hover {text-decoration:none;color:#666666;font-size:12px;}
+.td1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	line-height: 15pt;
+	color: #000000;
+}
+.style1 {color: #FF0000}
+td {
+	font-size: 9pt;
+	color: #000000;
+}
+.t3
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF6000;
+}
+.input1
+{
+	border: 1px solid #E6B907;
+	padding: 0px;
+	height: 18px; 
+	width: 110px;
+	background-color: #FFF8DD;
+}
+-->
+</style></head><body>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="750"> <tbody><tr> <td>
+
+<script type="text/javascript">
+makeHead();
+</script>	<table align="center" border="0" cellpadding="0" cellspacing="0" width="750">	<tbody><tr>	<td>		<table border="0" cellpadding="0" cellspacing="0" width="750">		<tbody><tr>		<td valign="bottom" width="125">		<a href="#"><img src="../image/admin/logo.gif" align="absbottom" border="0" height="33" width="180"></a>		</td>		<td align="right" valign="bottom" width="625">			<table border="0" cellpadding="0" cellspacing="0" width="100%">			<tbody><tr>			<td style="font-size: 12px; padding-top: 10px; padding-right: 4px;" align="right" valign="bottom">	<a href="../index.php" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" style="text-decoration: none; color: rgb(102, 102, 102);">首页</a>┊<a href="#" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" style="text-decoration: none; color: rgb(102, 102, 102);">控制面板</a>┊<a href="#" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" style="text-decoration: none; color: rgb(102, 102, 102);" target="search">搜索</a>┊<a href="#" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" style="text-decoration: none; color: rgb(102, 102, 102);" target="help">帮助</a>			</td>			
+</tr>			</tbody></table>		</td>		</tr>		</tbody></table>	</td>	</tr>	</tbody></table>	
+</td> </tr>
+</tbody></table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+  <tbody><tr>
+    <td colspan="2" background="../image/admin/td_bg.gif" height="21">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+  <tbody><tr>
+    <td class="l15" style="padding: 15px 0px;" bgcolor="#eef9fc"><table align="center" border="0" cellpadding="0" cellspacing="0" width="96%">
+      <tbody><tr><form method="post" action="admin.php"  name=mainform onsubmit="javascript :return ck();">
+        <td width="45%"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr>
+            <td bgcolor="#0086E7" valign="top" width="3%"><img src="../image/admin/leftup_corner_login.gif" height="10" width="10"></td>
+            <td class="style1" bgcolor="#0086E7" width="94%">&nbsp;</td>
+            <td align="right" bgcolor="#0086E7" valign="top" width="3%"><img src="../image/admin/rightup_corner_login.gif" height="11" width="11"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#0086E7" height="37"></td>
+            <td bgcolor="#0086E7" valign="middle"><strong><font color="#ffffff">提示：请直接输入登录名和密码登录。</font></strong></td>
+            <td bgcolor="#0086E7"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#fff4d0" height="121">&nbsp;</td>
+            <td style="padding: 10px 10px 8px;" bgcolor="#fff4d0"><table border="0" cellpadding="0" cellspacing="0" height="84" width="100%">
+              <tbody><tr>
+                <td style="padding: 5px 5px 3px 10px;" width="70%">·登录名：
+                    <input name="loginname" id="loginname" size="15" value="" tabindex="1" class="input1" type="text"  width="2"></td>
+                <td width="30%"><input name="image" tabindex="6" src="../image/admin/login_01.gif" align="bottom" height="19" type="image" width="74" onClick="form[0].submit"></td>
+              </tr>
+              <tr>
+                <td colspan="2" style="padding: 3px 5px 3px 10px;">·密　码：
+                    <input name="passwd" id="passwd" size="15" tabindex="2" class="input1" maxlength="16" type="password"></td>
+              </tr>
+              <tr>
+                <td style="padding: 3px 5px 3px 10px;">·验证码：
+                    <input name="checkwd" id="checkwd" size="15" tabindex="3" class="input1" type="text" value='暂时不需要' readonly="1"></td>
+                <td></td>
+              </tr>
+            </tbody></table></td>
+            <td bgcolor="#fff4d0">&nbsp;</td>
+          </tr>
+          <tr align="center">
+            <td colspan="3" style="border-top: 1px dashed rgb(253, 107, 0);" bgcolor="#6BB6EF" height="39"><input name="logintype" id="logintype" value="1" tabindex="4" type="checkbox">
+记住我的登录名 　<a href="#" target="_blank">申请维护人员</a>　　<a href="#" target="_blank">忘记密码</a></td>
+            </tr>
+          <tr>
+            <td bgcolor="#6BB6EF" height="15" valign="bottom"><img src="../image/admin/leftdown_corner_login.gif" height="10" width="9"></td>
+            <td bgcolor="#6BB6EF">&nbsp;</td>
+            <td align="right" bgcolor="#6BB6EF" valign="bottom"><img src="../image/admin/rightdown_corner_login.gif" height="10" width="11"></td>
+          </tr>
+        </tbody></table></td>
+      
+        <td valign="top" width="55%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr>
+            <td class="td1" style="padding: 10px 10px 8px;" bgcolor="#eef9fc"><table bgcolor="#d6e8f4" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td><table border="1" bordercolor="#d6e8f4" cellpadding="20" cellspacing="3" width="100%">
+                  <tbody><tr>
+                    <td bordercolor="#B4C8D3" bgcolor="#ffffff"><span class="t3">维护人员提示：</span><br>
+      <li>管理维护人员可<a href="#">点击此处</a>！</li>
+      <li>佳艺企业内部网正在测试阶段，您可以使用。</li>
+	  <li>请注意：</li>暂无
+      <li><a href="#" target="_blank">帮助</a></li></td>
+                  </tr>
+                </tbody></table></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<br>
+<br>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+  <tbody><tr>
+    <td background="../image/admin/1_r3_c2.gif" height="1"></td>
+  </tr>
+</tbody></table>
+<br>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+  <tbody><tr>
+    <td align="center"><div class="foot">		
+    <p>Copyright &#169; [##fromto##] SHJIAYI Corporation,  All Rights Reserved <br>
+          <br>			
+          上海佳艺冷弯型钢厂 <a href="#" target="_blank">版权所有</a>		<br>	
+          </p>
+    </div></td>
+  </tr>
+</tbody></table>
+<iframe name="iframe_data" style="display: none;"></iframe>
+<span id="dialogCase">
+<table id="dialogBox" style="border: 1px solid rgb(0, 0, 0); z-index: 10; position: absolute; display: none;" border="0" cellpadding="0" cellspacing="0" width="300">			<tbody><tr bgcolor="#d6e3eb" height="1"><td></td></tr>			<tr bgcolor="#6795b4" height="25">				<td>					<table onselectstart="return false;" style="-moz-user-select: none;" border="0" cellpadding="0" cellspacing="0" width="100%">						<tbody><tr>							<td width="6"></td>							<td id="dialogBoxTitle" onmousedown="new dialog().moveStart(event, 'dialogBox')" style="color: rgb(255, 255, 255); cursor: move; font-size: 12px; font-weight: bold;">系统提示信息</td>							<td id="dialogClose" align="right" valign="middle" width="27"><input id="dialogBoxClose" onclick="new dialog().reset();" src="../image/admin/dialogClose0.gif" onmouseover="this.src='http://image2.sina.com.cn/blog/tmpl/v3/images/dialog/dialogCloseF.gif';" onmouseout="this.src='http://image2.sina.com.cn/blog/tmpl/v3/images/dialog/dialogClose0.gif';" align="absmiddle" border="0" height="17" type="image" width="17"></td>							<td width="6"></td>						</tr>					</tbody></table>				</td>			</tr>			<tr bgcolor="#ededed" height="2"><td></td></tr>			<tr id="dialogHeight" style="">				<td id="dialogBody" bgcolor="#ffffff">		<table id="dialogBodyBox" align="center" border="0" cellpadding="0" cellspacing="0">			<tbody><tr height="10"><td colspan="4"></td></tr>			<tr>				<td width="10"></td>				<td align="center" valign="absmiddle" width="80"><img id="dialogBoxFace" src="../image/admin/3.gif"></td>				<td id="dialogMsg" style="font-size: 12px;"></td>				<td width="10"></td>			</tr>			<tr height="10"><td colspan="4" align="center"></td></tr>			<tr><td id="dialogFunc" colspan="4" align="center"><input id="dialogOk" style="" value="确认" onclick="new dialog().reset();" type="button"> <input id="dialogCancel" style="" value="取消" onclick="new dialog().reset();" type="button"></td></tr>			<tr height="10"><td colspan="4" align="center"></td></tr>		</tbody></table>	</td>			</tr>		</tbody></table>		<div id="dialogBoxShadow" style="background: rgb(0, 0, 0) none repeat scroll 0%; z-index: 9; position: absolute; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; opacity: 0.2; display: none;"></div>	</span></body></html>

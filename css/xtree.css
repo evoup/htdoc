@@ -1,0 +1,68 @@
+body {
+	font: 12px "ËÎÌו","Arial"; /*background: #F6F6F6;*/
+	color:#333333;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top: 0px;
+}
+
+#tree_countainer_bg{background-color: white;width:100%;}
+
+.webfx-tree-container {
+	margin: 0px;
+	padding: 0px;
+	font: icon;
+	white-space: nowrap;
+	
+}
+
+.webfx-tree-item {
+font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	font: icon;
+	color: black;
+	white-space: nowrap;
+}
+
+.webfx-tree-item a, .webfx-tree-item a:active, .webfx-tree-item a:hover {
+	margin-left: 3px;
+	padding: 1px 2px 1px 2px;
+}
+
+.webfx-tree-item a {
+font-size: 12px;
+	color: #003399;
+	text-decoration: none;
+}
+
+.webfx-tree-item a:hover {
+	color: #FF6600;
+	text-decoration: underline;
+}
+
+.webfx-tree-item a:active {
+size:
+	/*background: highlight;
+	color: highlighttext;*/
+	text-decoration: none;
+}
+
+.webfx-tree-item img {
+	vertical-align: middle;
+	border: 0px;
+}
+
+.webfx-tree-icon {
+	width: 16px;
+	height: 16px;
+}
+.webfx-tree-item a.selected {
+	color: selectedtext;
+	background: selected;
+}
+
+.webfx-tree-item a.selected-inactive {
+	color: windowtext;
+	background: buttonface;
+}

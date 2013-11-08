@@ -1,0 +1,50 @@
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+function alertx(){
+	if (document.getElementById('logname').value=="")
+	{
+		alert("请填写用户名！");
+		return false;
+	}
+	if (document.getElementById('password').value=="")
+	{
+		alert("请填写密码！");
+		return false;
+	}
+}
+//-->
+</SCRIPT>
+
+
+
+<FORM id=fm METHOD=POST ACTION="validate_i.php" onsubmit="javascript :return alertx();" 
+autocomplete = "off">
+
+<!-- //下面是登录窗体的背景 -->
+<div id=loginbox_bg2><TABLE class=tableborder   cellSpacing=3 cellPadding=4 width=185   height=176 align=center border=0  
+valign=center>
+<tr >
+<td class=header_skin6 colspan=2 style='font-size: 14px;text-align:center;'>&nbsp;  </td>
+</tr>
+<TR >
+	<TD  align=center style='font-size:12px;font-weight:bold'>用户名：</TD>
+	<TD>
+	<INPUT TYPE="text" NAME="logname" id = "logname" size=19 class=textare 
+style="width:60px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padd
+ing-top:1;padding-bottom:1">
+	</TD>
+</TR>
+<TR>
+	<TD align=center style='font-size:12px;font-weight:bold'>密&nbsp;&nbsp;码：</TD>
+	<TD><INPUT TYPE="password" name="password" id="password" class=textare  
+style="width:60px;border-style:solid;border-width:1;padding-left:4;padding-right:4;padd
+ing-top:1;padding-bottom:1" AUTOCOMPLETE="off">
+	</TD>
+</TR>
+<TR >
+<td><INPUT TYPE="button" value='忘记密码' class='inp5' onsubmit='alert('g');'></td>	<TD  ><INPUT TYPE="submit" value="登&nbsp;&nbsp;录" 
+class='inp5'></TD>
+	</TR>
+</TABLE></div><BR>
+[##testvar##]
+</FORM>

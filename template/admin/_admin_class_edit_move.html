@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1><span class="action-span"><a href="admin_class_edit.php?action=list">文章分类</a></span> <span class="action-span1"><a href="javascript:void()">EVP管理中心</a> - 转移分类内的文章</span>
+  <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+  <form action="admin_class_edit.php?action=list" method="post" name="theForm" enctype="multipart/form-data">
+    <table width="100%">
+      <tr>
+        <td><div style="font-weight:bold"><img src="images/notice.gif" width="16" height="16" border="0" /> 什么是转移文章分类?</div>
+          <ul>
+            <li>在新增文章或者文章管理中,如果需要对文章的分类进行变更,那么你可以通过此功能,正确管理你的文章分类。</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><strong>从此分类</strong>&nbsp;&nbsp;
+          <select name="cat_id">
+            <script language="javascript" src="../js/catelog_Dropdownlist.js?time=[##phprand##];"></script>
+          </select>
+          &nbsp;&nbsp; <strong>转移到</strong>
+          <select name="target_cat_id">
+            <script language="javascript" src="../js/catelog_Dropdownlist.js?time=[##phprand##];"></script>
+          </select>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="submit" name="move_cat" value="开始转移" class="button">
+          <input type="reset" value=" 重设 " class="button" />
+          <input type="hidden" name="act" value="move_cat" /></td>
+      </tr>
+    </table>
+    <!--<input type="hidden" value="[##postflag##]"/>V1.1-->
+	<input type="hidden" value='move' name = 'pagedo' />[##gen_input##]
+    <!--V2-->
+  </form>
+</div>
+<div id="footer">共執行  個查詢，耗時 秒，Gzip 已 用，記憶體已用  MB<br />
+</div>
+
+</body>
+</html>

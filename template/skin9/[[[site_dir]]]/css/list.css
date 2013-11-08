@@ -1,0 +1,33 @@
+.list{
+margin: 0px 10px 20px;
+text-align: left; 
+}
+
+.list ul{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+
+.list li{
+background: url(/images/xuxian.gif) repeat-x bottom; 
+/*列表底部的虚线*/
+width: 100%; 
+}
+.list li a{
+color: #777777;
+display: block;
+padding: 0px 0px 4px 15px;
+background: url(images/huangsekuai.gif) no-repeat 0 6px;
+/*列表左边的箭头图片*/
+}
+
+.list li span{
+float: right;/*使span元素浮动到右面*/
+text-align: right;/*日期右对齐*/
+}
+.list li a:hover{
+color: #336699;
+background: url(images/huangsekuai.gif) repeat-x bottom;
+}
+

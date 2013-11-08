@@ -1,0 +1,5 @@
+<!--$Header: /home/cvsroot/htdoc/cvsheader,v 1.1 2008/08/09 16:31:10 root Exp $/*修改了新闻简介的左右对齐，段首缩进，新闻日期，友情链接文字缩小已适应宽屏幕*/
+$Author: root $
+$Date: 2008/08/09 16:31:10 $ 
+$Revision: 1.1 $--> 
+还有javadoc要这么写/** explaination**/。只要去改EXP的部分就可以了，其他交给CVS好了，当然如果c++那么<!---->就换成/*CVS TAGS*/就好了，还没试验，等等去试验

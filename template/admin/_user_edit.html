@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form id="userinfo" name="userinfo" onsubmit="" action="user.php" method ="POST">
+  <table cellspacing="1" width="100%" bgcolor="#000000">
+    <tbody>
+      <tr bgcolor="#FFFFFF">
+        <th colspan="2">更新帐号:[[[username]]]</th>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td><span color='red'>*</span>帐号</td>
+        <td><input id="username" maxlength="25" size="25" value="[[[username]]]" name="username" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td><span color='red'>*</span>真实姓名</td>
+        <td><input id="name" maxlength="60" size="30" value="[[[real_name]]]" name="name" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td><span color='red'>*</span>email</td>
+        <td><input id="email" maxlength="60" size="30" value="[[[email]]]" name="email" />
+          <br />
+          <input type="checkbox" value="1" name="user_viewemail" />
+          公开这个EMAIL </td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>网址</td>
+        <td><input id="url" maxlength="100" size="30" name="url" value="[[[homepage]]]" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>时区</td>
+        <td><select id="timezone_offset" size="1" name="timezone_offset">
+            <option value="-12">(GMT-12:00) 国际换日线以西, 瓜加林岛</option>
+            <option value="-11">(GMT-11:00) 中途岛,   萨摩亚</option>
+            <option value="-10">(GMT-10:00) 夏威夷</option>
+            <option value="-9">(GMT-9:00) 阿拉斯加</option>
+            <option value="-8">(GMT-8:00) 太平洋时区 (美 &amp;   加)</option>
+            <option value="-7">(GMT-7:00) 山区时间 (美 &amp; 加)</option>
+            <option value="-6">(GMT-6:00) 中央时间 (美 &amp; 加), 墨西哥</option>
+            <option value="-5">(GMT-5:00)   东部时间 (美 &amp; 加), 波哥大, 利马, 基多</option>
+            <option value="-4">(GMT-4:00) 大西洋 时区 (加),   卡拉卡斯(委内瑞拉), 拉巴斯(玻利维亚)</option>
+            <option value="-3.5">(GMT-3:30) 纽芬兰</option>
+            <option value="-3">(GMT-3:00) 巴西利亚, 布宜诺艾利斯, 佐治敦</option>
+            <option value="-2">(GMT-2:00) 大西洋中部</option>
+            <option value="-1">(GMT-1:00) 亚速尔群岛,   维德角群岛</option>
+            <option value="0">(GMT) 格林威治中央标准时间, 伦敦, 都柏林, 里斯本, 卡萨布兰卡,   蒙罗维亚</option>
+            <option value="1">(GMT+1:00) 中西非, 柏林, 罗马, 斯德哥尔摩, 布鲁赛尔, 马德里,   巴黎</option>
+            <option value="2">(GMT+2:00) 布加勒斯特, 哈拉雷, 皮托里, 耶路撒冷, 开罗, 南非</option>
+            <option value="3">(GMT+3:00) 巴格达, 科威特, 利雅德, 莫斯科, 圣彼得堡</option>
+            <option value="3.5">(GMT+3:30) 德黑兰</option>
+            <option value="4">(GMT+4:00) 巴库, 第比利斯, 叶里温,   阿布达比</option>
+            <option value="4.5">(GMT+4:30) 喀布尔</option>
+            <option value="5">(GMT+5:00) 伊卡特林堡, 伊斯兰马巴德, 克洛其, 塔什干</option>
+            <option value="5.5">(GMT+5:30)   辰内, 加尔各答, 孟拜, 新德里</option>
+            <option value="6">(GMT+6:00) 阿马提, 达卡, 可伦坡</option>
+            <option value="7">(GMT+7:00) 曼谷, 河内, 雅加达</option>
+            <option value="8" selected="selected">(GMT+8:00) 台北, 北京, 伯斯, 新加坡, 香港, 乌兰巴图</option>
+            <option value="9">(GMT+9:00) 东京, 汉城, 大坂, 札幌, 亚库次克</option>
+            <option value="9.5">(GMT+9:30)   爱德蓝, 达尔文</option>
+            <option value="10">(GMT+10:00) 布里斯本, 坎培拉, 墨尔本, 雪梨, 海参威</option>
+            <option value="11">(GMT+11:00) 马加丹, 所罗门群岛, 新加勒多尼亚</option>
+            <option value="12">(GMT+12:00) 奥克兰(纽西兰), 威灵顿(纽西兰首都), 斐济, 堪察加半岛,   马绍尔群岛</option>
+          </select></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>QQ号码</td>
+        <td><input id="user_icq" maxlength="15" size="15" name="user_icq" /></td>
+      </tr>
+      
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>雅虎通帐号</td>
+        <td><input id="user_yim" maxlength="25" size="25" name="user_yim" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>MSN帐号</td>
+        <td><input id="user_msnm" maxlength="100" size="30" name="user_msnm" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>来自</td>
+        <td><input id="user_from" maxlength="100" size="30" name="user_from" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>职业</td>
+        <td><input id="user_occ" maxlength="100" size="30" name="user_occ" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>兴趣</td>
+        <td><input id="user_intrest" maxlength="150" size="30" name="user_intrest" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>签名</td>
+        <td><textarea id="user_sig" name="user_sig" rows="5" cols="50">[[[usersign]]]</textarea>
+          <br />
+          <input type="checkbox" value="1" name="attachsig" />
+          发文时加入签名 </td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>回应评注的显示模式</td>
+        <td><select id="umode" size="1" name="umode">
+            <option value="nest">巢状</option>
+            <option value="flat" selected="selected">全部展开</option>
+            <option value="thread">树状显示</option>
+          </select></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>回应评注排列顺序</td>
+        <td><select id="uorder" size="1" name="uorder">
+            <option value="0" selected="selected">旧的在前</option>
+            <option value="1">新的在前</option>
+          </select></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>通知方式: 当您追踪的项目，如讨论区有新的事件，是否要接受更新通知，?</td>
+        <td><select id="notify_method" size="1" name="notify_method">
+            <option value="0">暂时关闭</option>
+            <option value="1" selected="selected">私人讯息</option>
+            <option value="2">Email (您注册时使用的email)</option>
+          </select></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>预设提醒模式</td>
+        <td><select id="notify_mode" size="1" name="notify_mode">
+            <option value="0" selected="selected">所有选择的更新都通知我</option>
+            <option value="1">只通知一次</option>
+            <option value="2">通知我一次后关闭，直到我下次登入</option>
+          </select></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>额外的资讯</td>
+        <td><textarea id="bio" name="bio" rows="5" cols="50"></textarea></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>等级</td>
+        <td><select id="rank" size="1" name="rank">
+            <option value="0" selected="selected">--------------</option>
+            <option value="6">版主</option>
+            <option value="7">网站管理员</option>
+          </select></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>密码</td>
+        <td><input id="password" type="password" maxlength="32" size="10" value="" name="password" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>重复密码</td>
+        <td><input id="pass2" type="password" maxlength="32" size="10" value="" name="pass2" /></td>
+      </tr>
+      <tr valign="top" align="left" bgcolor="#FFFFFF">
+        <td>接受网站管理者及<br />
+          有相关权限的管理员寄送Email通知最新消息吗?</td>
+        <td><input type="radio" checked="checked" value="1" name="user_mailok" />
+          是
+          <input type="radio" value="0" name="user_mailok" />
+          否 </td>
+      </tr>
+    </tbody>
+	    <input id="uid" type="hidden" value="[[[uid]]]" name="uid" />
+    <input id="op" type="hidden" value="updateUser" name="op" />
+    <tr valign="top" align="left" bgcolor="#FFFFFF">
+      <td></td>
+      <td><input id="submit" type="submit" value="确出" name="submit" /></td>
+    </tr>
+  </table>
+</form>
+<!-- Start Form Vaidation JavaScript //-->
+<!--//  function xoopsFormValidate_userinfo() {  	myform = window.document.userinfo;  if ( myform.username.value == "" ) { window.alert("请输入 帐号"); myform.username.focus(); return false; }  if ( myform.email.value == "" ) { window.alert("请输入 email"); myform.email.focus(); return false; }  return true;  }  //-->
+<!-- End Form Vaidation JavaScript //-->
+<br />
+<strong>使用者发表数</strong><br />
+<br />
+<table>
+  <tbody>
+    <tr>
+      <td>文章及回应评论发表数</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

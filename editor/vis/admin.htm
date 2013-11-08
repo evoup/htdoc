@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="UTF-8">
+<link rel="stylesheet" rev="stylesheet" href="admin.php_files/common.css" type="text/css" media="all">
+<script type="text/javascript" src="admin.php_files/jslang.js"></script>
+<script type="text/javascript" src="admin_data/uploader.js"></script></head><body style="margin: 0px; padding: 0px; overflow-y: auto; overflow-x: hidden;">
+<div id="adminrow" style="width: 100%;">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+
+</tr></tbody></table><table style="border-left: 1px solid rgb(0, 0, 0); border-right: 1px solid rgb(0, 0, 0);" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="highlight" height="15" width="33%"><a href="http://localhost/blogsp2/admin.php?go=upload">新增上传文件</a></td>
+<td class="normal" height="15" width="33%"><a href="http://localhost/blogsp2/admin.php?go=upload_filedir">上传文件库</a></td>
+<td class="normal" height="15" width="34%"><a href="http://localhost/blogsp2/admin.php?go=upload_gallery">图片文件库</a></td>
+</tr>
+</tbody></table>
+
+
+
+
+<table style="border-left: 1px solid rgb(0, 0, 0); border-right: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0);" cellpadding="1" cellspacing="0" height="180" width="100%">
+<tbody><tr>
+<td class="sect" align="center" valign="top"><form enctype="multipart/form-data" action="admin.php?go=upload_doattach" method="post"><table class="adminoption" align="center" width="86%"><tbody><tr><td align="center" valign="top" width="25%">选择文件</td><td width="60%"><input name="newupfile[]" type="file"><br><input name="newupfile[]" type="file"><br><input name="newupfile[]" type="file"><br><input name="newupfile[]" type="file"><br><input name="newupfile[]" type="file"><br>允许的文件扩展名 <select><option>zip</option><option>rar</option><option>gz</option><option>bz2</option><option>jpg</option><option>jpeg</option><option>gif</option><option>bmp</option><option>png</option><option>swf</option><option>mp3</option><option>wma</option><option>rm</option><option>htm</option><option>html</option><option>txt</option><option>doc</option><option>xml</option><option>css</option></select></td><td valign="bottom" width="15%"><input value="上传" type="submit"></td></tr><tr><td align="center" width="25%">文件命名</td><td width="60%"><input name="filerename" value="1" type="radio">保持原名（中文会被转换） <input name="filerename" value="0" checked="checked" type="radio">自动重命名 </td><td width="15%"><input value="重置" type="reset"></td></tr></tbody></table></form></td>
+</tr>
+</tbody></table>
+
+
+
+
+</div>
+</body></html>

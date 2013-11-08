@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="gb2312"?>
+<tree>
+ <tree text="操作日志" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/document/draft.php';void(null);" radio="" checked="false">
+<!--   <tree text="报表发送管理">
+   <tree src="document_general.xml">
+    gg
+   </tree>
+  </tree>
+  <tree>
+   test2-3
+  </tree> -->
+ </tree>
+ <tree text="登陆日志" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/addlist/admin.php';void(null);" radio="" checked="false" >
+ </tree>
+ <tree text="用户管理" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/addlist/ablum.php';void(null);" radio="" checked="false" >
+ </tree>
+ <tree text="模块管理" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/admin/makejs/makedepusr_transfer.php';void(null);" radio="" checked="false" >
+ </tree>
+ <tree text="角色管理" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/admin/makejs/makedepusr_transfer.php';void(null);" radio="" checked="false" >
+ </tree>
+ <tree text="目录管理" menugrade="1" menusuperior="2" value="1" action="javascript:   top.main.location.href='http://192.168.16.104/admin/makejs/makedepusr_transfer.php';void(null);" radio="" checked="false" >
+ </tree>
+
+
+</tree>

@@ -1,0 +1,146 @@
+SEE
+http://www.unverse.net/abitwhizzy
+FOR THE LATEST INFORMATION       abitwhizzy.php 5, whizzywig.js 54
+
+Installing aBitWhizzy
+=====================
+
+   1. First, download the zip file - the individual files, plus translations for various languages, are on the download page.
+   2. Extract the files from the archive: if you don't have compressed folders you'll need  zip sofware 
+   3. Using an FTP client (e.g. Filezilla), upload them to the root of your website
+      OR, you can use Internet Explorer to upload files
+      If you installed in a sub-directory or test folder, you'll need to set the paths in the configuration options.
+      Note that abitwhizzy can only edit files in it's own directory.
+   4. Check that file permissions on your server  are set so that PHP can write files in the directory holding your pages.
+      Note: If you miss this step you will get "Permission denied" warnings when you try to save files.
+   5. You can set configuration options, including a password, in the //CONFIGURE HERE part of the script
+      or, password protect the editor another way now.
+   6. If you have HTML pages already on your site (back them up first!) you will be able to edit them straight away:
+      point your browser at (e.g.) www.yoursitename.com/abitwhizzy.php
+      see Using aBitWhizzy.
+
+Configuring aBitWhizzy
+
+Use a text editor (e.g. notepad) to open the file abitwhizzy.php on your computer.
+
+In the  //CONFIGURE HERE section of the script you will see a bunch of things you can change.
+
+The first thing you'll probably want to change is the password setting:
+
+ //CONFIGURE HERE ========================
+ if (!$password) $password = "secret"; 
+
+Change the the password from "" to "whatever-you want-your-password-to-be".
+
+This means that aBitWhizzy will now prompt for a password before it shows the Save button.
+
+If you installed aBitWhizzy anywhere other than the root directory of your server, you will need to change the paths to the key files:
+
+ if (!$cssFile) $cssFile= "location-of-my.css"; //choose your stylesheet, or set to ""
+ if (!$buttonPath) $buttonPath = "/subdirectory/whizzery/buttons/"; //toolbar images live here. "" for text buttons
+
+and so on.
+
+
+'Including' aBitWhizzy
+======================
+You can edit the source of abitwhizzy.php  or you can create your own editor file with it's own parameters.
+This lets you set up different versions of the editor and means you can upgrade to a newer version of aBitWhizzy without having to reapply all your configuration changes.
+
+For example, you could create a file called myeditor.php containing the following:
+-----------
+ <?php
+ $cssFile= "/etc/my.css"
+ $buttonPath = "whizzery/buttons/";
+ $toolbar = "bold italic color bullet number image link table clean";
+ $top = <<<END_TOP
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+ <HTML>
+ <HEAD>
+ <TITLE>The home of good stuff</TITLE>
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <SCRIPT type="text/javascript" src="etc/pagestuff.js"></SCRIPT>
+ <LINK href="style.css" rel="stylesheet" type="text/css">
+ </HEAD>
+ <BODY onload="my_init()" background="images/texture.gif">
+ END_TOP;
+ include "whizzery/abitwhizzy.php";
+ ?>
+
+Then point your browser at www.mysitename.com/myeditor.php to edit files.
+
+If you already have standard code on all the pages of your site, you may want to replace the bit in $top above with your own. Include the BODY tag.
+
+
+Create a template
+=================
+If your host supports Server Side Includes (SSI) then you can use included files to top and tail your pages.
+
+   1. Edit the file called top.shtml (type "top.shtml" in the Filename field and click [Open])
+   2. Using the editor, create anything you want to appear at the top of every page you create or edit.
+      Strictly, this means anything to appear in the HTML code between the opening BODY tag and the start of the editable content for each page.
+   3. Click save.
+   4. If required, repeat steps 1-3 for tail.shtml.
+      This creates your standard HTML to appear beween the end of the editable content for each page and the closing BODY tag.
+
+
+How it works
+============
+If SSI is enabled, aBitWhizzy adds in files called top.shtml or tail.shtml to the top and bottom of each page.
+For example, on this page, the page header, the search box and the menu are all in top.shtml.
+
+When you change one of these files, the changes will be reflected in all your pages, straight away.
+
+If you cannot see the content of top.shtml and tail.shtml when you view your pages, then SSI may not be enabled on your site. You may need to rename your files to end with .shtml
+
+It is perfectly valid for either, or both, of top.shtml and tail.shtml to be empty. You may get errors if they don't exist.
+What if I don't have SSI enabled?
+
+Look at the //CONFIGURE HERE section of the abitwhizzy.php script.
+The 2 variables at the bottom of the list can be used to set a page template for all the files you edit with aBitWhizzy:
+
+    * $top =
+    * $tail = 
+
+As the name suggests, they can be used to "top and tail" the page content produced by the editor.
+
+You can edit the HTML inside each variable. Be sure to include the necessary HTML to make your pages valid, including HEAD and BODY tags. If you need to, you can include META tags here. Note that changing these variables will not change all your pages straight away, only after you have edited each page. Better to use SSI if you can.
+How do I include stuff in the HTML HEAD section?
+Put it in the $top variable. It will be easier if you have scripts in an external file.
+Use the $top variable if you want to add
+
+    * meta tags
+    * scripts
+    * more than one stylesheet
+    * special attributes on the BODY section e.g. background image.
+
+An example:
+-----------
+in abitwhizzy.php edit the $top variable; e.g.
+if (!$top) $top = <<<END_TOP
+$doctype
+<head>
+<title>$t</title>
+<meta name='description' content= 'These pages are wonderful' >
+<link rel='stylesheet' type='text/css' href='$cssFile' >
+</head>
+<body background='image.gif'>
+END_TOP;
+
+
+Using aBitWhizzy
+================
+aBitWhizzy will edit any file in the same directory as itself with a name that ends in "html" or "htm". These are the standard file extensions used for html pages. You can change the extensions that aBitWhizzy will recognise by changing the $extensions configuration variable. For example, you may want to add "asp".
+
+On the form at the top of the editor page,
+
+    * type in the name of the file (something.html) you want to edit...
+    * ...or select the file from the pull-down "or choose:"
+    * then  click the [Open]  button to edit that file.
+
+To create a new file, type in the name for the new file (ending in .htm or .html) and click [Open] .
+
+If a password has been set in the configuration, the [Save] buton does not appear until you have typed something into the password field. If the password is set to nothing ("") then the password field does not appear and the [Save] button is visible all the time.
+
+

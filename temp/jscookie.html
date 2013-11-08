@@ -1,0 +1,34 @@
+<Html>
+<head>
+<title>读写cookies</title>
+</head>
+<body>
+<script language="javascript">
+document.cookie="a=hehe;"
+document.cookie="b=b;"
+var mycookie = document.cookie; 
+function readcookie(name)
+{
+var start1 = mycookie.indexOf(name + "=");
+if (start1== -1)
+alert("cookies not found");
+else
+{
+start=mycookie.indexOf("=",start1)+1; 
+var end = mycookie.indexOf(";",start);
+if (end==-1)
+{
+ end=mycookie.length;}
+ var value=unescape(mycookie.substring(start,end));
+ if (value==null)
+ {alert("No cookies found!");}
+ else
+ {alert("cookie变量:"+name+" 的值是 :"+value);}
+ }
+}
+readcookie("a");
+readcookie("b");
+</script>
+</body>
+</html>
+

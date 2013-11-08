@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>办公物品申领</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<link rel=stylesheet href="../css/css.css" type="text/css">
+</HEAD>
+<BODY bgcolor=#EDF4F8>
+<BR>现存办公品用品以及领用记录有：<BR>
+<table cellspacing="1" cellpadding="4" width="99%" class="tableborder">
+<tr>
+<td class="header1" colspan="10">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" style="table-layout: fixed; word-wrap: break-word; font: 11px Tahoma, Verdana; color: #000000; font-weight: bold">
+<tr><td colspan="10">&nbsp;库存列表</td></tr></table></td>
+</tr>
+<tr>
+<td class="altbg1" >品名</td>
+<td class="altbg1" >规格</td>
+<TD class="altbg1">计划数量</TD>
+<TD class="altbg1">单位</TD>
+<TD class="altbg1">批准数量</TD>
+<TD class="altbg1">操作</TD>
+</tr>
+
+
+<!-- BEGIN list -->
+<tr bgcolor=white onMouseOver="this.bgColor='#AFAFA4';" onMouseOut="this.bgColor='white';">
+<td  >{sd_name}</td>
+<td  >{sd_type}</td>
+<TD >{sd_plannum}</TD>
+<TD >{sd_unit}</TD>
+<TD >{sd_approvenum}</TD>
+<TD >{action}</TD>
+</tr><!-- END list -->
+
+
+
+<tr>
+<td class="altbg1" colspan="10">
+<!-- <a href="###" onclick="history.go(-1);">返回</a> |
+<a href="msgpost_ubb.php?Recipient={senderid}">回复</a> --> 
+
+</td>
+</tr>
+</table></td></tr></table>
+<div style='margin-top:10px;align:center;'>{sd_additem}</div>
+</BODY>
+</HTML>

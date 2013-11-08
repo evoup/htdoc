@@ -1,0 +1,315 @@
+HTML {
+/*FILTER: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)*/
+}/*512变色*/
+
+#container	{ position:relative; max-width:1000px; min-width:760px;margin-left:auto; margin-right:auto;} 
+#page		{ 
+	padding-top: 70px; 
+  margin-right: auto;
+  margin-left: auto;
+  position:relative; max-width:1000px; min-width:760px;
+} 
+
+#page.sidebar { 
+  /* position: absolute; 
+  left: 260px;  */
+    margin-left: 260px;
+	
+}
+
+.page_header {
+	font-size: 150%;
+	font-weight: bold;
+	line-height: 140%;
+	margin:8px 0px 12px 0px; 
+	color: #e07300;
+	border-bottom: 2px solid #bbb;
+}
+
+
+
+
+.navlogo {
+	FLOAT: left
+}
+.navbar {
+	CLEAR: both; FONT-SIZE: 14px; Z-INDEX: 201; BACKGROUND: #fff; LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 0px
+}
+.navbar A {
+	COLOR: #00c0ff; TEXT-DECORATION: underline
+}
+.navbar A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.tools {
+	CLEAR: both; MARGIN: 0px auto; WIDTH: 960px
+}
+.toolbg {
+	WIDTH: 100%; POSITION: relative
+}
+.onlineuser {
+	BORDER-RIGHT: #ffcc9e 1px solid; MARGIN-TOP: 17px; FLOAT: left; WIDTH: 128px; LINE-HEIGHT: 32px; HEIGHT: 32px; TEXT-ALIGN: center
+}
+.onlineuser A {
+	PADDING-LEFT: 14px; BACKGROUND: url(cssimg/icon_online.gif) no-repeat 0px 2px
+}
+.onlinefig {
+	PADDING-LEFT: 14px; BACKGROUND: url(cssimg/icon_online.gif) no-repeat 0px 2px
+}
+.sethome {
+	PADDING-LEFT: 18px; BACKGROUND: url(http://image.360quan.com/images2008/navbar2/home.gif) no-repeat 0px 2px; MARGIN-LEFT: 19px
+}
+.onlineuser2 {
+	MARGIN-TOP: 17px; DISPLAY: inline; PADDING-LEFT: 9px; FLOAT: left; BORDER-LEFT: #ffcc9e 1px solid; LINE-HEIGHT: 32px; HEIGHT: 32px
+}
+.menuleft {
+	BACKGROUND: url(cssimg/channelleft.gif); FLOAT: left; WIDTH: 9px; HEIGHT: 27px
+}
+.menuright {
+	BACKGROUND: url(cssimg/channelright.gif); FLOAT: left; WIDTH: 6px; HEIGHT: 27px
+}
+.menudoc {
+	BACKGROUND: url(cssimg/menudoc.gif); FLOAT: left; WIDTH: 19px; HEIGHT: 27px
+}
+.navlogin {
+	MARGIN-TOP: 19px; DISPLAY: inline; RIGHT: 170px; LINE-HEIGHT: 27px; POSITION: absolute; TOP: 2px
+}
+.navlogin A {
+	DISPLAY: block; FONT-WEIGHT: bold; BACKGROUND: url(cssimg/loginbut.gif); FLOAT: left; WIDTH: 43px; COLOR: #fff; MARGIN-RIGHT: 8px; HEIGHT: 27px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.navlogin A:link {
+	BACKGROUND: url(cssimg/loginbut.gif); COLOR: #fff; TEXT-DECORATION: none
+}
+.navlogin A:visited {
+	BACKGROUND: url(cssimg/loginbut.gif); COLOR: #fff; TEXT-DECORATION: none
+}
+.navlogin A:hover {
+	BACKGROUND: url(cssimg/loginbut.gif); COLOR: #fff; TEXT-DECORATION: underline
+}
+.navlogin A:unknown {
+	BACKGROUND: url(cssimg/loginbut.gif); COLOR: #fff; TEXT-DECORATION: none
+}
+.navsearch {
+	MARGIN-TOP: 19px;
+	DISPLAY: inline;
+	RIGHT: 0px;
+	LINE-HEIGHT: 26px;
+	POSITION: absolute;
+	TOP: 2px;
+	HEIGHT: 26px;
+	width: 251px;
+	white-space: nowrap;
+}
+A { font-size:13px}
+A.normalink {
+	COLOR: #00c0ff; TEXT-DECORATION: underline
+}
+A.normalink:hover {
+	  COLOR: #ff0000; TEXT-DECORATION: none; 
+}
+.help {
+	PADDING-RIGHT: 11px; PADDING-LEFT: 13px; BACKGROUND: url(cssimg/help.gif) no-repeat 0px 50%; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.searchcon {/**/
+	BACKGROUND: url(http://image.360quan.com/images2008/navbar2/searchbg.gif) no-repeat 0px 0px; FLOAT: left; WIDTH: 140px; HEIGHT: 26px
+}
+.searchcon .input {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 5px; VERTICAL-ALIGN: top; WIDTH: 90px; COLOR: #aaa; LINE-HEIGHT: 26px; HEIGHT: 26px; BORDER-RIGHT-WIDTH: 0px
+}
+.searchcon .input1 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 5px; VERTICAL-ALIGN: top; WIDTH: 90px; COLOR: #000; LINE-HEIGHT: 26px; HEIGHT: 26px; BORDER-RIGHT-WIDTH: 0px
+}
+.searchcon .input2 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 5px; VERTICAL-ALIGN: top; WIDTH: 90px; COLOR: #000; LINE-HEIGHT: 26px; HEIGHT: 26px; BORDER-RIGHT-WIDTH: 0px
+}
+.searchcon .but {
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	BACKGROUND: url(cssimg/searchbut.gif);
+	BORDER-BOTTOM-WIDTH: 0px;
+	VERTICAL-ALIGN: top;
+	WIDTH: 24px;
+	CURSOR: pointer;
+	HEIGHT: 26px;
+	BORDER-RIGHT-WIDTH: 0px;
+}
+.navmenu {
+	CLEAR: both; Z-INDEX: 200; BACKGROUND: url(cssimg/menubg.gif); LEFT: 0px; OVERFLOW: hidden; WIDTH: 100%; POSITION: absolute; TOP: 59px; HEIGHT: 32px
+}
+.menubg {
+	CLEAR: both; MARGIN: 0px auto; WIDTH: 960px
+}
+.navcon {
+	FONT-SIZE: 14px; MARGIN: 0px auto; WIDTH: 960px
+}
+.navcon UL {
+	MARGIN-TOP: 3px; DISPLAY: inline; FLOAT: left; MARGIN-RIGHT: 2px; WHITE-SPACE: nowrap
+}
+.navcon UL .normali {
+	DISPLAY: inline; FONT-WEIGHT: bold; BACKGROUND: url(cssimg/navlibg1_1.gif); FLOAT: left; OVERFLOW: hidden; LINE-HEIGHT: 25px; MARGIN-RIGHT: 6px; HEIGHT: 25px; TEXT-ALIGN: center
+}
+.navcon UL .normali SPAN {
+	PADDING-LEFT: 12px; BACKGROUND: url(cssimg/navlibg1_2.gif) no-repeat 0px 0px; FLOAT: left
+}
+.navcon UL .normali CITE {
+	BACKGROUND: url(cssimg/navlibg1_3.gif) no-repeat 0px 0px; FLOAT: left; WIDTH: 12px; HEIGHT: 25px
+}
+.navcon UL .normali A {
+	MARGIN-TOP: 1px; FLOAT: left; COLOR: #f53f00; TEXT-DECORATION: none
+}
+.navcon UL .normali A:hover {
+	COLOR: #f53f00; TEXT-DECORATION: underline
+}
+.navcon UL .selectli {
+	DISPLAY: inline; FONT-WEIGHT: bold; BACKGROUND: url(cssimg/navlibg2_1.gif); FLOAT: left; OVERFLOW: hidden; LINE-HEIGHT: 25px; MARGIN-RIGHT: 6px; HEIGHT: 25px; TEXT-ALIGN: center
+}
+.navcon UL .selectli SPAN {
+	PADDING-LEFT: 12px; BACKGROUND: url(cssimg/navlibg2_2.gif) no-repeat 0px 0px; FLOAT: left
+}
+.navcon UL .selectli CITE {
+	BACKGROUND: url(cssimg/navlibg2_3.gif) no-repeat 0px 0px; FLOAT: left; WIDTH: 12px; HEIGHT: 25px
+}
+.navcon UL .selectli A {
+	MARGIN-TOP: 1px; FLOAT: left; COLOR: #fff; TEXT-DECORATION: none
+}
+.navcon UL .selectli A:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+.special_enter {
+	MARGIN-TOP: 3px; FONT-WEIGHT: bold; BACKGROUND: url(cssimg/specialbg1_1.gif); FLOAT: right; MARGIN-LEFT: 5px; LINE-HEIGHT: 25px; WHITE-SPACE: nowrap; HEIGHT: 25px
+}
+.special_enter SPAN A {
+	MARGIN-TOP: 1px; FLOAT: left; CURSOR: pointer; COLOR: #fff; TEXT-DECORATION: none
+}
+.special_enter SPAN A:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.special_enter SPAN A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.special_enter SPAN A:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+.special_enter SPAN A:unknown {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.special_enter SPAN {
+	PADDING-LEFT: 8px; BACKGROUND: url(cssimg/specialbg1_2.gif) no-repeat 0px 0px; FLOAT: left
+}
+.special_enter CITE {
+	BACKGROUND: url(cssimg/specialbg1_3.gif) no-repeat 0px 0px; FLOAT: left; WIDTH: 8px; HEIGHT: 25px
+}
+.shadow {
+	Z-INDEX: 200; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src='cssimg/toolbarshadow.png'); LEFT: 0px; BACKGROUND-IMAGE: none; OVERFLOW: hidden; WIDTH: 100%; LINE-HEIGHT: 9px; BACKGROUND-REPEAT: repeat-x; POSITION: absolute; TOP: 91px; HEIGHT: 9px
+}
+.im {
+	LEFT: 36px; WIDTH: 23px; POSITION: absolute; TOP: -13px; HEIGHT: 21px
+}
+.im IMG {
+	CURSOR: pointer
+}
+.navquit {
+	FLOAT: left; LINE-HEIGHT: 30px
+}
+.navclear {
+	CLEAR: both
+}
+.navfloatl {
+	FLOAT: left
+}
+.navhead {
+	MARGIN-RIGHT: 3px
+}
+
+/*navi style from weather.qq.com */
+#nowpsn {
+	CLEAR: both; BACKGROUND: #4570aa; MARGIN: 0px auto 6px; WIDTH: 910px; COLOR: #fff; HEIGHT: 20px; font-size:12px
+}
+#nowpsn A {
+	COLOR: white;font-size:12px; text-decoration:none;
+}
+#nowpsn A:hover {
+	TEXT-DECORATION: underline
+}
+#nowpsn P#position {/*您所在的位置*/
+	PADDING-LEFT: 20px;
+	FLOAT: left;
+	LINE-HEIGHT: 12px;
+	TEXT-ALIGN: left;
+	top: -50%;
+}
+#nowpsn P#Soso {
+	MARGIN-TOP: 4px; FLOAT: right; WIDTH: 180px
+}
+#nowpsn P#Soso .sosoin {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 1px solid; WIDTH: 122px; LINE-HEIGHT: 15px; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; HEIGHT: 15px
+}
+#nowpsn P#Soso .sosobutton {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://mat1.qq.com/weather/images/pub/soso_search.gif); BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 4px; WIDTH: 17px; CURSOR: pointer; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+/*navi style from weather.qq.com end*/
+a:{font-size:13px; color: #0066FF}
+a:visited{ font-size:13px; color:#0099CC}
+a:active{ font-size:13px;color: #999999}
+a:hover{ font-size:13px; color: #CC0000}
+
+
+
+/*a function to resize img*/
+#articlecontent img{ 
+border:0;  
+margin:0;  
+padding:0; 
+max-width:590px; 
+width:expression(this.width>590?"590px":this.width); 
+max-height:590px; 
+/*height:expression(this.height>590?"590px":this.height); */
+} 
+
+/*社区段*/
+.club {
+	PADDING-LEFT: 10px;
+	FONT: bold 14px/27px "宋体";
+	COLOR: #111;
+	HEIGHT: 27px;
+	background-image: url(../image/index/media_bg.gif);
+	background-repeat: repeat-x;
+}
+.clublist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; BACKGROUND: url(../images/index/club_list_bg.jpg) repeat-x 50% bottom; PADDING-BOTTOM: 6px; FONT: 12px/20px "宋体"; PADDING-TOP: 12px; HEIGHT: 100%
+}
+.clublist LI {
+	PADDING-LEFT: 14px; BACKGROUND: url(../images/index/orange_arror.gif) no-repeat 0px 4px; MARGIN: 0px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.clubfirst {
+	FONT: 12px/18px "宋体"; COLOR: #333
+}
+.clublist IMG {
+	BORDER-RIGHT: #039 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #039 1px solid; PADDING-LEFT: 2px; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 0px 12px 8px 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: #039 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #039 1px solid
+}
+.informationfirst {
+	FONT: 12px/18px "宋体"; COLOR: #333
+}
+.frmore {
+	DISPLAY: inline; FLOAT: right; MARGIN: 3px 10px 0px 0px
+}
+.cb {
+	CLEAR: both
+}
+
+
+a.fontlink:hover {/*分页连接,不起作用*/
+background-color:#0A86EA;
+color:#FFFFFF;
+text-decoration:none;
+}
+.fontlink {
+background-color:#FFFFFF;
+border:1px solid #B9DCFF;
+font-family:Verdana;
+font-size:10px;
+margin:0 4px;
+padding:2px 4px;
+text-align:center;
+text-decoration:none;
+}

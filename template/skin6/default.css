@@ -1,0 +1,286 @@
+/*#############################################################
+Name: Gemstone
+Date: 2006-05-30
+Description: A lightweight black/blue design suitable for communitys and webportals.
+Author: Viktor Persson
+URL: http://arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+
+/* Standard element */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #999 url(img/bg.gif) repeat-y;
+	font-family: 宋体,Tahoma,sans-serif;
+	font-size: 8.9pt;
+	padding-left: 25px;
+}
+a{font-size:8.9pt;}
+p {
+	margin-bottom: 1.2em;
+}
+ul {
+	margin: 0 0 10px 22px;
+}
+li {
+	list-style-image: url(img/li.gif);
+}
+
+/* misc */
+.clearer {
+	clear: both;
+}
+div.quote {
+	border-left: 4px solid #36C;
+	clear: both;
+	color: #555;
+	display: block;
+	font: italic 1.1em Verdana,serif;
+	margin: 8.9pt 0 8.9pt 16px;
+	padding-left: 8.9pt;
+}
+
+/* top & header */
+
+#sitename{
+
+/*clear:right;*/
+	
+	width:391px;
+	height:50px;
+	text-align:left;}
+#sitename	h1{
+	font: bold 2em sans-serif;background-image:url(img/logojiayi.png);
+	background-repeat:no-repeat;
+	padding: 8px 16px 0;width:391px;
+	height:50px;
+}
+#sitename	h1 span{
+	font: normal 60% Verdana,sans-serif;
+	padding: 8px 16px 0;
+	display:none;
+}	
+	
+
+.header {
+	background: url(img/header.gif); 
+	height: 71px;
+	width: 939px; 
+}
+#xbar {
+	background-color:#CCCCCC;
+	height:8px;
+	width:939px;
+	float: right;
+	/*border-bottom: 1px solid #CCCCCC;*/
+	font-size: 0px;
+	display: block;
+	background-image: url(img/xbar.gif);
+}
+#xbar2 {
+	background-color:#CCCCCC;
+	height:31px;
+	margin:1px;
+	width:937px;
+	float: right;
+	/*border-bottom: 1px solid #CCCCCC;*/
+	font-size: 8.9pt;
+	display: block;
+	background-image: url(img/x_bg1.gif);
+	color:rgb(103,104,99);
+	vertical-align:middle;
+line-height:31px;
+	
+}
+
+.span_xbar2_left{margin-left:14px;float:left;font-size:11px;}
+.span_xbar2_right{margin-right:14px;display:inline;float:right;font-size:11px;}
+
+/* menu */
+div.menu{
+margin:0 0 0 8.9pt;
+}
+div.menu ul {
+	float: right;
+	margin: 0 1px 0 0;
+}
+div.menu li {
+	list-style-image: none;
+	background:url(img/bgtnv_right.gif) no-repeat top right;
+}
+div.menu a {
+	background: url(img/bgtnv_left.gif) no-repeat top left;
+	background:url(img/bgtnv_left.gif) no-repeat top left;
+	color: #666666;
+	display: block;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 3px 0 1px 8px;
+	text-decoration: none;
+	/*width: 180px;*/
+	width:130px;
+	text-align:center;
+}
+div.menu a#current {
+	background: url(img/bgtnv_current.gif) no-repeat top right; color: #000000;width: 180px;
+}
+div.menu a:hover {
+	/*background: #555;*/ color:rgb(255,0,0);
+}
+div.menu li {
+	list-style-type: none;
+	margin: 0 0 1px 0;
+	padding: 0;
+	float:left;
+	font-size: 15px;
+}
+
+
+
+
+div.content_main{
+	margin: 0px;
+	width: 937px;
+}
+/* left side */
+div.content_left {
+	margin: 1px;
+	width: 705px;
+	float: right;
+	height: 800px;
+}
+div.date {
+	background: #0070CD url(img/bgdate.gif) repeat-x;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px;
+}
+div.newsitem {
+	/*background: #F0F0F0 url(img/bg_newsitem.png) repeat-x;*/
+	border: 1px solid #EEE;
+	border-color: #EEE #EEE #DDD #EEE;
+	clear: both;
+	color: #333;
+	line-height: 1.5;
+	margin: 6px;
+	padding: 10px;
+}div.newsitem1 {
+	/*background: #F0F0F0 url(img/bg_newsitem.png) repeat-x;*/
+	border: 1px solid #EEE;
+	border-color: #EEE #EEE #DDD #EEE;
+	clear: both;
+	color: #333;
+	line-height: 1.5;
+	margin: 6px;
+	padding: 10px;
+}
+div.newsitem img {
+	border: 3px double #CCC;
+	height: 320px;
+	margin: 6px 10px 10px 10px;
+	width: 520px;
+}div.newsitem1 img {
+	border: 3px double #CCC;
+	height: 70px;
+	margin: 6px 10px 10px 10px;
+	width: 120px;
+}
+div.newsitem img.left {
+	float: left;
+}div.newsitem1 img.left {
+	float: left;
+}
+div.newsitem img.right {
+	float: right;
+}div.newsitem1 img.right {
+	float: right;
+}
+div.newsitem .title {
+	color: #0066CC;
+	font: bold 1.2em Tahoma,sans-serif;
+	padding: 3px 4px;
+	
+
+}div.newsitem1.title {
+	color: #0066CC;
+	font: bold 1.2em Tahoma,sans-serif;
+	padding: 3px 4px;
+}
+div.newsitem .body {
+	font-family: "Trebuchet MS",Tahoma,sans-serif;
+	font-size: 0.9em;
+	text-align: justify;
+}
+div.newsitem1.body {
+	font-family: "Trebuchet MS",Tahoma,sans-serif;
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+/* right side */
+div.content_right {
+	width: 200px;
+	position: absolute;
+	top: 117px;
+	left: 36px;
+	display:block;
+}
+
+div.links a {
+	background: url(img/bg_navitem.gif) repeat-x #FFF;
+	border-bottom: 1px solid #EEE;
+	display: block;
+	font:  8.9pt 宋体, Verdana,Tahoma,sans-serif;
+	padding: 6px 0 8px 8px;
+	text-decoration: none; color: #333;
+}
+div.links a:hover {
+	color: #0080DD; background-position: left bottom;
+	font:  8.9pt 宋体, Verdana,Tahoma,sans-serif;
+}
+div.links div.line {
+	height: 1px; background-color: #EEEEF5;
+}
+div.links .title {
+	background: rgb(255,163,0) url(img/top_4.gif) repeat-x;
+	color: #FFF;
+	font: normal 9.8pt Tahoma,sans-serif;
+	padding: 5px 8px;
+	font-weight:bold;
+
+}
+
+/* footer */
+div.footer {
+	background: #F0F0F0 url(img/bgdate.gif) repeat-x;
+	border: 1px solid #EEE;
+	color: #FFF;
+	margin-left: 5px;
+	width: 931px;
+	float: right;
+}
+div.footer .copyright {
+	padding: 6px 8.9pt;
+}
+div.footer .copyright a {
+	color:white;
+}
+div.footer .copyright a:visited {
+	color:white;
+}
+div.footer a {
+	color: #FFF;
+	font: bold 1em "Trebuchet MS",sans-serif;
+	text-decoration: none;
+}
+/*外挂*/
+.announce {
+		PADDING-RIGHT: 8.9pt; DISPLAY: block; PADDING-LEFT: 8.9pt; PADDING-BOTTOM: 0px; MARGIN: 0; PADDING-TOP: 6px; BACKGROUND-COLOR: rgb(236,237,232);
+}
+#annc{
+background:none;display:inline;padding-left:0px;font-size:8.9pt;line-height:1.3;
+}

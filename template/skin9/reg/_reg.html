@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新用户注册</title>
+<style type="text/css">
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+TABLE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+FONT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+SELECT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+TEXTAREA {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #474747; WORD-BREAK: break-all; PADDING-TOP: 0px; FONT-FAMILY: '宋体'; LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+A {
+	COLOR: #464646; LINE-HEIGHT: 18px; FONT-FAMILY: '宋体'; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.cut {
+	MARGIN: 5px auto 0px; WIDTH: 760px
+}
+.cut1 {
+	MARGIN: 0px auto; WIDTH: 760px
+}
+.tit {
+	PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 0px auto; WIDTH: 645px; LINE-HEIGHT: 45px; BORDER-BOTTOM: #ebebeb 1px solid
+}
+.myinfo {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 8px auto 0px; WIDTH: 645px; PADDING-TOP: 0px
+}
+.myinfo1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 8px auto 0px; WIDTH: 645px; PADDING-TOP: 0px
+}
+.myinfo TD {
+	HEIGHT: 38px
+}
+SELECT.city {
+	WIDTH: 60px
+}
+INPUT.myinfo_tx {
+	BORDER-RIGHT: #c4c7c8 1px solid; BORDER-TOP: #c4c7c8 1px solid; BORDER-LEFT: #c4c7c8 1px solid; WIDTH: 156px; LINE-HEIGHT: 22px; BORDER-BOTTOM: #c4c7c8 1px solid; HEIGHT: 22px
+}
+INPUT.myinfo_ps {
+	BORDER-RIGHT: #c4c7c8 1px solid; BORDER-TOP: #c4c7c8 1px solid; FLOAT: left; BORDER-LEFT: #c4c7c8 1px solid; WIDTH: 105px; LINE-HEIGHT: 22px; BORDER-BOTTOM: #c4c7c8 1px solid; HEIGHT: 22px
+}
+INPUT.myinfo_log {
+	BORDER-RIGHT: #c4c7c8 1px solid; BORDER-TOP: #c4c7c8 1px solid; FLOAT: left; BORDER-LEFT: #c4c7c8 1px solid; WIDTH: 135px; LINE-HEIGHT: 22px; BORDER-BOTTOM: #c4c7c8 1px solid; HEIGHT: 22px
+}
+.gray {
+	COLOR: #919191
+}
+.myinfo P {
+	BORDER-RIGHT: #bcbcbc 1px solid; BORDER-TOP: #bcbcbc 1px solid; BACKGROUND: #ebebeb; FLOAT: left; MARGIN: 4px 0px 0px 7px; BORDER-LEFT: #bcbcbc 1px solid; WIDTH: 42px; COLOR: #474747; BORDER-BOTTOM: #bcbcbc 1px solid; HEIGHT: 15px; TEXT-ALIGN: center
+}
+.login {
+	PADDING-RIGHT: 0px; BORDER-TOP: #ebebeb 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; TEXT-ALIGN: center
+}
+.login INPUT {
+	FONT-SIZE: 14px; WIDTH: 85px; COLOR: #000; PADDING-TOP: 2px
+}
+.login INPUT.sure {
+	WIDTH: 105px
+}
+.confer {
+	MARGIN: 0px auto; WIDTH: 670px
+}
+.confer P {
+	PADDING-LEFT: 10px; HEIGHT: 30px
+}
+.confer TEXTAREA {
+	PADDING-RIGHT: 7px; OVERFLOW-Y: auto; PADDING-LEFT: 7px; PADDING-BOTTOM: 7px; WIDTH: 650px; PADDING-TOP: 7px; HEIGHT: 110px
+}
+.blue {
+	COLOR: #003cff; TEXT-DECORATION: underline
+}
+.remark {
+	MARGIN: 10px auto 0px; WIDTH: 510px; LINE-HEIGHT: 18px
+}
+.sure_tx {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 72px; MARGIN: 0px auto; WIDTH: 645px; COLOR: #ff4a00; LINE-HEIGHT: 28px; PADDING-TOP: 72px; BORDER-BOTTOM: #ebebeb 1px solid; TEXT-ALIGN: center
+}
+.state {
+	MARGIN: 0px auto; WIDTH: 755px; COLOR: #000; LINE-HEIGHT: 36px; PADDING-TOP: 10px; TEXT-ALIGN: right
+}
+.state A {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.state A.on {
+	COLOR: #ff0000
+}
+.cote A.on {
+	COLOR: #ff0000
+}
+.sure_info {
+	FLOAT: left; MARGIN-LEFT: 5px; WIDTH: 151px; COLOR: #2b30d3; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.wellcome {
+	FONT-WEIGHT: bold; COLOR: #ff0000; HEIGHT: 30px
+}
+.wc_info {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #2b30d3; HEIGHT: 30px
+}
+.wc_infotx {
+	COLOR: #2b30d3
+}
+.cote {
+	BORDER-RIGHT: #c0cce7 1px solid; BORDER-TOP: #c0cce7 1px solid; FLOAT: left; BORDER-LEFT: #c0cce7 1px solid; WIDTH: 594px; BORDER-BOTTOM: #c0cce7 1px solid
+}
+.cote TD {
+	PADDING-LEFT: 14px; COLOR: #0048ff
+}
+.cote_tit {
+	BACKGROUND: #f3f7ff; WIDTH: 56px; HEIGHT: 36px
+}
+.cote_tit B {
+	FONT-SIZE: 14px; COLOR: #000000
+}
+.cote A {
+	PADDING-RIGHT: 4px; FONT-SIZE: 14px; COLOR: #0048ff
+}
+.explain_blue {
+	BORDER-RIGHT: #a7d7ec 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #a7d7ec 1px solid; PADDING-LEFT: 3px; BACKGROUND: #fbfeff; PADDING-BOTTOM: 3px; OVERFLOW: hidden; BORDER-LEFT: #a7d7ec 1px solid; WIDTH: 420px; COLOR: #45a9d6; PADDING-TOP: 3px; BORDER-BOTTOM: #a7d7ec 1px solid; HEIGHT: 25px
+}
+.explain_green {
+	BORDER-RIGHT: #afe3d4 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #afe3d4 1px solid; PADDING-LEFT: 3px; BACKGROUND: #fbfefd; PADDING-BOTTOM: 3px; OVERFLOW: hidden; BORDER-LEFT: #afe3d4 1px solid; WIDTH: 420px; COLOR: #2cc34c; PADDING-TOP: 3px; BORDER-BOTTOM: #afe3d4 1px solid; HEIGHT: 25px
+}
+.explain_red {
+	BORDER-RIGHT: #ff7b67 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ff7b67 1px solid; PADDING-LEFT: 3px; BACKGROUND: #feeeed; PADDING-BOTTOM: 3px; OVERFLOW: hidden; BORDER-LEFT: #ff7b67 1px solid; WIDTH: 420px; COLOR: #ff4800; PADDING-TOP: 3px; BORDER-BOTTOM: #ff7b67 1px solid; HEIGHT: 25px
+}
+
+</style>
+[[[header]]]<script language="javascript">
+function reloadShowCode(obj){
+var e=document.getElementById(obj);
+//e.click();
+}
+function check_form(){
+document.getElementById('Submit').click();
+}
+</script>
+<div id = "container">
+<div id =page style=" width:790px; margin:auto;"><IMG style="MARGIN: 15px 0px 0px 25px"
+src="../[[[site_dir]]]/image/title.jpg">
+  <hr 
+      style="BORDER-RIGHT: #c4c4c4 1px dotted; BORDER-TOP: #c4c4c4 1px dotted; BORDER-LEFT: #c4c4c4 1px dotted; BORDER-BOTTOM: #c4c4c4 1px dotted" 
+      width="98%">
+  </hr><form name="form1" method="post" action="[[[actionurl]]]">
+  <table style="MARGIN: 17px 0px 0px 17px" cellspacing=0 cellpadding=0 border="0">
+    <TBODY>
+      <tr>
+        <td align=right height=35>Email：</td>
+        <td align=left><input class="myinfo_tx" id="email" name="email"  value="[[[_email]]]"/></td>
+        <td></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td align=right width=225 height=35>用户名：</td>
+        <td align=left width=205><INPUT class=myinfo_tx id=UserName 
+            onblur=check_username(this); 
+            onfocus="showspace(getobj('username_info'))" name=login value=[[[_login]]]></td>
+        <td></td>
+        <td width=524><SPAN id=username_info 
+            space="3-32个字符(只能由小写字母、数字、下划线组成)。<br>&#13;&#10;一旦注册成功不能修改。"></SPAN></td>
+      </tr>
+      <tr>
+        <td align=right width=225 height=35>用户昵称：</td>
+        <td align=left><INPUT class=myinfo_tx id=nickname 
+            onblur=check_nickname(); 
+            onfocus="check_nickname();showspace(getobj('nickname_info'))" 
+            name=nickname></td>
+        <td></td>
+        <td><SPAN class=whitecolor id=nickname_info 
+            space="昵称即网名、绰号，例如：小荒唐，周星星等" wrong="请正确填写昵称；昵称应为3-32个字符" 
+            no="× 您还未填写昵称，请输入。" yes="√ 你的昵称可用"></SPAN></td>
+      </tr>
+      <tr>
+        <td align=right width=225 height=35>密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+        <td align=left><INPUT class=myinfo_tx id=PassWord 
+            onblur=check_PassWord();check_PassWord_Check(); 
+            onfocus="check_PassWord();showspace(getobj('password_info'))" 
+            type=password name=password value=[[[_password]]]></td>
+        <td></td>
+        <td><SPAN class=whitecolor id=password_info 
+            space="密码由3-32个字符组成，请尽量使用英文字母加数字或符号的组合密码，注意区分大小写。" 
+            no="× 您还未设置密码，请输入。" yes="√ 初设密码已经完成，请在下面二次确认密码"></SPAN></td>
+      </tr>
+      <tr id=repassword style="">
+        <td align=right width=225 height=20></td>
+        <td align=left><FONT color=#3939a7>密码确认</FONT></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id=repassword2 style="">
+        <td align=right width=225 height=35>&nbsp;</td>
+        <td align=left><INPUT name=confirm type=password class="myinfo_tx"  id=PassWord_Check value="[[[_confirm]]]"></td>
+        <td></td>
+        <td><SPAN class=whitecolor id=password2_info 
+            space="为确认无误，请重复输入一次上面的密码输入。" no="× 您输入的确认密码与上面的密码不符，请重新设置密码" 
+            yes="√ 密码输入正确"></SPAN></td>
+      </tr>
+      <tr id=location>
+        <td align=right width=225 height=35>所在地区：</td>
+        <td align=left><select >
+            <option>请选择</option>
+          </select>        </td>
+        <td></td>
+        <td><SPAN class=whitecolor id=check_locate_info space="请选择你所在地区" 
+            no="" yes=""></SPAN></td>
+      </tr>
+      <tr>
+        <td align=right width=225 height=35>性&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+        <td align=left>&nbsp;
+          <LABEL>
+          <INPUT id=sex1 onfocus=check_sex() 
+            type=radio align=absMiddle value=1 
+            name=sex>
+          男性</LABEL>
+          &nbsp;&nbsp;&nbsp;
+          <LABEL>
+          <INPUT id=sex2 
+            onfocus="changclass('sex_info','warmsg');check_sex()" type=radio 
+            align=absMiddle value=2 name=sex>
+          女性</LABEL></td>
+        <td></td>
+        <td><SPAN id=sex_info space="性别不能为空" no="" 
+yes="性别已经填写"></SPAN></td>
+      </tr>
+      <tr id=tr1 style="DISPLAY: none">
+        <td align=middle colSpan=2 height=35><StrONG 
+            style="COLOR: #ff0000">请完善密码保护信息:</StrONG></td>
+        <td width=10></td>
+        <td></td>
+      </tr>
+      <tr id=tr2 style="DISPLAY: none">
+        <td align=right width=225 height=35>QQ号码：</td>
+        <td align=left colSpan=3><INPUT class=input-text id=qq 
+            onblur=check_qq(this); onkeyup=chgemail(); style="WIDTH: 120px" 
+            onfocus="return true;showspace(getobj('qq_info'))" name=qq>
+          (你还可用此QQ直接登录POCO，选填)
+          <!-- </td>
+            <td></td>
+            <td><span id="qq_info" space="你还可能用此QQ号码直接登录POCO" no=""> </span> -->        </td>
+      </tr>
+      <tr id=tr3 style="DISPLAY: none">
+        <td align=right width=225 height=35>电子邮件：</td>
+        <td align=left><INPUT class=input-text id=EmailAddress 
+            onblur=check_EmailAddress(this); onkeyup=readtag=1; 
+            onfocus="showspace(getobj('email_info'))" name=EmailAddress></td>
+        <td></td>
+        <td><SPAN class=whitecolor id=email_info 
+            space="请正确填写您常用电子邮件地址，作为密码取回之用" wrong="× 您还未填写邮箱，请输入。" 
+            no="× 您输入的邮箱格式不正确，请参考正确格式输入：****@****.***" 
+        yes="√ 邮箱输入正确"></SPAN></td>
+      </tr>
+      <tr>
+        <td align=right width=225 height=35>验证码：</td>
+        <td align=left><INPUT class=myinfo_tx id=reg_code 
+            style="WIDTH: 100px; MARGIN-RIGHT: 8px" name=captcha>
+          <SPAN 
+            id=show_code>
+          <INPUT type=hidden value=2878877075 name=regid>
+          <IMG id = "captimg"
+            alt="Code Bit" src="reg.php?act=captcha" 
+            border=0 style="cursor:pointer;border:1px solid #333333" width="145px" height="20px" onclick="this.src='reg.php?act=captcha&'+Math.random();">
+          <DIV></DIV>
+          </SPAN></td>
+        <td></td>
+        <td><SPAN id=check_code_info>验证码看不清？<A 
+            style="COLOR: #b40404; MARGIN-RIGHT: 10px" 
+            onclick="reloadShowCode('captimg')" 
+            href="javascript:;">请刷新.</A></SPAN></td>
+      </tr>
+      <tr>
+        <td vAlign=center align=middle colSpan=4 height=80><table>
+            <TBODY>
+              <tr>
+                <td><INPUT id=reg_agreement type=checkbox CHECKED></td>
+                <td>我已阅读并同意<A href="/company/terms.php" 
+                  target=_blank>注册协议</A></td>
+                <td style="PADDING-LEFT: 10px"><img style="CURSOR: pointer" 
+                  onclick="return check_form();" name="Submit_p"
+                  src="../[[[site_dir]]]/image/buttom2.jpg" /><input type="submit" name="Submit" id = "Submit" value="Submit" style="display:none"></td>
+              </tr>
+            </TBODY>
+          </table><p><b>[[[_error]]]</b></p></td>
+      </tr>
+    </TBODY>
+  </table></form>
+  </div>
+</div>[[[footer]]]
+</body>
+</html>

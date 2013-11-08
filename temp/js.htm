@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<TITLE>jsselect元素值传递</TITLE>
+<script language="Javascript"> 
+ 
+var arrayData = new Array(); 
+ 
+arrayData[0]	= 'SALES|[SAL] User 01|' 
+arrayData[1]	= 'SALES|[SAL] User 02|' 
+arrayData[2]	= 'SALES|[SAL] User 03|' 
+arrayData[3]	= 'MARKETING|[MAR] User 01|' 
+arrayData[4]	= 'MARKETING|[MAR] User 02|' 
+arrayData[5]	= 'MARKETING|[MAR] User 03|' 
+arrayData[6]	= 'TECHNOLOGY|[TEC] User 01|' 
+arrayData[7]	= 'TECHNOLOGY|[TEC] User 02|' 
+arrayData[8]	= 'TECHNOLOGY|[TEC] User 03|' 
+ 
+ 
+function populateData( name ) { 
+ 
+	select	= document.getElementById('SubCategory'); 
+	string	= ""; 
+ 
+		// 0 - will display the new options only 
+		// 1 - will display the first existing option plus the new options 
+ 
+	count	= 0; 
+ 
+		// Clear the old list (above element 0) 
+ 
+	select.options.length = count; 
+ 
+		// Place all matching categories into Options. 
+ 
+	for( i = 0; i < arrayData.length; i++ ) { 
+		string = arrayData[i].split( "|" ); 
+		//假如你选择的部门和数组的撇号之前的部分相同，那么加个选项，一直到select.options[]完
+		if( string[0] == name ) { 
+			select.options[count++] = new Option( string[1] ); 
+		} 
+	} 
+ 
+		// Set which option from subcategory is to be selected 
+ 
+//	select.options.selectedIndex = 2; 
+ 
+		// Give subcategory focus and select it 
+ 
+//	select.focus(); 
+ 
+} 
+ 
+</script>
+</HEAD>
+
+<!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
+
+<BODY>
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Original:  Vladimir Geshanov -->
+<!-- Web Site:  http://hotarea.com -->
+<table cellpadding=4 cellspacing=0 border=0> 
+	<tr> 
+		<form name=form method=post action="result.php"> 
+		<td><span class=DefMenuText>Departments</span><br> 
+			<select name='category' size=3 style="width:120;" 
+				onChange='javascript:populateData( this.options[selectedIndex].text)'> 
+					<option>SALES</option> 
+					<option>MARKETING</option> 
+					<option>TECHNOLOGY</option> 
+			</select> 
+		</td> 
+		<td><span class=DefMenuText>Department Users</span><br> 
+			<select id="SubCategory" name="SubCategory" size=3 style="width:120;" multiple=multiple> 
+			</select> 
+		</td> 
+		<tr><td><INPUT TYPE="submit"></td></tr>
+		</form> 
+		
+	</tr> 
+</table><hr>
+<FORM METHOD=POST ACTION="result.php">
+		<INPUT TYPE="text" id="r" name="r">
+		<INPUT TYPE="submit">
+		</FORM>
+</BODY>
+</HTML>

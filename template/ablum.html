@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" >
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>人员照片</title>
+
+<link rel=stylesheet href="../css/css.css" type="text/css">
+
+
+<style type="text/css">
+ul#gallery {
+  padding:0; 
+  margin:0; 
+  width:730px; 
+  height:336px; 
+  position:relative;
+  list-style-type:none;
+  /*background:#888;*/
+  }
+#gallery li {
+  width:122px; 
+  height:172px; 
+  float:left; 
+  z-index:100;
+  }
+#imgtext{
+width:120px; 
+  height:18px; 
+  float:left; 
+  z-index:110;
+  text-align:center;
+  color:#FFFFFF;
+  border:1px solid #888; 
+  position:relative;
+  background-color:#0B9ADD;
+  padding-top:6px;
+}  
+  
+#gallery a img {
+  position:relative;
+  width:120px; 
+  height:170px; 
+  border:1px solid #888; 
+  z-index:100;
+  }
+#preamble{
+
+top:120px;
+left:0;
+
+  width:182px; 
+  height:222px; 
+  float:left; 
+  z-index:100;
+}  
+  
+  
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function ck(){
+if (document.getElementById('empname').value=="")
+{
+alert("你似乎没填好查询条件吧!");
+return false;
+}}
+//-->
+</SCRIPT>
+</head>
+
+<body><p style='margin-top:10px;'>位置：行政管理 -> 人员照片</p> 
+
+<FORM METHOD=POST ACTION="ablum.php?action=search" onsubmit="javascript :return ck();">
+<div style='margin-left:13px;margin-top:10px;margin-bottom:10px;'>部门<script src="/js/dep_s.js" charset=utf-8></script>
+姓名<INPUT TYPE="text" NAME="empname" id="empname">
+<INPUT TYPE="submit" value="查询" class=inp2></div>
+</FORM>
+<div align="center">
+<ul id="gallery">
+<!-- BEGIN list -->
+<div align=center>
+  <div id =preamble><li class="frozen"><a href={imgsrc} id="#nogo" ><img src="{imgsrc}" alt="{imgalt}" title="{imgalt}" /></a></li><div id =imgtext>{imgtext}</div></div>
+</div>
+
+<!-- END list -->  
+</ul>
+</div>
+
+</body>
+</html>

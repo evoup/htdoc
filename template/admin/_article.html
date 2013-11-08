@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/confirm.js"></script>
+<script language="javascript">
+function refreshtime(v){
+document.listForm.action="article.php?action=list";
+document.getElementById("hid_refreshtime").value=v;
+document.getElementById("pagedo").value='refreshtime';
+document.listForm.submit();
+//void(0);
+}
+</script>
+<style type="text/css">
+<!--分页的样式，以后加上
+.pagenavi { text-align:center;  font: 11px Arial, tahoma, sans-serif; padding-top: 20px; padding-bottom: 10px; margin: 0px; }
+.pagenavi a {border: 1px solid #E2F1AF; background: #FFFFFF; text-decoration: none; color:#C16012; display:inline-block; padding-left:6px; padding-right:6px; padding-top:2px; padding-bottom:2px}
+.pagenavi a:visited {border: 1px solid #E2F1AF; background: #FFFFFF; text-decoration: none; padding-left:6px; padding-right:6px; padding-top:2px; padding-bottom:2px}
+.pagenavi .break {border: medium none;  text-decoration: none; color:#C16012; background:;; padding-left:6px; padding-right:6px; padding-top:2px; padding-bottom:2px}
+.pagenavi .num {color:#C16012; font-size:12pt; padding-left:3px; padding-right:3px; padding-top:0; padding-bottom:0}
+.pagenavi .curr {padding: 2px 6px; border-color: #999; font-weight: bold; font-size:12pt; background:transparent;}
+.pagenavi a:hover {color: #C16012; background: #E2F1AF; text-decoration: none}
+-->
+</style>
+
+</head>
+<body>
+<h1>
+<span class="action-span"><a href="article.php?action=add">新增文章</a></span>
+<span class="action-span1"><a href="javascript:void(0)">EVPCMS 管理中心</a>  - 文章列表 </span>
+<div style="clear:both"></div>
+</h1>
+<!-- 商品搜索 -->
+<!-- $Id: _article.html,v 1.3 2008/08/11 16:03:46 root Exp $ -->
+<div class="form-div">
+  <form action="javascript:searchGoods()" name="searchForm">
+    <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+        <!-- 分类 -->
+    <select name="cat_id"><option value="0">所有分類</option><option value="1" >手機</option><option value="3" >&nbsp;&nbsp;&nbsp;&nbsp;日韓手機</option><option value="4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SONY</option><option value="2" >&nbsp;&nbsp;&nbsp;&nbsp;歐美手機</option></select>
+    <!-- 品牌 -->
+    <select name="brand_id"><option value="0">所有品牌</option><option value="1">摩托羅拉</option><option value="2">諾基亞</option><option value="3">三星</option><option value="4">索尼愛立信</option><option value="5">disnus</option><option value="6">飛利浦</option><option value="7">LG</option></select>
+    <!-- 推荐 -->
+    <select name="intro_type"><option value="0">推薦</option><option value="is_best">精品</option><option value="is_new">新品</option><option value="is_hot">熱賣</option><option value="is_promote">特價</option></select>
+        <!-- 关键字 -->
+    关键字 <input type="text" name="keyword" size="15" />
+    <input type="submit" value=" 搜索 " class="button" />
+  </form>
+</div>
+
+
+
+<!-- 商品列表 -->
+<!--<form method="post" action="" name="listForm" onsubmit="return confirmSubmit(this)">-->
+<form method="post" action="" name="listForm">
+
+  <div class="list-div" id="listDiv">
+<table cellpadding="3" cellspacing="1">
+  <tr>
+    <th>
+      <input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox" />
+      <a href="javascript:listTable.sort('goods_id'); ">编号</a><img src="images/sort_desc.gif"/>    </th>
+    <th><a href="javascript:listTable.sort('goods_name'); ">序号</a></th>
+    <th><a href="javascript:listTable.sort('goods_sn'); ">标题</a></th>
+    <th><a href="javascript:listTable.sort('shop_price'); ">时间</a></th>
+    <th><a href="javascript:listTable.sort('is_on_sale'); ">设为推荐</a></th>
+    <th><a href="javascript:listTable.sort('is_best'); ">删除推荐</a></th>
+    <th><a href="javascript:listTable.sort('goods_number'); ">刷新时间</a></th>
+        <th>操作</th>
+  
+  <!-- BEGIN list -->
+  [[[newslist]]]
+  <!-- END list -->
+  </table>
+
+
+<!-- 分页 -->
+<table id="page-table" cellspacing="0">
+  <tr>
+    <td align="right" nowrap="true">
+            <div id="turn-page">
+       [[[paging]]]&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<div>
+  <input type="hidden" name="act" value="batch" />
+  <select name="type" id="selAction" onchange="changeAction()">
+    <option value="">請選擇...</option>
+    <option value="trash">回收站</option>
+    <option value="on_sale">上架</option>
+    <option value="not_on_sale">下架</option>
+    <option value="best">精品</option>
+    <option value="not_best">取消精品</option>
+    <option value="new">新品</option>
+    <option value="not_new">取消新品</option>
+    <option value="hot">熱賣</option>
+    <option value="not_hot">取消熱賣</option>
+    <option value="move_to">轉移到分類</option>
+  </select>
+  <select name="target_cat" style="display:none">
+    <option value="0">請選擇...</option><option value="1" >手機</option><option value="3" >&nbsp;&nbsp;&nbsp;&nbsp;日韓手機</option><option value="4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SONY</option><option value="2" >&nbsp;&nbsp;&nbsp;&nbsp;歐美手機</option>  </select>
+    <input type="hidden" name="extension_code" value="" />
+    <input type="hidden" name = "hid_refreshtime" id= "hid_refreshtime" value='' /><input type="hidden" name = "pagedo" id = "pagedo"  /><input type="submit" value=" 確定 " id="btnSubmit" name="btnSubmit" class="button" />
+</div>
+</form>
+
+
+<div id="footer">
+共執行  個查詢，耗時  秒，Gzip 已 用，記憶體已用  MB<br />
+</div>
+</body>
+</html>
